@@ -1,0 +1,10 @@
+<div class="skill-item mt-3">
+  <div class="row">
+    <div class="col-md-7 text-primary-emphasis mb-1 skill-item__name">{{ skill.name }}</div>
+    <div class="col-md-5">
+      <div class="progress" style="height: 5px" role="progressbar" aria-label="Basic example" [attr.aria-valuenow]="skill.coverage">
+        <div class="progress-bar bg-secondary" [style.width]="percent + '%'"></div>
+      </div>
+    </div>
+  </div>
+</div>

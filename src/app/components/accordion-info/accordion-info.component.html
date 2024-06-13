@@ -1,0 +1,31 @@
+<div class="accordion accordion-info" [id]="idAccordion">
+  <div class="accordion-item" *ngFor="let item of accordionItems">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button"
+        [class.collapsed]="item.type !== typeItem.CAREER"
+        type="button"
+        data-bs-toggle="collapse"
+        [attr.data-bs-target]="'#' + item.type"
+        [attr.aria-expanded]="item.type === typeItem.CAREER ? true : false"
+        aria-controls="collapseOne"
+      >
+        <div class="text-center text-primary-emphasis fs-5 fw-bold">
+          <i class="bi {{ item.icon }} me-2"></i> {{ 'info.' + item.type | translate }}
+        </div>
+      </button>
+    </h2>
+    <div
+      [id]="item.type"
+      [class.show]="item.type === typeItem.CAREER"
+      class="accordion-collapse collapse"
+      [attr.data-bs-parent]="'#' + idAccordion"
+    >
+      <div class="accordion-body">
+        <app-accordion-item-career *ngIf="item.type === typeItem.CAREER"></app-accordion-item-career>
+        <app-accordion-item-degrees *ngIf="item.type === typeItem.DEGREES"></app-accordion-item-degrees>
+        <app-accordion-item-courses *ngIf="item.type === typeItem.COURSES"></app-accordion-item-courses>
+      </div>
+    </div>
+  </div>
+</div>

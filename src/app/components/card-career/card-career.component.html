@@ -1,0 +1,4 @@
+<div class="card-career card border-primary mb-3" *ngIf="resumeService.infoUser | async as infoUser">
+  <div class="card-header border-primary text-primary fw-bold text-center"><i class="bi bi-boxes"></i> {{ 'info.career' | translate }}</div>
+  <div class="card-body text-secondary">{{ infoUser.positionDescription }}</div>
+</div>

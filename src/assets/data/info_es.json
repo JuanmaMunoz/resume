@@ -1,0 +1,232 @@
+{
+  "name": "Juan Manuel Muñoz González",
+  "age": 40,
+  "city": "Torre del Mar (Málaga)",
+  "email": "jmmugoz@gmail.com",
+  "position": "Front-end Architect",
+  "positionDescription": "<p>Tengo 18 años de experiencia en el mundo del software.</p> He trabajado para importantes compañías como Repsol, Vodafone, Línea Directa, Banco Santader entre otros, donde en algunos de estos proyectos, he tenido la oportunidad de diseñar desde cero y liderar el desarrollo de la arquitectura front, opteniendo gran experiencia en este area. Cuanto con conocimientos avanzados de Back-end y Ux, lo que me da una visión global de las necesidades y dando soporte al resto de equipos.",
+  "skills": [
+    {
+      "name": "Angular 15",
+      "coverage": 95
+    },
+    {
+      "name": "RxJs",
+      "coverage": 90
+    },
+    {
+      "name": "NgRx",
+      "coverage": 80
+    },
+    {
+      "name": "HTML 5",
+      "coverage": 95
+    },
+    {
+      "name": "TypeScript",
+      "coverage": 95
+    },
+    {
+      "name": "Js",
+      "coverage": 95
+    },
+    {
+      "name": "Vue.js",
+      "coverage": 80
+    },
+    {
+      "name": "CSS 3",
+      "coverage": 80
+    },
+    {
+      "name": "Sass",
+      "coverage": 85
+    },
+    {
+      "name": "SPA (Micro-sites)",
+      "coverage": 85
+    },
+    {
+      "name": "Library Components",
+      "coverage": 95
+    },
+    {
+      "name": "Jquery",
+      "coverage": 80
+    },
+    {
+      "name": "BackBone",
+      "coverage": 75
+    },
+    {
+      "name": "Mean Stack",
+      "coverage": 75
+    },
+    {
+      "name": "Ionic",
+      "coverage": 80
+    }
+  ],
+  "businessSkills": [
+    {
+      "name": "Liderazgo",
+      "coverage": 95
+    },
+    {
+      "name": "Arquitectura desde 0",
+      "coverage": 95
+    },
+    {
+      "name": "Gestión de Equipos",
+      "coverage": 95
+    },
+    {
+      "name": "Soporte Front-Back",
+      "coverage": 95
+    },
+    {
+      "name": "Soporte Ux-Back",
+      "coverage": 95
+    },
+    {
+      "name": "Soporte Producto",
+      "coverage": 90
+    }
+  ],
+  "degrees": [
+    {
+      "name": "Ingeniería Electrónica",
+      "school": "Universidad de Málaga",
+      "startDate": 2010,
+      "endDate": 2012
+    },
+    {
+      "name": "FP2 Desarrollo de aplicaciones informáticas",
+      "school": "I.E.S Instituto Martín Rivero",
+      "startDate": 2011,
+      "endDate": 2012
+    }
+  ],
+  "courses": [
+    {
+      "name": "Angular Testing Masterclass",
+      "school": "Angular University",
+      "startDate": 2020,
+      "endDate": 2021
+    },
+    {
+      "name": "Angular 8 MEAN STACK",
+      "school": "Angular University",
+      "startDate": 2020,
+      "endDate": 2020
+    },
+    {
+      "name": "Angular 8 Advanced",
+      "school": "Angular University",
+      "startDate": 2020,
+      "endDate": 2020
+    },
+    {
+      "name": "Rxjs Level Pro",
+      "school": "Accenture Academy",
+      "startDate": 2020,
+      "endDate": 2020
+    }
+  ],
+  "languages": [
+    { "name": "Español", "coverage": 99 },
+    { "name": "Inglés", "coverage": 60 }
+  ],
+  "experience": [
+    {
+      "name": "Front-end Architect",
+      "company": "Vintegris",
+      "imageCompany": "",
+      "startDate": 2022,
+      "endDate": 2023,
+      "description": "Front-End Architect. Diseño y refactorización de la arquitectura, liderazgo de los tres equipos de front, estableciendo las metodologías y buenas prácticas para la costrucción de aplicaciones robustas y escalables.",
+      "proyects": [
+        {
+          "name": "Signicat platform web",
+          "description": "Diseño y desarrollo de la arquitectura front de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data en química por Expoquimia",
+          "technologies": [
+            "Angular 12",
+            "Vue.js",
+            "Node Js",
+            "Azure Cloud",
+            "HTML 5",
+            "Sass",
+            "Js",
+            "Full Rest",
+            "Own component library (Angular)"
+          ]
+        },
+        {
+          "name": "Vodafone IDM",
+          "description": "Mantenimiento y desarrollo de la arquitectura Front y IDM de Vodafone, software encargado de la administración de identidades de la plataforma.",
+          "technologies": ["Angular 10", "HTML 5", "Sass", "Js", "API SOAP", "Full Rest", "Web Socket IO"]
+        }
+      ]
+    },
+    {
+      "name": "Front-end Architect",
+      "company": "Signicat",
+      "imageCompany": "",
+      "startDate": 2022,
+      "endDate": 2023,
+      "description": "Front-End Architect. Diseño y refactorización de la arquitectura, liderazgo de los tres equipos de front, estableciendo las metodologías y buenas prácticas para la costrucción de aplicaciones robustas y escalables.",
+      "proyects": [
+        {
+          "name": "Signicat platform web",
+          "description": "Diseño y desarrollo de la arquitectura front de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data en química por Expoquimia",
+          "technologies": [
+            "Angular 12",
+            "Vue.js",
+            "Node Js",
+            "Azure Cloud",
+            "HTML 5",
+            "Sass",
+            "Js",
+            "Full Rest",
+            "Own component library (Angular)"
+          ]
+        },
+        {
+          "name": "Vodafone IDM",
+          "description": "Mantenimiento y desarrollo de la arquitectura Front y IDM de Vodafone, software encargado de la administración de identidades de la plataforma.",
+          "technologies": ["Angular 10", "HTML 5", "Sass", "Js", "API SOAP", "Full Rest", "Web Socket IO"]
+        }
+      ]
+    },
+    {
+      "name": "Front-end Architect",
+      "company": "Accenture",
+      "imageCompany": "",
+      "startDate": 2020,
+      "endDate": 2022,
+      "description": "Consultor jefe en Front. Diseño de la arquitectura y liderazgo de los direntes equipos de front, estableciendo las metodologías y buenas prácticas para la costrucción de aplicaciones robustas y escalables.",
+      "proyects": [
+        {
+          "name": "Repsol Proyecto Aria",
+          "description": "Diseño y desarrollo de la arquitectura front de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data en química por Expoquimia",
+          "technologies": [
+            "Angular 12",
+            "Vue.js",
+            "Node Js",
+            "Azure Cloud",
+            "HTML 5",
+            "Sass",
+            "Js",
+            "Full Rest",
+            "Own component library (Angular)"
+          ]
+        },
+        {
+          "name": "Vodafone IDM",
+          "description": "Mantenimiento y desarrollo de la arquitectura Front y IDM de Vodafone, software encargado de la administración de identidades de la plataforma.",
+          "technologies": ["Angular 10", "HTML 5", "Sass", "Js", "API SOAP", "Full Rest", "Web Socket IO"]
+        }
+      ]
+    }
+  ]
+}

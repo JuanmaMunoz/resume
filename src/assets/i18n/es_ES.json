@@ -1,0 +1,22 @@
+{
+  "menuButtons": {
+    "info": "Información",
+    "experience": "Experiencia",
+    "skills": "Habilidades"
+  },
+  "info": {
+    "personalInfo": "Información personal",
+    "career": "Carrera profesional",
+    "degrees": "Títulación",
+    "courses": "Otra formación"
+  },
+  "skills": {
+    "techSkills": "Habilidades técnicas",
+    "bussSkills": "Habilidades de negocio",
+    "growthProfesional": "Crecimiento profesional",
+    "languages": "Idiomas"
+  },
+  "experience": {
+    "experience": "Experiencia"
+  }
+}

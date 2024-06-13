@@ -1,0 +1,13 @@
+.skills {
+  &__btn {
+    cursor: pointer;
+    &:hover {
+      color: var(--bs-primary-emphasis) !important;
+    }
+  }
+  &__card {
+    max-height: 20rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
