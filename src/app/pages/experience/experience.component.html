@@ -6,26 +6,11 @@
       </div>
       <div class="card-body">
         <div class="row">
-          <div class="col-3">
-            <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy">
-              <a class="p-1 rounded" *ngFor="let item of infoUser.experience" [href]="'#' + item.company"
-                >{{ item.company }} {{ item.startDate }} - {{ item.endDate }}</a
-              >
-            </div>
+          <div class="col-3 experience__menu border-end">
+            <app-experience-menu-item [experience]="item" *ngFor="let item of infoUser.experience"></app-experience-menu-item>
           </div>
-          <div class="col-9">
-            <div
-              data-bs-spy="scroll"
-              *ngFor="let item of infoUser.experience"
-              [attr.data-bs-target]="'#' + item.company"
-              data-bs-offset="0"
-              data-bs-smooth-scroll="true"
-              class="scrollspy-example"
-              tabindex="0"
-            >
-              <h4 id="simple-list-item-1">{{ item.company }}</h4>
-              <p>{{ item.description }}</p>
-            </div>
+          <div class="col-9 experience__body">
+            <app-experience-item [experience]="item" *ngFor="let item of infoUser.experience"></app-experience-item>
           </div>
         </div>
       </div>

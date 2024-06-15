@@ -1,0 +1,7 @@
+.experience {
+    &__body,&__menu{
+        max-height: 30rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}

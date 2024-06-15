@@ -1,0 +1,7 @@
+.experience-menu-item{
+    cursor: pointer;
+    color:var(--bs-secondary);
+    &:hover{
+        color:var(--bs-primary-text-emphasis);
+    }
+}
