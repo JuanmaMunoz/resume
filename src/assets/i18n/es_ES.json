@@ -17,6 +17,8 @@
     "languages": "Idiomas"
   },
   "experience": {
-    "experience": "Experiencia"
+    "experience": "Experiencia",
+    "proyects": "Proyectos",
+    "technologies": "Tecnologías"
   }
 }

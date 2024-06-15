@@ -141,7 +141,7 @@
     {
       "name": "Front-end Architect",
       "company": "Vintegris",
-      "imageCompany": "",
+      "imageCompany": "/assets/images/companies/vintegris.png",
       "startDate": 2022,
       "endDate": 2023,
       "description": "Front-End Architect. Diseño y refactorización de la arquitectura, liderazgo de los tres equipos de front, estableciendo las metodologías y buenas prácticas para la costrucción de aplicaciones robustas y escalables.",
@@ -171,7 +171,7 @@
     {
       "name": "Front-end Architect",
       "company": "Signicat",
-      "imageCompany": "",
+      "imageCompany": "/assets/images/companies/signicat.png",
       "startDate": 2022,
       "endDate": 2023,
       "description": "Front-End Architect. Diseño y refactorización de la arquitectura, liderazgo de los tres equipos de front, estableciendo las metodologías y buenas prácticas para la costrucción de aplicaciones robustas y escalables.",
@@ -201,7 +201,7 @@
     {
       "name": "Front-end Architect",
       "company": "Accenture",
-      "imageCompany": "",
+      "imageCompany": "/assets/images/companies/accenture.png",
       "startDate": 2020,
       "endDate": 2022,
       "description": "Consultor jefe en Front. Diseño de la arquitectura y liderazgo de los direntes equipos de front, estableciendo las metodologías y buenas prácticas para la costrucción de aplicaciones robustas y escalables.",

@@ -14,17 +14,19 @@ import { AccordionItemDegreesComponent } from './components/accordion-item-degre
 import { CardCareerComponent } from './components/card-career/card-career.component';
 import { CardDegreesComponent } from './components/card-degrees/card-degrees.component';
 import { CardUserComponent } from './components/card-user/card-user.component';
+import { ExperienceItemComponent } from './components/experience-item/experience-item.component';
 import { HeaderComponent } from './components/header/header.component';
 import { InfoItemComponent } from './components/info-item/info-item.component';
 import { MenuButtonComponent } from './components/menu-button/menu-button.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PhotoComponent } from './components/photo/photo.component';
+import { ProfesionalGrowthComponent } from './components/profesional-growth/profesional-growth.component';
+import { SkillItemComponent } from './components/skill-item/skill-item.component';
+import { TitleComponent } from './components/title/title.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { InfoComponent } from './pages/info/info.component';
 import { SkillsComponent } from './pages/skills/skills.component';
-import { TitleComponent } from './components/title/title.component';
-import { SkillItemComponent } from './components/skill-item/skill-item.component';
-import { ProfesionalGrowthComponent } from './components/profesional-growth/profesional-growth.component';
+import { ExperienceMenuItemComponent } from './components/experience-menu-item/experience-menu-item.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
@@ -50,6 +52,8 @@ export function createTranslateLoader(http: HttpClient) {
     TitleComponent,
     SkillItemComponent,
     ProfesionalGrowthComponent,
+    ExperienceItemComponent,
+    ExperienceMenuItemComponent,
   ],
   imports: [
     BrowserModule,
