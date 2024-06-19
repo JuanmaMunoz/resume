@@ -2,6 +2,12 @@
   .card {
     border-radius: var(--bs-border-radius-xxl);
   }
+
+  .card-header{
+    padding-top: 1rem;
+    padding-left: 1.25rem;
+  }
+
   .card-header,
   .card-header:first-child,
   .card-img-top {
@@ -34,3 +40,20 @@
     font-weight: 500;
   }
 }
+
+
+.main {
+  &__body{
+    position: relative;
+  }
+}
+
+
+@media (max-width: 768px) { 
+  .main {
+   padding: 0 1rem 0 1rem;
+    overflow-y: hidden;
+      overflow-x: hidden;
+  }
+}
+

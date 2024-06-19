@@ -5,11 +5,11 @@
         <i class="bi bi-rocket-takeoff me-2"></i> {{ 'experience.experience' | translate }}
       </div>
       <div class="card-body">
-        <div class="row">
-          <div class="col-3 experience__menu border-end">
+        <div class="row pe-2">
+          <div class="col-3 experience__menu border-end d-none d-lg-block">
             <app-experience-menu-item [experience]="item" *ngFor="let item of infoUser.experience"></app-experience-menu-item>
           </div>
-          <div class="col-9 experience__body">
+          <div class="col experience__body">
             <app-experience-item [experience]="item" *ngFor="let item of infoUser.experience"></app-experience-item>
           </div>
         </div>

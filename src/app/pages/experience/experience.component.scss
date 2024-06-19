@@ -5,3 +5,12 @@
         overflow-x: hidden;
     }
 }
+
+
+@media (max-width: 768px) { 
+    .experience {
+        &__body{
+            max-height: 70vh;
+        }
+    }
+  }

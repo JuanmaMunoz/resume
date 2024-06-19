@@ -1,0 +1,12 @@
+.menu-sm{
+    position: absolute;
+    top: 3.4rem;
+    left: 0.5rem;
+    z-index: 100;
+    overflow: hidden;
+    width: 60vw;
+    border: 2px solid var(--bs-primary-text-emphasis)!important;
+    &__buttons{
+        padding: 2rem 1rem;
+    }
+}

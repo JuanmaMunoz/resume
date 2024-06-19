@@ -1,1 +1,8 @@
 
+@media (max-width: 768px) { 
+ .body__sm {
+    max-height: 69vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+  }

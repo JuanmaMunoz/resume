@@ -2,13 +2,33 @@
   <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
     <i class="bi bi-person-bounding-box me-2"></i> {{ 'info.personalInfo' | translate }}
   </div>
-  <img src="assets/images/photo.jpg" alt="Front-end Architect" />
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item text-primary-emphasis"><i class="bi bi-person me-2"></i> {{ infoUser.name }}</li>
-    <li class="list-group-item text-primary-emphasis"><i class="bi bi-cake2 me-2"></i> {{ infoUser.age }}</li>
-    <li class="list-group-item text-primary-emphasis"><i class="bi bi-envelope me-2"></i> {{ infoUser.email }}</li>
-  </ul>
-  <div class="card-body">
-    <li class="list-group-item text-primary-emphasis"><i class="bi bi-geo-alt me-2"></i> {{ infoUser.city }}</li>
+
+  <div class="card-user__lg d-none d-lg-block">
+    <img src="assets/images/photo.jpg" alt="Front-end Architect" class="img-fluid" />
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item text-primary-emphasis"><i class="bi bi-person me-2"></i> {{ infoUser.name }}</li>
+      <li class="list-group-item text-primary-emphasis"><i class="bi bi-cake2 me-2"></i> {{ infoUser.age }}</li>
+      <li class="list-group-item text-primary-emphasis"><i class="bi bi-envelope me-2"></i> {{ infoUser.email }}</li>
+    </ul>
+    <div class="card-body">
+      <li class="list-group-item text-primary-emphasis"><i class="bi bi-geo-alt me-2"></i> {{ infoUser.city }}</li>
+    </div>
+  </div>
+
+  <div class="card-user__sm d-lg-none">
+    <div class="card-body body__sm me-2 my-3">
+      <div class="col-12 text-center mb-4">
+        <app-photo></app-photo>
+      </div>
+      <div class="col-12 mb-4">
+        <app-item-career></app-item-career>
+      </div>
+      <div class="col-12 mb-4">
+        <app-item-degrees></app-item-degrees>
+      </div>
+      <div class="col-12 mb-4">
+        <app-item-courses></app-item-courses>
+      </div>
+    </div>
   </div>
 </div>
