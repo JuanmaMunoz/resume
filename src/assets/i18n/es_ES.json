@@ -14,7 +14,9 @@
     "techSkills": "Habilidades técnicas",
     "bussSkills": "Habilidades de negocio",
     "growthProfesional": "Crecimiento profesional",
-    "languages": "Idiomas"
+    "languages": "Idiomas",
+    "tech": "Técnicas",
+    "business": "Negocio"
   },
   "experience": {
     "experience": "Experiencia",

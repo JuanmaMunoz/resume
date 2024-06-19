@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Input } from '@angular/core';
 import Chart from 'chart.js/auto';
 
 @Component({
@@ -6,16 +6,19 @@ import Chart from 'chart.js/auto';
   templateUrl: './profesional-growth.component.html',
   styleUrls: ['./profesional-growth.component.scss'],
 })
-export class ProfesionalGrowthComponent implements OnInit {
-  public chart: any;
-  ngOnInit(): void {
+export class ProfesionalGrowthComponent implements AfterViewInit {
+  @Input() idChart: string = '';
+  public chart: any = null;
+
+  ngAfterViewInit(): void {
     this.createChart();
   }
 
   private createChart() {
-    const ctx = document.getElementById('growth');
+    if (this.chart) this.chart.destroy();
+    const ctx = document.getElementById(this.idChart);
 
-    new Chart(ctx as any, {
+    this.chart = new Chart(ctx as any, {
       type: 'radar',
       data: {
         labels: [
