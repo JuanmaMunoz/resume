@@ -18,8 +18,8 @@
             <h4 class="navbar-brand">CV / Resume</h4>
           </div>
         </nav>
-        <div #menu class="d-xl-none" [ngStyle]="showMenu ? { display: 'block' } : { display: 'none' }" [@showHideStatus]="showMenu">
-          <app-menu-sm (actionClose)="showHideMenu()"></app-menu-sm>
+        <div #menu class="d-xl-none main__menu-sm">
+          <app-menu-sm [show]="showMenu"></app-menu-sm>
         </div>
         <div #content>
           <router-outlet></router-outlet>
