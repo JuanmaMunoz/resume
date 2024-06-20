@@ -11,8 +11,14 @@
         <app-menu> </app-menu>
       </div>
       <div class="main__body col bg-body-secondary rounded-5 p-2 p-xl-4">
-        <app-navbar (actionShowMenu)="showHideMenu()"></app-navbar>
-        <div *ngIf="showMenu" class="d-xl-none">
+        <!--<app-navbar (actionShowMenu)="showHideMenu()"></app-navbar>-->
+        <nav class="navbar rounded-4 mb-1 p-0 d-xl-none">
+          <div class="container-fluid">
+            <button #btnMenu (click)="showHideMenu()" class="btn btn-secondary"><i class="bi bi-list"></i></button>
+            <h4 class="navbar-brand">CV / Resume</h4>
+          </div>
+        </nav>
+        <div #menu class="d-xl-none" [ngStyle]="showMenu ? { display: 'block' } : { display: 'none' }" [@showHideStatus]="showMenu">
           <app-menu-sm (actionClose)="showHideMenu()"></app-menu-sm>
         </div>
         <div #content>

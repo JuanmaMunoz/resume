@@ -1,6 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
-const duration: string = '200ms';
+const duration: string = '100ms';
 
 const effectShow = [style({ opacity: 0 }), animate(duration, style({ opacity: 1 }))];
 

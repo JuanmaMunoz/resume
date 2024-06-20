@@ -1,5 +1,5 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { IMenuButton } from 'src/app/models/interfaces';
 import { ResumeService } from 'src/app/services/resume.service';
@@ -10,7 +10,6 @@ import { ResumeService } from 'src/app/services/resume.service';
   styleUrls: ['./menu-sm.component.scss'],
 })
 export class MenuSmComponent {
-  @Output() actionClose: EventEmitter<null> = new EventEmitter();
   private subscription = new Subscription();
   public menuButtons: IMenuButton[] = [];
   constructor(public resumeService: ResumeService) {}
@@ -23,9 +22,5 @@ export class MenuSmComponent {
         error: (e: HttpErrorResponse) => {},
       })
     );
-  }
-
-  public closeMenu(): void {
-    this.actionClose.emit();
   }
 }

@@ -1,16 +1,23 @@
-<div class="info-sm row">
-  <div class="col-12 text-center mb-4">
-    <app-photo></app-photo>
-  </div>
-  <div class="col-12 mb-4 border-bottom pb-4">
-    <app-item-career></app-item-career>
-  </div>
-  <div class="col-12 mb-4 border-bottom">
-    <h4 class="text-primary-emphasis fw-bold"><i class="bi bi bi-mortarboard"></i> {{ 'info.degrees' | translate }}:</h4>
-    <app-item-degrees></app-item-degrees>
-  </div>
-  <div class="col-12 mb-4 border-bottom">
-    <h4 class="text-primary-emphasis fw-bold"><i class="bi bi bi-award"></i> {{ 'info.courses' | translate }}:</h4>
-    <app-item-courses></app-item-courses>
+<div class="info-sm col-12">
+  <div class="card">
+    <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
+      <i class="bi bi-cup-hot me-2"></i> {{ 'menuButtons.skills' | translate }}
+    </div>
+    <div class="card-body info-sm__body row my-3 me-2">
+      <div class="col-12 text-center mb-4">
+        <app-photo></app-photo>
+      </div>
+      <div class="col-12 mb-4 border-bottom pb-4">
+        <app-item-career></app-item-career>
+      </div>
+      <div class="col-12 mb-4 border-bottom">
+        <h4 class="text-primary-emphasis fw-bold"><i class="bi bi bi-mortarboard"></i> {{ 'info.degrees' | translate }}:</h4>
+        <app-item-degrees></app-item-degrees>
+      </div>
+      <div class="col-12 mb-4 border-bottom">
+        <h4 class="text-primary-emphasis fw-bold"><i class="bi bi bi-award"></i> {{ 'info.courses' | translate }}:</h4>
+        <app-item-courses></app-item-courses>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,7 +1,7 @@
 <div class="menu-sm border bg-body rounded-5">
   <div class="row">
     <div class="col-12 menu__buttons py-3">
-      <div (click)="closeMenu()" *ngFor="let button of menuButtons" class="d-flex flex-column mx-3">
+      <div *ngFor="let button of menuButtons" class="d-flex flex-column mx-3">
         <app-menu-button [menuButton]="button"></app-menu-button>
       </div>
     </div>

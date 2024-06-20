@@ -27,3 +27,13 @@
     }
   }
 }
+
+@media (max-width: 390px) {
+  .menu-button {
+    font-size: 2rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    &--active {
+      padding: 0.5rem 0 0.5rem 0.7rem;
+    }
+  }
+}
