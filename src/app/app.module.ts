@@ -34,6 +34,7 @@ import { InfoComponent } from './pages/info/info.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { InfoSmComponent } from './components/info-sm/info-sm.component';
 import { SkillsSmComponent } from './components/skills-sm/skills-sm.component';
+import { HobbiesComponent } from './components/hobbies/hobbies.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
@@ -66,6 +67,7 @@ export function createTranslateLoader(http: HttpClient) {
     MenuSmComponent,
     InfoSmComponent,
     SkillsSmComponent,
+    HobbiesComponent,
   ],
   imports: [
     BrowserModule,

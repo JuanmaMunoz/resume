@@ -1,0 +1,10 @@
+<div class="hoobies">
+  <div class="card-hobbies card" *ngIf="resumeService.infoUser | async as infoUser">
+    <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
+      <i class="bi bi-arrow-through-heart me-2"></i> {{ 'info.hobbies' | translate }}
+    </div>
+    <div class="card-body d-flex justify-content-between px-4">
+      <i class="bi {{ hobby }} fs-3 text-secondary" *ngFor="let hobby of infoUser.hobbies"></i>
+    </div>
+  </div>
+</div>

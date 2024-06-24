@@ -37,6 +37,7 @@ export interface IInfoUser {
   position: string;
   positionDescription: string;
   skills: ISkill[];
+  hobbies: string[];
   businessSkills: ISkill[];
   languages: ISkill[];
   degrees: IDegree[];

@@ -1,15 +1,16 @@
 .experience {
-    &__body,&__menu{
-        max-height: 30rem;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
+  &__body,
+  &__menu {
+    max-height: 28rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }
 
-@media (max-width: 768px) { 
-    .experience {
-        &__body{
-            max-height: 69vh;
-        }
+@media (max-width: 768px) {
+  .experience {
+    &__body {
+      max-height: 69vh;
     }
   }
+}

@@ -8,7 +8,9 @@
     "personalInfo": "Información personal",
     "career": "Carrera profesional",
     "degrees": "Títulación",
-    "courses": "Otra formación"
+    "courses": "Otra formación",
+    "hobbies": "Aficiones",
+    "fullRemote": "Solo teletrabajo 100%"
   },
   "skills": {
     "techSkills": "Habilidades técnicas",

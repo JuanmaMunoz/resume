@@ -6,7 +6,7 @@
     background-color: var(--bs-secondary-bg-subtle);
     color: var(--bs-primary-text-emphasis);
     border-left: solid 0.3rem var(--bs-primary-text-emphasis);
-    padding: 0.5rem 0 0.5rem 4.3rem;
+    padding: 0.5rem 0 0.5rem 4.25rem;
   }
 }
 
@@ -14,7 +14,7 @@
   .menu-button {
     padding: 0.5rem 0 0.5rem 3rem;
     &--active {
-      padding: 0.5rem 0 0.5rem 2.7rem;
+      padding: 0.5rem 0 0.5rem 2.65rem;
     }
   }
 }
@@ -23,7 +23,7 @@
   .menu-button {
     padding: 0.5rem 0 0.5rem 2rem;
     &--active {
-      padding: 0.5rem 0 0.5rem 1.7rem;
+      padding: 0.5rem 0 0.5rem 1.65rem;
     }
   }
 }
