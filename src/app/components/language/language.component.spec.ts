@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardCareerComponent } from './card-career.component';
+import { LanguageComponent } from './language.component';
 
-describe('CardCareerComponent', () => {
-  let component: CardCareerComponent;
-  let fixture: ComponentFixture<CardCareerComponent>;
+describe('LanguageComponent', () => {
+  let component: LanguageComponent;
+  let fixture: ComponentFixture<LanguageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CardCareerComponent ]
+      declarations: [ LanguageComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CardCareerComponent);
+    fixture = TestBed.createComponent(LanguageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

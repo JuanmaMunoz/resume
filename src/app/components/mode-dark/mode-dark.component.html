@@ -1,4 +1,4 @@
-<div class="mode-dark form-check form-switch" (click)="changeModeDark()">
-  <input id="shared" class="form-check-input" type="checkbox" [(ngModel)]="modeDark" />
-  <label for="shared" class="form-check-label text-secondary fw-bold">Mode Dark</label>
+<div class="mode-dark form-check form-switch">
+  <input id="shared" class="form-check-input" type="checkbox" [(ngModel)]="modeDark" (ngModelChange)="changeModeDark()" />
+  <label for="shared" class="form-check-label">{{ 'dark' | translate }}</label>
 </div>

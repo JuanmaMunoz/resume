@@ -1,19 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { ModeDark } from 'src/app/models/enums';
+import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
   selector: 'app-mode-dark',
   templateUrl: './mode-dark.component.html',
   styleUrls: ['./mode-dark.component.scss'],
 })
-export class ModeDarkComponent {
-  public modeDark: boolean = true;
+export class ModeDarkComponent implements OnInit, OnDestroy {
+  public modeDark: boolean = false;
+  public modeDarkEnum = ModeDark;
+  public subscription = new Subscription();
+  public constructor(private resumeService: ResumeService) {}
+
+  ngOnInit(): void {
+    this.subscription.add(
+      this.resumeService.modeDark.subscribe((mode: ModeDark) => {
+        this.modeDark = mode === ModeDark.DARK ? true : false;
+      })
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
 
   public changeModeDark() {
-    this.modeDark = !this.modeDark;
     if (this.modeDark) {
-      document.documentElement.setAttribute('data-bs-theme', 'dark');
+      this.resumeService.modeDark.next(this.modeDarkEnum.DARK);
     } else {
-      document.documentElement.setAttribute('data-bs-theme', 'light');
+      this.resumeService.modeDark.next(this.modeDarkEnum.LIGHT);
     }
   }
 }

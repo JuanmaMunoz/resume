@@ -5,7 +5,7 @@
       <app-title *ngIf="this.resumeService.currentUrl === '/info'"></app-title>
     </div>
     <div class="col-12 menu__buttons ps-0">
-      <div *ngFor="let button of menuButtons" class="d-flex flex-column">
+      <div *ngFor="let button of menu | async" class="d-flex flex-column">
         <app-menu-button [menuButton]="button"></app-menu-button>
       </div>
     </div>

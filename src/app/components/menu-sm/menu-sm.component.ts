@@ -1,6 +1,5 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 import { IMenuButton } from 'src/app/models/interfaces';
 import { ResumeService } from 'src/app/services/resume.service';
 
@@ -11,19 +10,11 @@ import { ResumeService } from 'src/app/services/resume.service';
 })
 export class MenuSmComponent {
   @Input() show: boolean = false;
-  private subscription = new Subscription();
-  public menuButtons: IMenuButton[] = [];
+  public menu!: Observable<IMenuButton[]>;
 
   constructor(public resumeService: ResumeService) {}
 
   ngOnInit(): void {
-    this.subscription.add(
-      this.resumeService.getMenuButtons().subscribe({
-        next: (data: IMenuButton[]) => {
-          this.menuButtons = data;
-        },
-        error: (e: HttpErrorResponse) => {},
-      })
-    );
+    this.menu = this.resumeService.getMenuButtons();
   }
 }

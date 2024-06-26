@@ -1,18 +1,17 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import { Language, ModeDark } from './models/enums';
 import { IInfoUser } from './models/interfaces';
 import { ResumeService } from './services/resume.service';
-import { showHideStatus } from './utils/effects';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [showHideStatus],
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   public subscription = new Subscription();
   public showMenu: boolean = false;
   @ViewChild('content') content: ElementRef = {} as ElementRef;
@@ -21,9 +20,26 @@ export class AppComponent implements OnInit, AfterViewInit {
   constructor(private translate: TranslateService, private resumeService: ResumeService) {}
 
   ngOnInit(): void {
-    this.translate.use('es_ES');
-    document.documentElement.setAttribute('data-bs-theme', 'dark');
-    this.getInfo();
+    const lang = localStorage.getItem('language') || Language.ENGLISH;
+    const modeDark = localStorage.getItem('modeDark') || ModeDark.LIGHT;
+    this.resumeService.modeDark.next(modeDark as ModeDark);
+    this.translate.use(lang);
+    this.subscription.add(
+      this.translate.onLangChange.subscribe((data) => {
+        this.getInfo(data.lang as Language);
+        localStorage.setItem('language', data.lang);
+      })
+    );
+    this.subscription.add(
+      this.resumeService.modeDark.subscribe((mode: ModeDark) => {
+        document.documentElement.setAttribute('data-bs-theme', mode);
+        localStorage.setItem('modeDark', mode);
+      })
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
   ngAfterViewInit(): void {
@@ -38,9 +54,9 @@ export class AppComponent implements OnInit, AfterViewInit {
     });
   }
 
-  private getInfo(): void {
+  private getInfo(lan: Language): void {
     this.subscription.add(
-      this.resumeService.getInfo().subscribe({
+      this.resumeService.getInfo(lan).subscribe({
         next: (data: IInfoUser) => this.resumeService.infoUser.next(data),
         error: (e: HttpErrorResponse) => {},
       })

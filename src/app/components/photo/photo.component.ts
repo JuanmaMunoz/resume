@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
@@ -6,8 +6,6 @@ import { ResumeService } from 'src/app/services/resume.service';
   templateUrl: './photo.component.html',
   styleUrls: ['./photo.component.scss'],
 })
-export class PhotoComponent implements OnInit {
+export class PhotoComponent {
   constructor(public resumeService: ResumeService) {}
-
-  ngOnInit(): void {}
 }
