@@ -15,11 +15,11 @@ import { ExperienceMenuItemComponent } from './components/experience-menu-item/e
 import { HeaderComponent } from './components/header/header.component';
 import { InfoItemComponent } from './components/info-item/info-item.component';
 
+import { CareerItemComponent } from './components/career-item/career-item.component';
+import { CoursesItemComponent } from './components/courses-item/courses-item.component';
+import { DegreesItemComponent } from './components/degrees-item/degrees-item.component';
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { InfoSmComponent } from './components/info-sm/info-sm.component';
-import { ItemCareerComponent } from './components/item-career/item-career.component';
-import { ItemCoursesComponent } from './components/item-courses/item-courses.component';
-import { ItemDegreesComponent } from './components/item-degrees/item-degrees.component';
 import { LanguageComponent } from './components/language/language.component';
 import { MenuButtonComponent } from './components/menu-button/menu-button.component';
 import { MenuSmComponent } from './components/menu-sm/menu-sm.component';
@@ -49,9 +49,10 @@ export function createTranslateLoader(http: HttpClient) {
     ExperienceComponent,
     CardUserComponent,
     AccordionInfoComponent,
-    ItemCareerComponent,
-    ItemDegreesComponent,
-    ItemCoursesComponent,
+    DegreesItemComponent,
+    CoursesItemComponent,
+    CareerItemComponent,
+    ExperienceItemComponent,
     InfoItemComponent,
     InfoComponent,
     TitleComponent,

@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ItemDegreesComponent } from './item-degrees.component';
+import { CareerItemComponent } from './career-item.component';
 
-describe('ItemDegreesComponent', () => {
-  let component: ItemDegreesComponent;
-  let fixture: ComponentFixture<ItemDegreesComponent>;
+describe('CareerItemComponent', () => {
+  let component: CareerItemComponent;
+  let fixture: ComponentFixture<CareerItemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ItemDegreesComponent],
+      declarations: [CareerItemComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ItemDegreesComponent);
+    fixture = TestBed.createComponent(CareerItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

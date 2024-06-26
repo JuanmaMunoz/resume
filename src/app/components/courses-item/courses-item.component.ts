@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
-  selector: 'app-item-courses',
-  templateUrl: './item-courses.component.html',
-  styleUrls: ['./item-courses.component.scss'],
+  selector: 'app-courses-item',
+  templateUrl: './courses-item.component.html',
+  styleUrls: ['./courses-item.component.scss'],
 })
-export class ItemCoursesComponent {
+export class CoursesItemComponent {
   constructor(public resumeService: ResumeService) {}
 }
