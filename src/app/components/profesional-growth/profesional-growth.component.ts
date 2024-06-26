@@ -1,17 +1,68 @@
-import { AfterViewInit, Component, Input } from '@angular/core';
+import { AfterViewInit, Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import Chart from 'chart.js/auto';
+import { Subscription } from 'rxjs';
+import { ICharData, IDataset, IGrowth, IInfoUser, IProfessionalGrowth } from 'src/app/models/interfaces';
+import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
   selector: 'app-profesional-growth',
   templateUrl: './profesional-growth.component.html',
   styleUrls: ['./profesional-growth.component.scss'],
 })
-export class ProfesionalGrowthComponent implements AfterViewInit {
+export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewInit {
   @Input() idChart: string = '';
+  @ViewChild('canvas') canvas!: HTMLCanvasElement;
   public chart: any = null;
+  private subscription = new Subscription();
+  private chartData!: ICharData;
+  private charColors = [
+    { backgroundColor: 'rgba(108, 117, 125, 0.3)', borderColor: 'rgba(108, 117, 125, 1)' },
+    {
+      backgroundColor: 'rgba(88, 21, 28, 0.3)',
+      borderColor: 'rgba(88, 21, 28, 1)',
+    },
+    {
+      backgroundColor: 'rgba(110, 168, 254, 0.3)',
+      borderColor: 'rgba(110, 168, 254, 1)',
+    },
+  ];
+  constructor(private translate: TranslateService, private resumeService: ResumeService) {}
+
+  ngOnInit(): void {
+    this.subscription.add(
+      this.resumeService.infoUser.subscribe((info: IInfoUser) => {
+        if (info.professionalGrowth && this.canvas) {
+          this.setCharData(info.professionalGrowth);
+          this.createChart();
+        }
+      })
+    );
+  }
 
   ngAfterViewInit(): void {
-    this.createChart();
+    if (this.resumeService.infoUser.getValue().professionalGrowth) {
+      this.setCharData(this.resumeService.infoUser.getValue().professionalGrowth);
+      this.createChart();
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
+
+  private setCharData(professionalGrowth: IProfessionalGrowth): void {
+    this.chartData = { ...this.chartData, labels: professionalGrowth.names, datasets: [] };
+    professionalGrowth.growth.forEach((e: IGrowth, index) => {
+      const dataset: IDataset = {
+        label: e.year.toString(),
+        data: e.values,
+        backgroundColor: this.charColors[index].backgroundColor,
+        borderColor: this.charColors[index].borderColor,
+        borderWidth: 1,
+      };
+      this.chartData.datasets.push(dataset);
+    });
   }
 
   private createChart() {
@@ -20,40 +71,7 @@ export class ProfesionalGrowthComponent implements AfterViewInit {
 
     this.chart = new Chart(ctx as any, {
       type: 'radar',
-      data: {
-        labels: [
-          'Arquitectura',
-          'Gestión de equipos',
-          'Soporte Producto',
-          'Expertise técnico',
-          'Arquitectura Micro-sites',
-          'Soporte Back-Front',
-          'Soporte Ux-Front',
-        ],
-        datasets: [
-          {
-            label: '2020',
-            data: [50, 50, 60, 60, 0, 70, 70],
-            borderWidth: 1,
-            backgroundColor: 'rgba(108, 117, 125, 0.3)',
-            borderColor: 'rgba(108, 117, 125, 1)',
-          },
-          {
-            label: '2022',
-            data: [80, 70, 80, 80, 50, 80, 85],
-            borderWidth: 1,
-            backgroundColor: 'rgba(88, 21, 28, 0.3)',
-            borderColor: 'rgba(88, 21, 28, 1)',
-          },
-          {
-            label: '2024',
-            data: [95, 90, 90, 95, 85, 90, 95],
-            borderWidth: 1,
-            backgroundColor: 'rgba(110, 168, 254, 0.3)',
-            borderColor: 'rgba(110, 168, 254, 1)',
-          },
-        ],
-      },
+      data: this.chartData,
       options: {
         elements: {
           line: {
@@ -67,7 +85,6 @@ export class ProfesionalGrowthComponent implements AfterViewInit {
             },
           },
         },
-        //borderColor: 'rgba(110, 168, 254, 1)',
       },
     });
   }

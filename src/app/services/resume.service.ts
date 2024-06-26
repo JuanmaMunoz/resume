@@ -13,10 +13,10 @@ export class ResumeService {
   public currentUrl: string = '/info';
   constructor(private http: HttpClient) {}
 
-  public getInfo(lan: Language): Observable<IInfoUser> {
+  public getInfo(lan: Language): void {
     //const url = lang === 'en_EN' ? `/assets/data/info_en.json` : `/assets/data/info_es.json`;
     const url = `/assets/data/info_es.json`;
-    return this.http.get<IInfoUser>(url);
+    this.http.get<IInfoUser>(url).subscribe((data: IInfoUser) => this.infoUser.next(data));
   }
 
   public getMenuButtons(): Observable<IMenuButton[]> {

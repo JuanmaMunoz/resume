@@ -1,9 +1,7 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { Language, ModeDark } from './models/enums';
-import { IInfoUser } from './models/interfaces';
 import { ResumeService } from './services/resume.service';
 
 @Component({
@@ -65,12 +63,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   private getInfo(lan: Language): void {
-    this.subscription.add(
-      this.resumeService.getInfo(lan).subscribe({
-        next: (data: IInfoUser) => this.resumeService.infoUser.next(data),
-        error: (e: HttpErrorResponse) => {},
-      })
-    );
+    this.resumeService.getInfo(lan);
   }
 
   public showHideMenu() {

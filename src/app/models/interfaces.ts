@@ -40,6 +40,7 @@ export interface IInfoUser {
   hobbies: string[];
   businessSkills: ISkill[];
   languages: ISkill[];
+  professionalGrowth: IProfessionalGrowth;
   degrees: IDegree[];
   courses: IDegree[];
   experience: IExperience[];
@@ -54,4 +55,27 @@ export interface IMenuButton {
 export interface IAccordionItem {
   type: TypeAccordionItem;
   icon: string;
+}
+
+export interface IGrowth {
+  year: number;
+  values: number[];
+}
+
+export interface IProfessionalGrowth {
+  names: string[];
+  growth: IGrowth[];
+}
+
+export interface IDataset {
+  label: string;
+  data: number[];
+  borderWidth: number;
+  backgroundColor: string;
+  borderColor: string;
+}
+
+export interface ICharData {
+  labels: string[];
+  datasets: IDataset[];
 }
