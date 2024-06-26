@@ -16,7 +16,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   public showMenu: boolean = false;
   @ViewChild('content') content: ElementRef = {} as ElementRef;
   @ViewChild('menu') menu: ElementRef = {} as ElementRef;
-  @ViewChild('btnMenu') btnMenu: ElementRef = {} as ElementRef;
+  // @ViewChild('btnMenu') btnMenu: ElementRef = {} as ElementRef;
   constructor(private translate: TranslateService, private resumeService: ResumeService) {}
 
   ngOnInit(): void {
@@ -44,10 +44,20 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
     window.addEventListener('mouseup', (event: any) => {
-      if (!this.menu?.nativeElement.contains(event.target) && !this.btnMenu?.nativeElement.contains(event.target)) {
-        this.showMenu = false;
+      if (!this.menu?.nativeElement.contains(event.target)) {
+        if (event.target.className.includes('navbar-btn') || event.target.className.includes('bi-list')) {
+          this.showMenu = !this.showMenu;
+        } else {
+          this.showMenu = false;
+        }
       } else {
-        if (event.target.className.includes('menu-button') || event.target.className.includes('form-check')) {
+        if (
+          event.target.className.includes('menu-button') ||
+          event.target.className.includes('form-check') ||
+          event.target.className.includes('bi-cup-hot') ||
+          event.target.className.includes('bi-hdd-stack') ||
+          event.target.className.includes('bi-emoji-sunglasses')
+        ) {
           this.showMenu = false;
         }
       }
@@ -64,8 +74,8 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   public showHideMenu() {
-    if (this.showMenu) this.resetScroll();
     this.showMenu = !this.showMenu;
+    if (this.showMenu) this.resetScroll();
   }
 
   private resetScroll() {

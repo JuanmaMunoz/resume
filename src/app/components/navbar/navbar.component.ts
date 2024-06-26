@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
+import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,8 +7,5 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  @Output() actionShowMenu: EventEmitter<null> = new EventEmitter();
-  public showHideMenu(): void {
-    this.actionShowMenu.emit();
-  }
+  constructor(public resumeService: ResumeService) {}
 }
