@@ -22,8 +22,8 @@ export interface IExperience {
   name: string;
   company: string;
   imageCompany: string;
-  startDate: number;
-  endDate: number;
+  startDate: string;
+  endDate: string;
   description: string;
   proyects: IProject[];
 }
