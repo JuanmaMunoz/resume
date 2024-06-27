@@ -1,0 +1,17 @@
+[
+  {
+    "text": "info",
+    "url": "/info",
+    "icon": "bi-emoji-sunglasses"
+  },
+  {
+    "text": "skills",
+    "url": "/skills",
+    "icon": "bi-cup-hot"
+  },
+  {
+    "text": "experience",
+    "url": "/experience",
+    "icon": "bi-hdd-stack"
+  }
+]

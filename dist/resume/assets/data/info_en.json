@@ -1,0 +1,329 @@
+{
+  "name": "Juan Manuel Muñoz González",
+  "age": 40,
+  "city": "Torre del Mar (Málaga)",
+  "email": "jmmugoz@gmail.com",
+  "position": "Front-End Architect",
+  "positionDescription": "<p>I have 18 years of experience in the software industry.</p><p>I have worked for major companies such as Repsol, Vodafone, Línea Directa, Banco Santander, among others. In some of these projects, I have had the opportunity to design and lead front-end architecture from scratch, gaining significant experience in this area. Besides designing the architecture, technically leading various front-end teams, and establishing best practices for creating solid and scalable applications, I enjoy being involved in the application development as another developer, which allows me to stay updated with technological advancements.</p><p>I have advanced knowledge in back-end and UX, providing me with a comprehensive understanding of the technical needs of any application, enabling me to offer support in these areas.</p><p>In 2022, I led the architecture of Repsol's ARIA project, which was part of the Stock Control application and was awarded Best in Class at Expoquimia in 2023.</p><p>Currently, I am involved in the architecture of microsites, along with the creation of a custom component library. This new type of architecture allows us to create applications quickly, robustly, and independently, representing the future of web development.</p>",
+  "hobbies": ["bi-image-alt", "bi-tsunami", "bi-camera-reels", "bi-music-note-beamed", "bi-bicycle", "bi-dribbble", "bi-controller"],
+  "skills": [
+    {
+      "name": "Js",
+      "coverage": 95
+    },
+    {
+      "name": "TypeScript",
+      "coverage": 95
+    },
+    {
+      "name": "HTML 5",
+      "coverage": 95
+    },
+    {
+      "name": "CSS 3",
+      "coverage": 85
+    },
+    {
+      "name": "Sass",
+      "coverage": 85
+    },
+    {
+      "name": "Angular",
+      "coverage": 95
+    },
+    {
+      "name": "SPA (Micro-sites)",
+      "coverage": 85
+    },
+    {
+      "name": "RxJs",
+      "coverage": 95
+    },
+    {
+      "name": "NgRx",
+      "coverage": 80
+    },
+    {
+      "name": "Vue",
+      "coverage": 75
+    },
+    {
+      "name": "Library Components",
+      "coverage": 95
+    },
+    {
+      "name": "Full Rest",
+      "coverage": 95
+    },
+    {
+      "name": "Web Socket",
+      "coverage": 95
+    },
+    {
+      "name": "Ionic",
+      "coverage": 80
+    },
+    {
+      "name": "Jquery",
+      "coverage": 80
+    },
+    {
+      "name": "BackBone",
+      "coverage": 75
+    },
+    {
+      "name": "Mean Stack",
+      "coverage": 80
+    },
+    {
+      "name": "BootStrap",
+      "coverage": 90
+    },
+    {
+      "name": "Express",
+      "coverage": 75
+    },
+    {
+      "name": "Mongoose",
+      "coverage": 75
+    }
+  ],
+  "businessSkills": [
+    {
+      "name": "Leadership",
+      "coverage": 90
+    },
+    {
+      "name": "Architecture",
+      "coverage": 95
+    },
+    {
+      "name": "Team management",
+      "coverage": 95
+    },
+    {
+      "name": "Support Front-Back",
+      "coverage": 85
+    },
+    {
+      "name": "Support Front-Ux",
+      "coverage": 95
+    },
+    {
+      "name": "Support Front-PM",
+      "coverage": 90
+    }
+  ],
+  "degrees": [
+    {
+      "name": "Electronic Engineering",
+      "school": "University of Málaga",
+      "startDate": 2000,
+      "endDate": 2003
+    },
+    {
+      "name": "FP2 Software Development",
+      "school": "Martín Rivero High School",
+      "startDate": 2002,
+      "endDate": 2004
+    }
+  ],
+  "courses": [
+    {
+      "name": "Vue.js",
+      "school": "Accenture Academy",
+      "startDate": 2021,
+      "endDate": 2021
+    },
+    {
+      "name": "Ionic",
+      "school": "Accenture Academy",
+      "startDate": 2021,
+      "endDate": 2021
+    },
+    {
+      "name": "Angular Testing Masterclass",
+      "school": "Angular University",
+      "startDate": 2020,
+      "endDate": 2021
+    },
+    {
+      "name": "Angular 8 MEAN STACK",
+      "school": "Angular University",
+      "startDate": 2020,
+      "endDate": 2020
+    },
+    {
+      "name": "Rxjs Level Pro",
+      "school": "Accenture Academy",
+      "startDate": 2020,
+      "endDate": 2020
+    },
+    {
+      "name": "Angular 8 Advanced",
+      "school": "Angular University",
+      "startDate": 2018,
+      "endDate": 2019
+    },
+    {
+      "name": "B1 Intermediate level of English",
+      "school": "Official School of Languages Ronda",
+      "startDate": 2017,
+      "endDate": 2018
+    }
+  ],
+  "languages": [
+    { "name": "Spanish", "coverage": 99 },
+    { "name": "English", "coverage": 65 }
+  ],
+  "professionalGrowth": {
+    "names": ["Architecture", "Team management", "Support Front-Ux", "Support Front-Back", "Support Front-PM"],
+    "growth": [
+      { "year": 2020, "values": [75, 74, 80, 72, 73] },
+      { "year": 2022, "values": [85, 80, 87, 75, 81] },
+      { "year": 2024, "values": [95, 95, 95, 85, 90] }
+    ]
+  },
+  "experience": [
+    {
+      "name": "Front-End Architect",
+      "company": "Vintegris",
+      "imageCompany": "/assets/images/companies/vintegris.png",
+      "startDate": "01/2023",
+      "endDate": "Currently",
+      "description": "Front-End Architect. Design of the architecture and tech leadership of the front-end team.",
+      "proyects": [
+        {
+          "name": "Webs 2.0",
+          "description": "Applications for digital certificate management. Design of microsite-based architecture using a proprietary component library and leadership in development. Distribution of front-end team tasks, code reviews, and establishment of work methodologies.",
+          "technologies": [
+            "Angular",
+            "SPA (Micro-sites)",
+            "HTML 5",
+            "Sass",
+            "Library Components",
+            "Full Rest",
+            "BootStrap",
+            "Node Js",
+            "Express"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Front-end Architect",
+      "company": "Signicat",
+      "imageCompany": "/assets/images/companies/signicat.png",
+      "startDate": "07/2022",
+      "endDate": "01/2023",
+      "description": "Front-End Architect. Design and refactoring of architecture, technical leadership of the three front-end teams.",
+      "proyects": [
+        {
+          "name": "Signicat Products",
+          "description": "Applications for digital certificate and facial recognition management. Design and refactoring of various identification products for Signicat. Training and code reviews for different front-end teams. Establishment of methodologies for achieving robust and scalable applications.",
+          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Web Socket", "Angular Material", "Prime Ng", "Webpack"]
+        }
+      ]
+    },
+    {
+      "name": "Front-end Architect",
+      "company": "Accenture",
+      "imageCompany": "/assets/images/companies/accenture.png",
+      "startDate": "11/2020",
+      "endDate": "07/2022",
+      "description": "Front-end Architect / Consulting Manager. Architecture design and consulting.",
+      "proyects": [
+        {
+          "name": "Repsol Project Aria",
+          "description": "Application that manages Repsol's Big Data. Design and development of the architecture for the Aria platform, software responsible for managing Repsol's Big Data. Awarded in 2023 as the best Big Data platform by Expoquimia. Leadership of the front-end teams.",
+          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Vue", "Library Components", "Angular Material"]
+        },
+        {
+          "name": "Vodafone IDM",
+          "description": "Software responsible for managing identities on the platform. Design and solutions for the IDM architecture at Vodafone.",
+          "technologies": ["Angular", "HTML 5", "Sass", "Js", "API SOAP", "Full Rest", "Java"]
+        },
+        {
+          "name": "Santander Iberia Plus",
+          "description": "Application that manages offers and bonuses for Santander clients. Front-end architecture design and consulting.",
+          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Library Components"]
+        }
+      ]
+    },
+    {
+      "name": "Front-End Senior",
+      "company": "Golden Race",
+      "imageCompany": "/assets/images/companies/golden.png",
+      "startDate": "12/2019",
+      "endDate": "11/2020",
+      "description": "Front-End Senior. Development of betting games.",
+      "proyects": [
+        {
+          "name": "Games 2.0",
+          "description": "Online and retail gambling video games. Development of gambling video games using web technology. Creation of new games and maintenance of existing ones. Enhancement of application performance through best development practices.",
+          "technologies": ["Angular", "HTML 5", "Sass", "Angular Animations", "Web Sockect", "Full-Rest"]
+        }
+      ]
+    },
+    {
+      "name": "Full-Stack Developer",
+      "company": "CMC",
+      "imageCompany": "/assets/images/companies/cmc.png",
+      "startDate": "08/2017",
+      "endDate": "12/2019",
+      "description": "Full-Stack Developer. Development of banking applications for Unicaja Banco.",
+      "proyects": [
+        {
+          "name": "Unicaja electronic forms",
+          "description": "Development and maintenance of electronic forms for Unicaja Banco. Management of the development team.",
+          "technologies": ["Angular", "HTML 5", "Sass", "DocPath", "Full-Rest"]
+        }
+      ]
+    },
+    {
+      "name": "Full-Stack Developer",
+      "company": "Lambda Automotive",
+      "imageCompany": "/assets/images/companies/lambda.png",
+      "startDate": "05/2014",
+      "endDate": "08/2017",
+      "description": "Full-Stack Developer. Design and development of the front-end for Efiasistencia 2.0.",
+      "proyects": [
+        {
+          "name": "Efiasistencia 2.0",
+          "description": "Application that centralizes road incidents for major insurance companies. Design of the front-end architecture for the Efiasistencia 2.0 application and leadership in development. Creation of the middleware layer for SOAP communications.",
+          "technologies": ["Js", "HTML 5", "Css 3", "Full-Rest", "SOAP", "PHP"]
+        }
+      ]
+    },
+    {
+      "name": "Full-Stack Developer",
+      "company": "Delaware",
+      "imageCompany": "/assets/images/companies/delaware.png",
+      "startDate": "06/2006",
+      "endDate": "05/2014",
+      "description": "Full-Stack Developer. Development of banking applications for Unicaja Banco.",
+      "proyects": [
+        {
+          "name": "Unicaja electronic forms",
+          "description": "Development and maintenance of electronic forms for Unicaja Banco.",
+          "technologies": ["Js", "HTML 5", "Css 3", "DocPath", "Full-Rest", "PHP"]
+        }
+      ]
+    },
+    {
+      "name": "Developer",
+      "company": "Isoft",
+      "imageCompany": "/assets/images/companies/isoft.png",
+      "startDate": "05/2004",
+      "endDate": "06/2006",
+      "description": "Junior Developer. Development of healthcare applications for the S.A.S.",
+      "proyects": [
+        {
+          "name": "NovaSoft Sanidad",
+          "description": "Healthcare management application. Development and implementation of software in various healthcare centers.",
+          "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery"]
+        }
+      ]
+    }
+  ]
+}

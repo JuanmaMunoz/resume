@@ -1,0 +1,31 @@
+{
+  "menuButtons": {
+    "info": "Información",
+    "experience": "Experiencia",
+    "skills": "Habilidades"
+  },
+  "info": {
+    "personalInfo": "Información personal",
+    "career": "Carrera profesional",
+    "degrees": "Títulación",
+    "courses": "Otra formación",
+    "hobbies": "Aficiones",
+    "fullRemote": "Solo teletrabajo 100%"
+  },
+  "skills": {
+    "techSkills": "Habilidades técnicas",
+    "bussSkills": "Habilidades de negocio",
+    "growthProfesional": "Crecimiento profesional",
+    "languages": "Idiomas",
+    "tech": "Técnicas",
+    "business": "Negocio"
+  },
+  "experience": {
+    "experience": "Experiencia",
+    "proyects": "Proyectos",
+    "technologies": "Tecnologías"
+  },
+  "spanish": "Español",
+  "english": "Inglés",
+  "dark": "Oscuro"
+}
