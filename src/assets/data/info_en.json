@@ -179,7 +179,7 @@
   "professionalGrowth": {
     "names": ["Architecture", "Team management", "Support Front-Ux", "Support Front-Back", "Support Front-PM"],
     "growth": [
-      { "year": 2020, "values": [70, 70, 80, 70, 75] },
+      { "year": 2020, "values": [75, 74, 80, 72, 73] },
       { "year": 2022, "values": [85, 80, 87, 75, 81] },
       { "year": 2024, "values": [95, 95, 95, 85, 90] }
     ]
@@ -321,7 +321,7 @@
         {
           "name": "NovaSoft Sanidad",
           "description": "Healthcare management application. Development and implementation of software in various healthcare centers.",
-          "technologies": ["Java", "Power Builder", "Js", "Html", "PHP", "Jquery"]
+          "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery"]
         }
       ]
     }

@@ -1,6 +1,9 @@
 .experience-menu-item {
   cursor: pointer;
   color: var(--bs-secondary);
+  &__date {
+    font-weight: 500;
+  }
   &:hover {
     color: var(--bs-primary-text-emphasis);
   }

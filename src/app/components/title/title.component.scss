@@ -9,12 +9,3 @@
     font-size: 2.5rem;
   }
 }
-
-@keyframes shine {
-  from {
-    -webkit-mask-position: 150%;
-  }
-  to {
-    -webkit-mask-position: -50%;
-  }
-}

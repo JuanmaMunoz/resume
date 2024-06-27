@@ -1,6 +1,7 @@
-<div class="experience-item border-bottom pb-3 mb-3" [id]="experience.company">
-  <div class="d-flex flex-row">
+<div class="experience-item border-bottom ps-2 pb-3 mb-3" [id]="experience.company">
+  <div class="d-flex flex-row align-items-center">
     <h2 id="simple-list-item-1" class="text-primary-emphasis">{{ experience.company }}</h2>
+    <span class="ms-3 experience-item__date text-secondary d-lg-none">{{ experience.startDate }} - {{ experience.endDate }}</span>
   </div>
   <p class="text-secondary">{{ experience.description }}</p>
   <h5 class="text-secondary mb-3">{{ 'experience.proyects' | translate }}:</h5>

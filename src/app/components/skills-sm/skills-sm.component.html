@@ -16,7 +16,7 @@
         <h5 class="mb-3 fw-bold mb-4 text-secondary"><i class="bi bi bi-mortarboard"></i> {{ 'skills.languages' | translate }}:</h5>
         <app-skill-item [skill]="item" *ngFor="let item of infoUser.languages"></app-skill-item>
       </div>
-      <div class="col-12 mb-3 pb-4 border-bottom">
+      <div class="col-12 mb-3 pb-4 border-bottom d-none d-sm-block">
         <h5 class="mb-3 fw-bold mb-4 text-secondary"><i class="bi bi bi-graph-up"></i> {{ 'skills.growthProfesional' | translate }}:</h5>
         <app-profesional-growth [idChart]="'charSm'"></app-profesional-growth>
       </div>

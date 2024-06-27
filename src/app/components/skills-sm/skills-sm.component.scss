@@ -1,12 +1,9 @@
-
-@media (max-width: 992px) { 
-.skills-sm{
-    &__body{
-        max-height: 69vh;
-        overflow-y: auto;
-        overflow-x: hidden;
-        }
-        }
+@media (max-width: 992px) {
+  .skills-sm {
+    &__body {
+      max-height: 69vh;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
-        
-        
+  }
+}
