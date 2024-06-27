@@ -1,0 +1,3 @@
+<div class="item-degrees" *ngIf="resumeService.infoUser | async as infoUser">
+  <app-info-item [degree]="degree" *ngFor="let degree of infoUser.degrees"></app-info-item>
+</div>

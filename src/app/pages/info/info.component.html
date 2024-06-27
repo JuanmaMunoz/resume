@@ -1,8 +1,20 @@
-<div class="info row">
-  <div class="col-md-4">
-    <app-card-user></app-card-user>
+<div class="info">
+  <div class="info__lg d-none d-lg-block">
+    <div class="row">
+      <div class="col">
+        <app-card-user></app-card-user>
+      </div>
+      <div class="col-md-8 d-none d-lg-block">
+        <div class="col-12 mb-3">
+          <app-accordion-info></app-accordion-info>
+        </div>
+        <div class="col-12">
+          <app-hobbies></app-hobbies>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="col-md-8">
-    <app-accordion-info></app-accordion-info>
+  <div class="info__sm d-lg-none">
+    <app-info-sm></app-info-sm>
   </div>
 </div>

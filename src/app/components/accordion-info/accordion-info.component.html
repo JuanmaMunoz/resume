@@ -22,9 +22,9 @@
       [attr.data-bs-parent]="'#' + idAccordion"
     >
       <div class="accordion-body">
-        <app-accordion-item-career *ngIf="item.type === typeItem.CAREER"></app-accordion-item-career>
-        <app-accordion-item-degrees *ngIf="item.type === typeItem.DEGREES"></app-accordion-item-degrees>
-        <app-accordion-item-courses *ngIf="item.type === typeItem.COURSES"></app-accordion-item-courses>
+        <app-career-item *ngIf="item.type === typeItem.CAREER"></app-career-item>
+        <app-degrees-item *ngIf="item.type === typeItem.DEGREES"></app-degrees-item>
+        <app-courses-item *ngIf="item.type === typeItem.COURSES"></app-courses-item>
       </div>
     </div>
   </div>

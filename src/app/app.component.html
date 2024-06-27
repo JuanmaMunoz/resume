@@ -4,13 +4,20 @@
       <app-header></app-header>
     </div>
   </div>
-  <div class="row mt-3 border border rounded-5 p-2">
+
+  <div class="row mt-2 border border rounded-5 p-2">
     <div class="row m-0 p-0">
-      <div class="col-3">
+      <div class="col-3 d-none d-xl-block">
         <app-menu> </app-menu>
       </div>
-      <div class="col-9 bg-body-secondary rounded-5 p-4">
-        <router-outlet></router-outlet>
+      <div class="main__body col bg-body-secondary rounded-5 p-2 p-xl-4">
+        <app-navbar></app-navbar>
+        <div #menu class="d-xl-none main__menu-sm">
+          <app-menu-sm [show]="showMenu"></app-menu-sm>
+        </div>
+        <div #content>
+          <router-outlet></router-outlet>
+        </div>
       </div>
     </div>
   </div>

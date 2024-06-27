@@ -1,56 +1,63 @@
 <div class="skills" *ngIf="resumeService.infoUser | async as infoUser">
-  <div class="row">
-    <div class="col-md-5">
-      <div class="col-12 mb-3">
-        <div class="card">
-          <div class="card-header d-flex flex-row bg-body text-primary-emphasis fs-5 fw-bold">
-            <div class="w-100">
-              <div *ngIf="typeSkill === enumTypeSkill.TECHNICAL"><i class="bi bi-gear me-2"></i> {{ 'skills.techSkills' | translate }}</div>
-              <div *ngIf="typeSkill === enumTypeSkill.BUSINESS">
-                <i class="bi bi-briefcase me-2"></i> {{ 'skills.bussSkills' | translate }}
+  <div class="skills__lg d-none d-lg-block">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="col-12 mb-3">
+          <div class="card">
+            <div class="card-header d-flex flex-row bg-body text-primary-emphasis fs-5 fw-bold">
+              <div class="w-100">
+                <div *ngIf="typeSkill === enumTypeSkill.TECHNICAL">
+                  <i class="bi bi-gear me-2"></i> {{ 'skills.techSkills' | translate }}
+                </div>
+                <div *ngIf="typeSkill === enumTypeSkill.BUSINESS">
+                  <i class="bi bi-briefcase me-2"></i> {{ 'skills.bussSkills' | translate }}
+                </div>
+              </div>
+              <div class="flex-shrink-1 text-secondary skills__btn mt-1">
+                <i (click)="changeTypeSkills(enumTypeSkill.TECHNICAL)" *ngIf="typeSkill === enumTypeSkill.BUSINESS" class="bi bi-gear"></i>
+                <i
+                  (click)="changeTypeSkills(enumTypeSkill.BUSINESS)"
+                  *ngIf="typeSkill === enumTypeSkill.TECHNICAL"
+                  class="bi bi-briefcase"
+                ></i>
               </div>
             </div>
-            <div class="flex-shrink-1 text-secondary skills__btn mt-1">
-              <i (click)="changeTypeSkills(enumTypeSkill.TECHNICAL)" *ngIf="typeSkill === enumTypeSkill.BUSINESS" class="bi bi-gear"></i>
-              <i
-                (click)="changeTypeSkills(enumTypeSkill.BUSINESS)"
-                *ngIf="typeSkill === enumTypeSkill.TECHNICAL"
-                class="bi bi-briefcase"
-              ></i>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="skills__card pe-3">
-              <div *ngIf="typeSkill === enumTypeSkill.TECHNICAL">
-                <app-skill-item [skill]="item" *ngFor="let item of infoUser.skills"></app-skill-item>
-              </div>
-              <div *ngIf="typeSkill === enumTypeSkill.BUSINESS">
-                <app-skill-item [skill]="item" *ngFor="let item of infoUser.businessSkills"></app-skill-item>
+            <div class="card-body">
+              <div class="skills__card pe-3">
+                <div *ngIf="typeSkill === enumTypeSkill.TECHNICAL">
+                  <app-skill-item [skill]="item" *ngFor="let item of infoUser.skills"></app-skill-item>
+                </div>
+                <div *ngIf="typeSkill === enumTypeSkill.BUSINESS">
+                  <app-skill-item [skill]="item" *ngFor="let item of infoUser.businessSkills"></app-skill-item>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
+              <i class="bi bi-translate me-2"></i> {{ 'skills.languages' | translate }}
+            </div>
+            <div class="card-body">
+              <app-skill-item [skill]="item" *ngFor="let item of infoUser.languages"></app-skill-item>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-12">
+      <div class="col-md-7">
         <div class="card">
           <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
-            <i class="bi bi-translate me-2"></i> {{ 'skills.languages' | translate }}
+            <i class="bi bi-rocket-takeoff me-2"></i> {{ 'skills.growthProfesional' | translate }}
           </div>
           <div class="card-body">
-            <app-skill-item [skill]="item" *ngFor="let item of infoUser.languages"></app-skill-item>
+            <app-profesional-growth [idChart]="'charLg'"></app-profesional-growth>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-7">
-      <div class="card">
-        <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
-          <i class="bi bi-rocket-takeoff me-2"></i> {{ 'skills.growthProfesional' | translate }}
-        </div>
-        <div class="card-body">
-          <app-profesional-growth></app-profesional-growth>
-        </div>
-      </div>
-    </div>
+  </div>
+  <div class="skills__sm d-lg-none">
+    <app-skills-sm></app-skills-sm>
   </div>
 </div>

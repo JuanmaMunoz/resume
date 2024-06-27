@@ -1,2 +1,38 @@
-.photo {
+.img-fluid {
+  animation: photoLg;
+  animation-duration: 0.5s;
+}
+
+@media (max-width: 991.98px) {
+  .img-fluid {
+    max-width: 55%;
+    animation: photoSm;
+    animation-duration: 0.5s;
+  }
+}
+
+@keyframes photoSm {
+  from {
+    -webkit-box-shadow: 0 0 0.1rem 0.1rem var(--bs-info-border-subtle);
+    -webkit-transform: scale(0.8);
+    filter: blur(10px);
+  }
+  to {
+    -webkit-box-shadow: 0 0 0.3rem 0.3rem var(--bs-info-border-subtle);
+    -webkit-transform: scale(1);
+    -webkit-transform: none;
+  }
+}
+
+@keyframes photoLg {
+  from {
+    -webkit-box-shadow: 0 0 0.1rem 0.1rem var(--bs-info-border-subtle);
+    -webkit-transform: scale(0.8);
+    filter: blur(10px);
+  }
+  to {
+    -webkit-box-shadow: 0 0 0.3rem 0.3rem var(--bs-info-border-subtle);
+    -webkit-transform: scale(1);
+    -webkit-transform: none;
+  }
 }

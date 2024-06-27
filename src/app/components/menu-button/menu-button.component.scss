@@ -1,11 +1,39 @@
 .menu-button {
   cursor: pointer;
-  padding: 0.5rem 0 0.5rem 4rem;
+  padding: 0.5rem 0 0.5rem 4.5rem;
   color: var(--bs-secondary);
   &--active {
     background-color: var(--bs-secondary-bg-subtle);
     color: var(--bs-primary-text-emphasis);
     border-left: solid 0.3rem var(--bs-primary-text-emphasis);
-    padding: 0.5rem 0 0.5rem 3.7rem;
+    padding: 0.5rem 0 0.5rem 4.25rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .menu-button {
+    padding: 0.5rem 0 0.5rem 3rem;
+    &--active {
+      padding: 0.5rem 0 0.5rem 2.65rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu-button {
+    padding: 0.5rem 0 0.5rem 2rem;
+    &--active {
+      padding: 0.5rem 0 0.5rem 1.65rem;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .menu-button {
+    font-size: 2rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    &--active {
+      padding: 0.5rem 0 0.5rem 0.7rem;
+    }
   }
 }

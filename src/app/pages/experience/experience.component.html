@@ -1,17 +1,15 @@
-<div class="experience" *ngIf="resumeService.infoUser | async as infoUser">
-  <div class="col-12">
-    <div class="card">
-      <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
-        <i class="bi bi-rocket-takeoff me-2"></i> {{ 'experience.experience' | translate }}
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-3 experience__menu border-end">
-            <app-experience-menu-item [experience]="item" *ngFor="let item of infoUser.experience"></app-experience-menu-item>
-          </div>
-          <div class="col-9 experience__body">
-            <app-experience-item [experience]="item" *ngFor="let item of infoUser.experience"></app-experience-item>
-          </div>
+<div class="experience col-12" *ngIf="resumeService.infoUser | async as infoUser">
+  <div class="card">
+    <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
+      <i class="bi bi-hdd-stack me-2"></i> {{ 'experience.experience' | translate }}
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-3 experience__menu border-end d-none d-lg-block">
+          <app-experience-menu-item [experience]="item" *ngFor="let item of infoUser.experience"></app-experience-menu-item>
+        </div>
+        <div class="col experience__body me-1">
+          <app-experience-item [experience]="item" *ngFor="let item of infoUser.experience"></app-experience-item>
         </div>
       </div>
     </div>

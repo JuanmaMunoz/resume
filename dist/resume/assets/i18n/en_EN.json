@@ -1,0 +1,31 @@
+{
+  "menuButtons": {
+    "info": "Information",
+    "experience": "Experience",
+    "skills": "Skills"
+  },
+  "info": {
+    "personalInfo": "Personal information",
+    "career": "Career",
+    "degrees": "Degrees",
+    "courses": "Another Courses",
+    "hobbies": "Hobbies",
+    "fullRemote": "Only full-remote 100%"
+  },
+  "skills": {
+    "techSkills": "Technical skills",
+    "bussSkills": "Business skills",
+    "growthProfesional": "Professional growth",
+    "languages": "Languages",
+    "tech": "Technicals",
+    "business": "Business"
+  },
+  "experience": {
+    "experience": "Experience",
+    "proyects": "Projects",
+    "technologies": "Technologies"
+  },
+  "spanish": "Spanish",
+  "english": "English",
+  "dark": "Dark"
+}

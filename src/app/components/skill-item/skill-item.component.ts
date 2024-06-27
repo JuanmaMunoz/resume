@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subscription, map, of, repeat } from 'rxjs';
 import { ISkill } from 'src/app/models/interfaces';
 
@@ -7,7 +7,7 @@ import { ISkill } from 'src/app/models/interfaces';
   templateUrl: './skill-item.component.html',
   styleUrls: ['./skill-item.component.scss'],
 })
-export class SkillItemComponent implements OnInit {
+export class SkillItemComponent implements OnInit, OnDestroy {
   @Input() skill!: ISkill;
   private subscription = new Subscription();
   public percent: number = 0;

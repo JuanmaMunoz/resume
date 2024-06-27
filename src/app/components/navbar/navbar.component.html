@@ -1,0 +1,12 @@
+<nav class="navbar rounded-4 mb-1 p-0 d-xl-none" *ngIf="resumeService.infoUser | async as info">
+  <div class="container-fluid">
+    <button class="navbar-btn btn btn-secondary"><i class="bi bi-list"></i></button>
+    <div class="d-flex flex-row align-items-center">
+      <h1 class="navbar__title text-primary-emphasis me-2">CV/</h1>
+      <div class="d-flex flex-column navbar__text">
+        <p class="mb-0 text-primary-emphasis">{{ info.name }}</p>
+        <p class="mb-0 text-secondary">{{ info.email }}</p>
+      </div>
+    </div>
+  </div>
+</nav>
