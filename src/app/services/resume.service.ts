@@ -26,7 +26,7 @@ export class ResumeService {
   }
 
   public getMenuButtons(): Observable<IMenuButton[]> {
-    const url = `${environmment.url}data/menu.json`;
+    const url = `${environmment.url}menu.json`;
     return this.http.get<IMenuButton[]>(url);
   }
 }
