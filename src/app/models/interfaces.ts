@@ -32,18 +32,17 @@ export interface IInfoUser {
   name: string;
   age: number;
   city: string;
-  phone: string;
   email: string;
   position: string;
-  positionDescription: string;
-  skills: ISkill[];
-  hobbies: string[];
-  businessSkills: ISkill[];
-  languages: ISkill[];
-  professionalGrowth: IProfessionalGrowth;
-  degrees: IDegree[];
-  courses: IDegree[];
-  experience: IExperience[];
+  positionDescription?: string;
+  skills?: ISkill[];
+  hobbies?: string[];
+  businessSkills?: ISkill[];
+  languages?: ISkill[];
+  professionalGrowth?: IProfessionalGrowth;
+  degrees?: IDegree[];
+  courses?: IDegree[];
+  experience?: IExperience[];
 }
 
 export interface IMenuButton {

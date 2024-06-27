@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ModeDark } from 'src/app/models/enums';
 import { ResumeService } from 'src/app/services/resume.service';
@@ -9,6 +9,7 @@ import { ResumeService } from 'src/app/services/resume.service';
   styleUrls: ['./mode-dark.component.scss'],
 })
 export class ModeDarkComponent implements OnInit, OnDestroy {
+  @Input() id: string = '';
   public modeDark: boolean = false;
   public modeDarkEnum = ModeDark;
   public subscription = new Subscription();

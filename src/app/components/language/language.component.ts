@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { Language } from 'src/app/models/enums';
@@ -9,7 +9,7 @@ import { Language } from 'src/app/models/enums';
   styleUrls: ['./language.component.scss'],
 })
 export class LanguageComponent implements OnInit, OnDestroy {
-  public id: string = '';
+  @Input() id: string = '';
   public language: Language = Language.ENGLISH;
   public languageEnum = Language;
   private subscription = new Subscription();

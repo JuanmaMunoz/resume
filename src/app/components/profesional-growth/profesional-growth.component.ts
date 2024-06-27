@@ -42,7 +42,7 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
 
   ngAfterViewInit(): void {
     if (this.resumeService.infoUser.getValue().professionalGrowth) {
-      this.setCharData(this.resumeService.infoUser.getValue().professionalGrowth);
+      this.setCharData(this.resumeService.infoUser.getValue().professionalGrowth!);
       this.createChart();
     }
   }
