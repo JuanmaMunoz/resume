@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { environmment } from '../../environments/environment.prod';
 import { Language, ModeDark } from '../models/enums';
 import { IInfoUser, IMenuButton } from '../models/interfaces';
 
@@ -20,7 +21,7 @@ export class ResumeService {
   constructor(private http: HttpClient) {}
 
   public getInfo(lan: Language): void {
-    const url = lan === Language.ENGLISH ? `/assets/data/info_en.json` : `/assets/data/info_es.json`;
+    const url = lan === Language.ENGLISH ? `${environmment.url}info_en.json` : `${environmment.url}info_es.json`;
     this.http.get<IInfoUser>(url).subscribe((data: IInfoUser) => this.infoUser.next(data));
   }
 
