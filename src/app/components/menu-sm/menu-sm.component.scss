@@ -1,42 +1,48 @@
-.menu-sm{
-    position: absolute;
-    top: 3.4rem;
-    left: 0.5rem;
-    z-index: 100;
-    overflow: hidden;
-    width: 60vw;
-    border: 2px solid var(--bs-primary-text-emphasis)!important;
-    &__buttons{
-        padding: 2rem 1rem;
-    }
-    &--open {
-        display: block;
-        animation: openMenu;
-        animation-duration: 0.7s;
-    }
-    &--close {
-        display: none;
-        animation: closeMenu;
-        animation-duration: 0.5s; 
-    }
+.menu-sm {
+  position: absolute;
+  top: 3.2rem;
+  left: 0.5rem;
+  z-index: 100;
+  overflow: hidden;
+  width: 60vw;
+  border: 2px solid var(--bs-primary-text-emphasis) !important;
+  &__buttons {
+    padding: 2rem 1rem;
+  }
+  &--open {
+    display: block;
+    animation: openMenu;
+    animation-duration: 0.7s;
+  }
+  &--close {
+    display: none;
+    animation: closeMenu;
+    animation-duration: 0.5s;
+  }
 }
 
 @keyframes openMenu {
-    from {
-      opacity: 0;
-      -webkit-box-shadow: 0 0 0.3rem 0.3rem var(--bs-primary-text-emphasis);
-    }
-    to{
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+    -webkit-box-shadow: 0 0 0.3rem 0.3rem var(--bs-primary-text-emphasis);
   }
+  to {
+    opacity: 1;
+  }
+}
 
 @keyframes closeMenu {
-    from {
-     opacity: 0.5;
-      display: block;
-    }
-    to{
+  from {
+    opacity: 0.5;
+    display: block;
+  }
+  to {
     opacity: 0;
-    }
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-sm {
+    top: 2.9rem;
+  }
 }
