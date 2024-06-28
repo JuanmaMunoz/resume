@@ -15,11 +15,13 @@
   from {
     -webkit-box-shadow: 0 0 0.1rem 0.1rem var(--bs-info-border-subtle);
     -webkit-transform: scale(0.8);
+    transform: scale(0.8);
     filter: blur(10px);
   }
   to {
     -webkit-box-shadow: 0 0 0.3rem 0.3rem var(--bs-info-border-subtle);
     -webkit-transform: scale(1);
+    transform: scale(1);
     -webkit-transform: none;
   }
 }
@@ -28,11 +30,13 @@
   from {
     -webkit-box-shadow: 0 0 0.1rem 0.1rem var(--bs-info-border-subtle);
     -webkit-transform: scale(0.8);
+    transform: scale(0.8);
     filter: blur(10px);
   }
   to {
     -webkit-box-shadow: 0 0 0.3rem 0.3rem var(--bs-info-border-subtle);
     -webkit-transform: scale(1);
+    transform: scale(1);
     -webkit-transform: none;
   }
 }

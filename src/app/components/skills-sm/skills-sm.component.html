@@ -3,7 +3,7 @@
     <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
       <i class="bi bi-cup-hot me-2"></i> {{ 'menuButtons.skills' | translate }}
     </div>
-    <div class="card-body skills-sm__body row my-3 me-2">
+    <div class="card-body skills-sm__body pe-0 row my-3 me-2">
       <div class="col-12 mb-3 pb-4 border-bottom">
         <h5 class="fw-bold mb-4 text-secondary"><i class="bi bi bi-mortarboard"></i> {{ 'skills.tech' | translate }}:</h5>
         <app-skill-item [skill]="item" *ngFor="let item of infoUser.skills"></app-skill-item>

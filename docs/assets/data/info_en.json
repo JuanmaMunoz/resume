@@ -142,7 +142,7 @@
       "endDate": 2021
     },
     {
-      "name": "Angular Testing Masterclass",
+      "name": "Angular Testing",
       "school": "Angular University",
       "startDate": 2020,
       "endDate": 2021
@@ -166,7 +166,7 @@
       "endDate": 2019
     },
     {
-      "name": "B1 Intermediate level of English",
+      "name": "B1 English",
       "school": "Official School of Languages Ronda",
       "startDate": 2017,
       "endDate": 2018
@@ -235,7 +235,7 @@
       "proyects": [
         {
           "name": "Repsol Project Aria",
-          "description": "Application that manages Repsol's Big Data. Design and development of the architecture for the Aria platform, software responsible for managing Repsol's Big Data. Awarded in 2023 as the best Big Data platform by Expoquimia. Leadership of the front-end teams.",
+          "description": "Design and development of the architecture for the Aria platform, software responsible for managing Repsol's Big Data. Awarded in 2023 as the best Big Data platform by Expoquimia. Leadership of the front-end teams.",
           "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Vue", "Library Components", "Angular Material"]
         },
         {
@@ -291,7 +291,7 @@
         {
           "name": "Efiasistencia 2.0",
           "description": "Application that centralizes road incidents for major insurance companies. Design of the front-end architecture for the Efiasistencia 2.0 application and leadership in development. Creation of the middleware layer for SOAP communications.",
-          "technologies": ["Js", "HTML 5", "Css 3", "Full-Rest", "SOAP", "PHP"]
+          "technologies": ["Angular", "Js", "HTML 5", "Sass", "Css 3", "BackBone", "Jquery", "Api Google Maps", "Full-Rest", "SOAP", "PHP"]
         }
       ]
     },
@@ -321,7 +321,7 @@
         {
           "name": "NovaSoft Sanidad",
           "description": "Healthcare management application. Development and implementation of software in various healthcare centers.",
-          "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery"]
+          "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery", "Css 3"]
         }
       ]
     }

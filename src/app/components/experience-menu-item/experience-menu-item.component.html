@@ -1,6 +1,6 @@
-<div (click)="goToExperience(experience.company)" class="experience-menu-item d-flex flex-column mb-3">
+<div (click)="goToExperience(experience.company)" class="experience-menu-item d-flex flex-column mt-2 mb-5">
   <div class="text-center">
     <img [src]="environment.url + experience.imageCompany" width="150px" class="experience-menu-item__img" />
-    <p class="experience-menu-item__date">{{ experience.startDate }} - {{ experience.endDate }}</p>
+    <p class="experience-menu-item__date mb-0">{{ experience.startDate }} - {{ experience.endDate }}</p>
   </div>
 </div>

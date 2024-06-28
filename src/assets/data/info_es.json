@@ -142,7 +142,7 @@
       "endDate": 2021
     },
     {
-      "name": "Angular Testing Masterclass",
+      "name": "Angular Testing",
       "school": "Angular University",
       "startDate": 2020,
       "endDate": 2021
@@ -166,7 +166,7 @@
       "endDate": 2019
     },
     {
-      "name": "B1 Nivel intermedio de Inglés",
+      "name": "B1 Inglés",
       "school": "Escuela Oficial de Idiomas Ronda",
       "startDate": 2017,
       "endDate": 2018
@@ -235,7 +235,7 @@
       "proyects": [
         {
           "name": "Repsol Proyecto Aria",
-          "description": "Aplicativo que gestiona el Big Data de Respsol. Diseño y desarrollo de la arquitectura de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data por Expoquimia. Liderazgo de los equipos de front-end.",
+          "description": "Diseño y desarrollo de la arquitectura de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data por Expoquimia. Liderazgo de los equipos de front-end.",
           "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Vue", "Library Components", "Angular Material"]
         },
         {
@@ -291,7 +291,7 @@
         {
           "name": "Efiasistencia 2.0",
           "description": "Aplicativo que centraliza los siniestros en carretera de las principales compañías de seguro. Diseño de la arquitectura front de la aplicación Efiasistencia 2.0 y liderazgo del desarrollo. Creación de la capa intermedia de negocio, para las comunicaciones SOAP.",
-          "technologies": ["Js", "HTML 5", "Css 3", "Full-Rest", "SOAP", "PHP"]
+          "technologies": ["Angular", "Js", "HTML 5", "Sass", "Css 3", "BackBone", "Jquery", "Api Google Maps", "Full-Rest", "SOAP", "PHP"]
         }
       ]
     },
@@ -321,7 +321,7 @@
         {
           "name": "NovaSoft Sanidad",
           "description": "Aplicativo de gestión sanitaria. Desarrollo e implementación del software en los distintos centros sanitarios.",
-          "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery"]
+          "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery", "Css 3"]
         }
       ]
     }
