@@ -21,7 +21,7 @@
       class="accordion-collapse collapse"
       [attr.data-bs-parent]="'#' + idAccordion"
     >
-      <div class="accordion-body">
+      <div class="accordion-body pe-2">
         <app-career-item *ngIf="item.type === typeItem.CAREER"></app-career-item>
         <app-degrees-item *ngIf="item.type === typeItem.DEGREES"></app-degrees-item>
         <app-courses-item *ngIf="item.type === typeItem.COURSES"></app-courses-item>
