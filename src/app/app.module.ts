@@ -34,6 +34,8 @@ import { TitleComponent } from './components/title/title.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { InfoComponent } from './pages/info/info.component';
 import { SkillsComponent } from './pages/skills/skills.component';
+import { InfoLgComponent } from './components/info-lg/info-lg.component';
+import { SkillsLgComponent } from './components/skills-lg/skills-lg.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
@@ -67,6 +69,8 @@ export function createTranslateLoader(http: HttpClient) {
     SkillsSmComponent,
     HobbiesComponent,
     LanguageComponent,
+    InfoLgComponent,
+    SkillsLgComponent,
   ],
   imports: [
     BrowserModule,
