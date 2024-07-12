@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IExperience } from 'src/app/models/interfaces';
+import { environmment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-experience-menu-item',
@@ -8,6 +9,7 @@ import { IExperience } from 'src/app/models/interfaces';
 })
 export class ExperienceMenuItemComponent {
   @Input() experience!: IExperience;
+  public environment = environmment;
 
   public goToExperience(company: string): void {
     const element = document.getElementById(company);

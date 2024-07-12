@@ -91,7 +91,7 @@
   "businessSkills": [
     {
       "name": "Liderazgo",
-      "coverage": 90
+      "coverage": 95
     },
     {
       "name": "Arquitectura",
@@ -142,7 +142,7 @@
       "endDate": 2021
     },
     {
-      "name": "Angular Testing Masterclass",
+      "name": "Angular Testing",
       "school": "Angular University",
       "startDate": 2020,
       "endDate": 2021
@@ -166,7 +166,7 @@
       "endDate": 2019
     },
     {
-      "name": "B1 Nivel intermedio de Inglés",
+      "name": "B1 Inglés",
       "school": "Escuela Oficial de Idiomas Ronda",
       "startDate": 2017,
       "endDate": 2018
@@ -188,7 +188,7 @@
     {
       "name": "Front-End Architect",
       "company": "Vintegris",
-      "imageCompany": "/assets/images/companies/vintegris.png",
+      "imageCompany": "/images/companies/vintegris.png",
       "startDate": "01/2023",
       "endDate": "Actualidad",
       "description": "Front-End Architect. Diseño de la arquitectura y tech-lead del equipo de front-end.",
@@ -213,7 +213,7 @@
     {
       "name": "Front-end Architect",
       "company": "Signicat",
-      "imageCompany": "/assets/images/companies/signicat.png",
+      "imageCompany": "/images/companies/signicat.png",
       "startDate": "07/2022",
       "endDate": "01/2023",
       "description": "Front-End Architect. Diseño y refactorización de la arquitectura, liderazgo técnico de los tres equipos de front.",
@@ -228,14 +228,14 @@
     {
       "name": "Front-end Architect",
       "company": "Accenture",
-      "imageCompany": "/assets/images/companies/accenture.png",
+      "imageCompany": "/images/companies/accenture.png",
       "startDate": "11/2020",
       "endDate": "07/2022",
       "description": "Front-end Architect / Consultor manager. Diseño y consultoría de arquitecturas.",
       "proyects": [
         {
           "name": "Repsol Proyecto Aria",
-          "description": "Aplicativo que gestiona el Big Data de Respsol. Diseño y desarrollo de la arquitectura de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data por Expoquimia. Liderazgo de los equipos de front-end.",
+          "description": "Diseño y desarrollo de la arquitectura de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data por Expoquimia. Liderazgo de los equipos de front-end.",
           "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Vue", "Library Components", "Angular Material"]
         },
         {
@@ -253,7 +253,7 @@
     {
       "name": "Front-End Senior",
       "company": "Golden Race",
-      "imageCompany": "/assets/images/companies/golden.png",
+      "imageCompany": "/images/companies/golden.png",
       "startDate": "12/2019",
       "endDate": "11/2020",
       "description": "Front-End Senior. Desarrollo de juegos de apuestas.",
@@ -268,7 +268,7 @@
     {
       "name": "Full-Stack Developer",
       "company": "CMC",
-      "imageCompany": "/assets/images/companies/cmc.png",
+      "imageCompany": "/images/companies/cmc.png",
       "startDate": "08/2017",
       "endDate": "12/2019",
       "description": "Full-Stack Developer. Desarrollo de aplicaciones bancarias para Unicaja Banco.",
@@ -283,7 +283,7 @@
     {
       "name": "Full-Stack Developer",
       "company": "Lambda Automotive",
-      "imageCompany": "/assets/images/companies/lambda.png",
+      "imageCompany": "/images/companies/lambda.png",
       "startDate": "05/2014",
       "endDate": "08/2017",
       "description": "Full-Stack Developer. Diseño y desarrollo del front-end de Efiasistencia 2.0.",
@@ -291,14 +291,14 @@
         {
           "name": "Efiasistencia 2.0",
           "description": "Aplicativo que centraliza los siniestros en carretera de las principales compañías de seguro. Diseño de la arquitectura front de la aplicación Efiasistencia 2.0 y liderazgo del desarrollo. Creación de la capa intermedia de negocio, para las comunicaciones SOAP.",
-          "technologies": ["Js", "HTML 5", "Css 3", "Full-Rest", "SOAP", "PHP"]
+          "technologies": ["Angular", "Js", "HTML 5", "Sass", "Css 3", "BackBone", "Jquery", "Api Google Maps", "Full-Rest", "SOAP", "PHP"]
         }
       ]
     },
     {
       "name": "Full-Stack Developer",
       "company": "Delaware",
-      "imageCompany": "/assets/images/companies/delaware.png",
+      "imageCompany": "/images/companies/delaware.png",
       "startDate": "06/2006",
       "endDate": "05/2014",
       "description": "Full-Stack Developer. Desarrollo de aplicaciones bancarias para Unicaja Banco.",
@@ -313,7 +313,7 @@
     {
       "name": "Developer",
       "company": "Isoft",
-      "imageCompany": "/assets/images/companies/isoft.png",
+      "imageCompany": "/images/companies/isoft.png",
       "startDate": "05/2004",
       "endDate": "06/2006",
       "description": "Desarrollador Junior. Desarrollo de aplicaciones sanitarias para el S.A.S.",
@@ -321,7 +321,7 @@
         {
           "name": "NovaSoft Sanidad",
           "description": "Aplicativo de gestión sanitaria. Desarrollo e implementación del software en los distintos centros sanitarios.",
-          "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery"]
+          "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery", "Css 3"]
         }
       ]
     }
