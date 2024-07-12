@@ -14,7 +14,7 @@
             <i (click)="changeTypeSkills(enumTypeSkill.BUSINESS)" *ngIf="typeSkill === enumTypeSkill.TECHNICAL" class="bi bi-briefcase"></i>
           </div>
         </div>
-        <div class="card-body">
+        <div class="card-body pe-2">
           <div class="skills-lg__card pe-3">
             <div *ngIf="typeSkill === enumTypeSkill.TECHNICAL">
               <app-skill-item [skill]="item" *ngFor="let item of infoUser.skills"></app-skill-item>
