@@ -1,3 +1,7 @@
-<div class="courses-item" *ngIf="resumeService.infoUser | async as infoUser">
-  <app-info-item [degree]="degree" *ngFor="let degree of infoUser.courses"></app-info-item>
+@if(resumeService.infoUser | async; as infoUser){
+<div class="courses-item">
+  @for(degree of infoUser.courses; track $index){
+  <app-info-item [degree]="degree"></app-info-item>
+  }
 </div>
+}

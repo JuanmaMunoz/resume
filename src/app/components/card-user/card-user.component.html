@@ -1,4 +1,5 @@
-<div class="card-user card" *ngIf="resumeService.infoUser | async as infoUser">
+@if(resumeService.infoUser | async; as infoUser){
+<div class="card-user card">
   <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
     <i class="bi bi-person-bounding-box me-2"></i> {{ 'info.personalInfo' | translate }}
   </div>
@@ -13,3 +14,4 @@
     </div>
   </div>
 </div>
+}

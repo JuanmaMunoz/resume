@@ -1,5 +1,6 @@
 <div class="accordion accordion-info" [id]="idAccordion">
-  <div class="accordion-item" *ngFor="let item of accordionItems">
+  @for (item of accordionItems; track $index){
+  <div class="accordion-item">
     <h2 class="accordion-header">
       <button
         class="accordion-button"
@@ -22,10 +23,15 @@
       [attr.data-bs-parent]="'#' + idAccordion"
     >
       <div class="accordion-body pe-2">
-        <app-career-item *ngIf="item.type === typeItem.CAREER"></app-career-item>
-        <app-degrees-item *ngIf="item.type === typeItem.DEGREES"></app-degrees-item>
-        <app-courses-item *ngIf="item.type === typeItem.COURSES"></app-courses-item>
+        @if(item.type=== typeItem.CAREER){
+        <app-career-item></app-career-item>
+        }@else if (item.type === typeItem.DEGREES) {
+        <app-degrees-item></app-degrees-item>
+        }@else {
+        <app-courses-item></app-courses-item>
+        }
       </div>
     </div>
   </div>
+  }
 </div>

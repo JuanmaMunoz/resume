@@ -5,12 +5,16 @@
   </div>
   <p class="text-secondary">{{ experience.description }}</p>
   <h5 class="text-secondary mb-3">{{ 'experience.proyects' | translate }}:</h5>
-  <div *ngFor="let proyect of experience.proyects">
+  @for(proyect of experience.proyects; track $index){
+  <div>
     <h5 class="text-primary-emphasis fw-bold">{{ proyect.name }}</h5>
     <p class="text-secondary">{{ proyect.description }}</p>
     <h6 class="text-secondary mb-3">{{ 'experience.technologies' | translate }}:</h6>
     <div class="d-flex flex-row flex-wrap">
-      <span *ngFor="let tecnology of proyect.technologies" class="badge text-bg-secondary me-3 mb-3 fs-6">{{ tecnology }}</span>
+      @for(tecnology of proyect.technologies; track $index){
+      <span class="badge text-bg-secondary me-3 mb-3 fs-6">{{ tecnology }}</span>
+      }
     </div>
   </div>
+  }
 </div>
