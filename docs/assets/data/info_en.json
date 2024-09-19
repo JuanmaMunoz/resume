@@ -102,15 +102,15 @@
       "coverage": 95
     },
     {
-      "name": "Support Front-Back",
+      "name": "Support Back",
       "coverage": 85
     },
     {
-      "name": "Support Front-Ux",
+      "name": "Support Ux",
       "coverage": 95
     },
     {
-      "name": "Support Front-PM",
+      "name": "Support PM",
       "coverage": 90
     }
   ],
@@ -174,10 +174,10 @@
   ],
   "languages": [
     { "name": "Spanish", "coverage": 99 },
-    { "name": "English", "coverage": 65 }
+    { "name": "English", "coverage": 70 }
   ],
   "professionalGrowth": {
-    "names": ["Architecture", "Team management", "Support Front-Ux", "Support Front-Back", "Support Front-PM"],
+    "names": ["Architecture", "Team management", "Support Ux", "Support Back", "Support PM"],
     "growth": [
       { "year": 2020, "values": [75, 74, 80, 72, 73] },
       { "year": 2022, "values": [85, 80, 87, 75, 81] },
