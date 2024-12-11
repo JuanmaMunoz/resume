@@ -3,8 +3,8 @@
   "age": 40,
   "city": "Torre del Mar (Málaga)",
   "email": "jmmugoz@gmail.com",
-  "position": "Front-End Architect",
-  "positionDescription": "<p>Cuento con 18 años de experiencia en el mundo del software, habiendo trabajado para grandes compañías como Repsol, Vodafone, Línea Directa, Banco Santander, entre otras. En muchos de estos proyectos, he tenido la responsabilidad de diseñar y liderar desde cero la arquitectura front-end, lo que me ha permitido consolidar una sólida experiencia en este ámbito. Mi rol no solo ha consistido en la creación de arquitecturas robustas, sino también en la dirección técnica de equipos de desarrollo front-end, estableciendo buenas prácticas para garantizar la entrega de aplicaciones escalables y de alta calidad.<p>Además de liderar, me involucro activamente en el desarrollo, lo que me permite mantenerme al día con las últimas tendencias tecnológicas y seguir aportando valor como un desarrollador más. Este enfoque práctico y actualizado es clave para asegurar el éxito de los proyectos que lidero.</p><p>Poseo sólidos conocimientos en back-end y experiencia avanzada en UX, lo que me proporciona una visión integral de las necesidades técnicas de cualquier aplicación. Esto me permite no solo dar soporte en estas áreas, sino también supervisar y garantizar que se cumplan los estándares adecuados en ambas, contribuyendo a la creación de aplicaciones bien estructuradas, funcionales y con una excelente experiencia de usuario. Mi enfoque holístico asegura que todos los aspectos del desarrollo, desde el diseño hasta la implementación, se alineen para la culminación exitosa del proyecto.<p><p>En 2022, tuve la oportunidad de liderar la arquitectura del proyecto ARIA de Repsol, que fue una pieza clave del aplicativo Stock Control. Este proyecto fue reconocido en 2023 con el premio Best in Class en Expoquimia. Gracias a este éxito, me convertí en un referente para Repsol en la arquitectura front-end, consolidando mi rol en la definición de soluciones innovadoras y de alto rendimiento dentro de la compañía.</p><p>Actualmente, me encuentro liderando el desarrollo de la arquitectura front-end de una aplicación destinada a gestionar la firma digital de todas las propuestas emitidas en el Parlamento de los Diputados. Este proyecto está basado en una arquitectura modular de microsites, acompañada de la creación de una librería de componentes personalizada. Esta solución no solo optimiza la velocidad y la robustez del desarrollo, sino que también permite una mayor independencia entre los módulos, posicionándose como una innovación clave en el futuro del desarrollo web.</p>",
+  "position": "Front End Architect",
+  "positionDescription": "<p>Cuento con 18 años de experiencia en el mundo del software, habiendo trabajado para grandes compañías como Repsol, Vodafone, Línea Directa, Banco Santander, entre otras. En muchos de estos proyectos, he tenido la responsabilidad de diseñar y liderar desde cero la arquitectura Front End, lo que me ha permitido consolidar una sólida experiencia en este ámbito. Mi rol no solo ha consistido en la creación de arquitecturas robustas, sino también en la dirección técnica de equipos de desarrollo Front End, estableciendo buenas prácticas para garantizar la entrega de aplicaciones escalables y de alta calidad.<p>Además de liderar, me involucro activamente en el desarrollo, lo que me permite mantenerme al día con las últimas tendencias tecnológicas y seguir aportando valor como un desarrollador más. Este enfoque práctico y actualizado es clave para asegurar el éxito de los proyectos que lidero.</p><p>Poseo sólidos conocimientos en Back End y experiencia avanzada en UX/UI, lo que me proporciona una visión integral de las necesidades técnicas de cualquier aplicación. Esto me permite no solo dar soporte en estas áreas, sino también supervisar y garantizar que se cumplan los estándares adecuados en ambas, contribuyendo a la creación de aplicaciones bien estructuradas, funcionales y con una excelente experiencia de usuario. Mi enfoque holístico asegura que todos los aspectos del desarrollo, desde el diseño hasta la implementación, se alineen para la culminación exitosa del proyecto.<p><p>En 2022, tuve la oportunidad de liderar la arquitectura del proyecto ARIA de Repsol, que fue una pieza clave del aplicativo Stock Control. Este proyecto fue reconocido en 2023 con el premio Best in Class en Expoquimia. Gracias a este éxito, me convertí en un referente para Repsol en la arquitectura Front End, consolidando mi rol en la definición de soluciones innovadoras y de alto rendimiento dentro de la compañía.</p><p>Actualmente, me encuentro liderando el desarrollo de la arquitectura Front End de una aplicación destinada a gestionar la firma digital de todas las propuestas emitidas en el Parlamento de los Diputados. Este proyecto está basado en una arquitectura modular de microsites, acompañada de la creación de una librería de componentes personalizada. Esta solución no solo optimiza la velocidad y la robustez del desarrollo, sino que también permite una mayor independencia entre los módulos, posicionándose como una innovación clave en el futuro del desarrollo web.</p>",
   "hobbies": ["bi-image-alt", "bi-tsunami", "bi-camera-reels", "bi-music-note-beamed", "bi-bicycle", "bi-dribbble", "bi-controller"],
   "skills": [
     {
@@ -102,11 +102,11 @@
       "coverage": 95
     },
     {
-      "name": "Soporte Back",
+      "name": "Soporte Back End",
       "coverage": 85
     },
     {
-      "name": "Soporte Ux",
+      "name": "Soporte UX/UI",
       "coverage": 95
     },
     {
@@ -177,7 +177,7 @@
     { "name": "Inglés", "coverage": 70 }
   ],
   "professionalGrowth": {
-    "names": ["Arquitectura", "Gestión de equipos", "Soporte Ux", "Soporte Back", "Soporte PM"],
+    "names": ["Arquitectura", "Gestión de equipos", "Soporte UX/UI", "Soporte Back End", "Soporte PM"],
     "growth": [
       { "year": 2020, "values": [75, 74, 80, 72, 73] },
       { "year": 2022, "values": [85, 80, 87, 75, 81] },
@@ -186,16 +186,16 @@
   },
   "experience": [
     {
-      "name": "Front-End Architect",
+      "name": "Front End Architect",
       "company": "Vintegris",
       "imageCompany": "/images/companies/vintegris.png",
       "startDate": "01/2023",
       "endDate": "Actualidad",
-      "description": "Front-End Architect. Diseño de la arquitectura y tech-lead del equipo de front-end.",
+      "description": "Front End Architect. Diseño de la arquitectura y Tech Lead del equipo de Front End.",
       "proyects": [
         {
           "name": "Webs 2.0",
-          "description": "Aplicaciones para la gestión de certificados digitales. Diseño de la arquitectura basada en microsites mediante librería de componentes propia y liderazgo del desarrollo. Distribucíon del trabajo del equipo de front-end, code-review y establecimiento de metodologías de trabajo.",
+          "description": "Aplicaciones para la gestión de certificados digitales. Diseño de la arquitectura basada en microsites mediante librería de componentes propia y liderazgo del desarrollo. Distribucíon del trabajo del equipo de Front End, code-review y establecimiento de metodologías de trabajo.",
           "technologies": [
             "Angular",
             "SPA (Micro-sites)",
@@ -211,31 +211,31 @@
       ]
     },
     {
-      "name": "Front-end Architect",
+      "name": "Front End Architect",
       "company": "Signicat",
       "imageCompany": "/images/companies/signicat.png",
       "startDate": "07/2022",
       "endDate": "01/2023",
-      "description": "Front-End Architect. Diseño y refactorización de la arquitectura, liderazgo técnico de los tres equipos de front.",
+      "description": "Front End Architect. Diseño y refactorización de la arquitectura, liderazgo técnico de los tres equipos de Front End.",
       "proyects": [
         {
           "name": "Signicat Products",
-          "description": "Aplicaciones para la gestión de certificados digitales e identificación facial. Diseño y refactorización de los distintos productos de identificación de la compañía Signicat. Formación y code-review de los distintos equipos de front-end. Establecimiento de metodologías para la consecución de aplicaciones robustas y escalables.",
+          "description": "Aplicaciones para la gestión de certificados digitales e identificación facial. Diseño y refactorización de los distintos productos de identificación de la compañía Signicat. Formación y code-review de los distintos equipos de Front End. Establecimiento de metodologías para la consecución de aplicaciones robustas y escalables.",
           "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Web Socket", "Angular Material", "Prime Ng", "Webpack"]
         }
       ]
     },
     {
-      "name": "Front-end Architect",
+      "name": "Front End Architect",
       "company": "Accenture",
       "imageCompany": "/images/companies/accenture.png",
       "startDate": "11/2020",
       "endDate": "07/2022",
-      "description": "Front-end Architect / Consultor manager. Diseño y consultoría de arquitecturas.",
+      "description": "Front End Architect / Consultor manager. Diseño y consultoría de arquitecturas.",
       "proyects": [
         {
           "name": "Repsol Proyecto Aria",
-          "description": "Diseño y desarrollo de la arquitectura de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data por Expoquimia. Liderazgo de los equipos de front-end.",
+          "description": "Diseño y desarrollo de la arquitectura de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data por Expoquimia. Liderazgo de los equipos de Front End.",
           "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Vue", "Library Components", "Angular Material"]
         },
         {
@@ -245,68 +245,68 @@
         },
         {
           "name": "Santander Iberia Plus",
-          "description": "Aplicativo que gestiona ofertas y bonos para clientes del Santander. Diseño y consultoría de la Arquitectura Front.",
+          "description": "Aplicativo que gestiona ofertas y bonos para clientes del Santander. Diseño y consultoría de la Arquitectura Front End.",
           "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Library Components"]
         }
       ]
     },
     {
-      "name": "Front-End Senior",
+      "name": "Front End Senior",
       "company": "Golden Race",
       "imageCompany": "/images/companies/golden.png",
       "startDate": "12/2019",
       "endDate": "11/2020",
-      "description": "Front-End Senior. Desarrollo de juegos de apuestas.",
+      "description": "Front End Senior. Desarrollo de juegos de apuestas.",
       "proyects": [
         {
           "name": "Games 2.0",
           "description": "Videojuegos de apuestas online y retail. Desarrollo de videojuegos de apuestas mediante tecnología web. Desarrollo de nuevos juegos y mantenimiento de los existentes. Mejora del rendimiento del aplicativo mediante buenas prácticas de desarrollo.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Angular Animations", "Web Sockect", "Full-Rest"]
+          "technologies": ["Angular", "HTML 5", "Sass", "Angular Animations", "Web Sockect", "Full Rest"]
         }
       ]
     },
     {
-      "name": "Full-Stack Developer",
+      "name": "Full Stack Developer",
       "company": "CMC",
       "imageCompany": "/images/companies/cmc.png",
       "startDate": "08/2017",
       "endDate": "12/2019",
-      "description": "Full-Stack Developer. Desarrollo de aplicaciones bancarias para Unicaja Banco.",
+      "description": "Full Stack Developer. Desarrollo de aplicaciones bancarias para Unicaja Banco.",
       "proyects": [
         {
           "name": "Formularios electrónicos Unicaja",
           "description": "Desarrollo y mantenimiento de los formularios electrónicos de Unicaja Banco. Gestión del equipo de desarrollo.",
-          "technologies": ["Angular", "HTML 5", "Sass", "DocPath", "Full-Rest"]
+          "technologies": ["Angular", "HTML 5", "Sass", "DocPath", "Full Rest"]
         }
       ]
     },
     {
-      "name": "Full-Stack Developer",
+      "name": "Full Stack Developer",
       "company": "Lambda Automotive",
       "imageCompany": "/images/companies/lambda.png",
       "startDate": "05/2014",
       "endDate": "08/2017",
-      "description": "Full-Stack Developer. Diseño y desarrollo del front-end de Efiasistencia 2.0.",
+      "description": "Full Stack Developer. Diseño y desarrollo del Front End de Efiasistencia 2.0.",
       "proyects": [
         {
           "name": "Efiasistencia 2.0",
-          "description": "Aplicativo que centraliza los siniestros en carretera de las principales compañías de seguro. Diseño de la arquitectura front de la aplicación Efiasistencia 2.0 y liderazgo del desarrollo. Creación de la capa intermedia de negocio, para las comunicaciones SOAP.",
-          "technologies": ["Angular", "Js", "HTML 5", "Sass", "Css 3", "BackBone", "Jquery", "Api Google Maps", "Full-Rest", "SOAP", "PHP"]
+          "description": "Aplicativo que centraliza los siniestros en carretera de las principales compañías de seguro. Diseño de la arquitectura Front End de la aplicación Efiasistencia 2.0 y liderazgo del desarrollo. Creación de la capa intermedia de negocio, para las comunicaciones SOAP.",
+          "technologies": ["Angular", "Js", "HTML 5", "Sass", "Css 3", "BackBone", "Jquery", "Api Google Maps", "Full Rest", "SOAP", "PHP"]
         }
       ]
     },
     {
-      "name": "Full-Stack Developer",
+      "name": "Full Stack Developer",
       "company": "Delaware",
       "imageCompany": "/images/companies/delaware.png",
       "startDate": "06/2006",
       "endDate": "05/2014",
-      "description": "Full-Stack Developer. Desarrollo de aplicaciones bancarias para Unicaja Banco.",
+      "description": "Full Stack Developer. Desarrollo de aplicaciones bancarias para Unicaja Banco.",
       "proyects": [
         {
           "name": "Formularios electrónicos Unicaja",
           "description": "Desarrollo y mantenimiento de los formularios electrónicos de Unicaja Banco.",
-          "technologies": ["Js", "HTML 5", "Css 3", "DocPath", "Full-Rest", "PHP"]
+          "technologies": ["Js", "HTML 5", "Css 3", "DocPath", "Full Rest", "PHP"]
         }
       ]
     },

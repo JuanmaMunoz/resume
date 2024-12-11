@@ -1,30 +1,30 @@
 .menu-sm {
+  border: 2px solid var(--bs-primary-text-emphasis) !important;
+  left: 0.5rem;
+  overflow: hidden;
   position: absolute;
   top: 3.4rem;
-  left: 0.5rem;
-  z-index: 100;
-  overflow: hidden;
   width: 60vw;
-  border: 2px solid var(--bs-primary-text-emphasis) !important;
+  z-index: 100;
   &__buttons {
     padding: 2rem 1rem;
   }
   &--open {
-    display: block;
     animation: openMenu;
     animation-duration: 0.7s;
+    display: block;
   }
   &--close {
-    display: none;
     animation: closeMenu;
     animation-duration: 0.5s;
+    display: none;
   }
 }
 
 @keyframes openMenu {
   from {
-    opacity: 0;
     -webkit-box-shadow: 0 0 0.3rem 0.3rem var(--bs-primary-text-emphasis);
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -33,8 +33,8 @@
 
 @keyframes closeMenu {
   from {
-    opacity: 0.5;
     display: block;
+    opacity: 0.5;
   }
   to {
     opacity: 0;
