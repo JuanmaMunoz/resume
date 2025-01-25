@@ -14,7 +14,7 @@ export class ResumeService {
     age: 40,
     city: 'Torre del Mar (Málaga)',
     email: 'jmmugoz@gmail.com',
-    position: 'Front-End Architect',
+    position: 'Front End Architect',
   });
   public modeDark: BehaviorSubject<ModeDark> = new BehaviorSubject(ModeDark.LIGHT as ModeDark);
   public currentUrl: string = '/info';

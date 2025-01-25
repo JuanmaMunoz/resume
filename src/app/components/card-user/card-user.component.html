@@ -1,8 +1,9 @@
-<div class="card-user card" *ngIf="resumeService.infoUser | async as infoUser">
+@if(resumeService.infoUser | async; as infoUser){
+<div class="card-user card">
   <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
     <i class="bi bi-person-bounding-box me-2"></i> {{ 'info.personalInfo' | translate }}
   </div>
-  <img src="assets/images/photo.jpg" alt="Front-end Architect" class="img-fluid" />
+  <img src="assets/images/photo.jpg" alt="Front End Architect" class="img-fluid" />
   <div class="card-body">
     <p class="text-primary-emphasis mb-0"><i class="bi bi-person me-2"></i>{{ infoUser.name }}</p>
     <p class="text-primary-emphasis mb-0"><i class="bi bi-cake2 me-2"></i>{{ infoUser.age }}</p>
@@ -13,3 +14,4 @@
     </div>
   </div>
 </div>
+}

@@ -1,4 +1,5 @@
-<div class="photo" *ngIf="resumeService.infoUser | async as infoUser">
+@if(resumeService.infoUser | async; as infoUser){
+<div class="photo">
   <div class="phot-header text-center mb-3">
     <h4 class="text-primary-emphasis">{{ infoUser.position }}</h4>
   </div>
@@ -8,3 +9,4 @@
     <h6 class="text-secondary">{{ infoUser.email }}</h6>
   </div>
 </div>
+}

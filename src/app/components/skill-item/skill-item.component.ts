@@ -1,5 +1,5 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { Subscription, map, of, repeat } from 'rxjs';
+import { Subscription, of, repeat } from 'rxjs';
 import { ISkill } from 'src/app/models/interfaces';
 
 @Component({
@@ -20,15 +20,13 @@ export class SkillItemComponent implements OnInit, OnDestroy {
   }
 
   private fillBar(): void {
-    let count = 1;
+    let initialValue = 1;
     this.subscription.add(
-      of(count)
-        .pipe(
-          repeat({ count: this.skill.coverage, delay: 1 }),
-          map((data: number) => (data = count++))
-        )
+      of(initialValue)
+        .pipe(repeat({ count: 3, delay: 1 }))
         .subscribe((data: number) => {
-          this.percent = data;
+          const percent = initialValue++ * 33;
+          percent < this.skill.coverage ? (this.percent = percent) : (this.percent = this.skill.coverage);
         })
     );
   }
