@@ -4,7 +4,7 @@
   "city": "Torre del Mar (Málaga)",
   "email": "jmmugoz@gmail.com",
   "position": "Front End Architect",
-  "positionDescription": "<p>Cuento con 18 años de experiencia en el mundo del software, habiendo trabajado para grandes compañías como Repsol, Vodafone, Línea Directa, Banco Santander, entre otras. En muchos de estos proyectos, he tenido la responsabilidad de diseñar y liderar desde cero la arquitectura Front End, lo que me ha permitido consolidar una sólida experiencia en este ámbito. Mi rol no solo ha consistido en la creación de arquitecturas robustas, sino también en la dirección técnica de equipos de desarrollo Front End, estableciendo buenas prácticas para garantizar la entrega de aplicaciones escalables y de alta calidad.<p>Además de liderar, me involucro activamente en el desarrollo, lo que me permite mantenerme al día con las últimas tendencias tecnológicas y seguir aportando valor como un desarrollador más. Este enfoque práctico y actualizado es clave para asegurar el éxito de los proyectos que lidero.</p><p>Poseo sólidos conocimientos en Back End y experiencia avanzada en UX/UI, lo que me proporciona una visión integral de las necesidades técnicas de cualquier aplicación. Esto me permite no solo dar soporte en estas áreas, sino también supervisar y garantizar que se cumplan los estándares adecuados en ambas, contribuyendo a la creación de aplicaciones bien estructuradas, funcionales y con una excelente experiencia de usuario.<p><p>En 2022, tuve la oportunidad de liderar la arquitectura del proyecto ARIA de Repsol, que fue una pieza clave del aplicativo Stock Control. Este proyecto fue reconocido en 2023 con el premio Best in Class en Expoquimia. Gracias a este éxito, me convertí en un referente para Repsol en la arquitectura Front End, consolidando mi rol en la definición de soluciones innovadoras y de alto rendimiento dentro de la compañía.</p><p>Actualmente, me encuentro liderando el desarrollo de la arquitectura Front End de una aplicación destinada a gestionar la firma digital de todas las propuestas emitidas en el Parlamento de los Diputados. Este proyecto está basado en una arquitectura modular de microsites, acompañada de la creación de una librería de componentes personalizada. Esta solución no solo optimiza la velocidad y la robustez del desarrollo, sino que también permite una mayor independencia entre los módulos, posicionándose como una innovación clave en el futuro del desarrollo web.</p>",
+  "positionDescription": "<p>Cuento con 19 años de experiencia en el mundo del software, habiendo trabajado para grandes compañías como Repsol, Vodafone, Línea Directa, Banco Santander, entre otras. En muchos de estos proyectos, he tenido la responsabilidad de diseñar y liderar desde cero la arquitectura Front End, lo que me ha permitido consolidar una sólida experiencia en este ámbito. Mi rol no solo ha consistido en la creación de arquitecturas robustas, sino también en la dirección técnica de equipos de desarrollo Front End, estableciendo buenas prácticas para garantizar la entrega de aplicaciones escalables y de alta calidad.<p>Además de liderar, me involucro activamente en el desarrollo, lo que me permite mantenerme al día con las últimas tendencias tecnológicas y seguir aportando valor como un desarrollador más. Este enfoque práctico y actualizado es clave para asegurar el éxito de los proyectos que lidero.</p><p>Poseo sólidos conocimientos en Back End y experiencia avanzada en UX/UI, lo que me proporciona una visión integral de las necesidades técnicas de cualquier aplicación. Esto me permite no solo dar soporte en estas áreas, sino también supervisar y garantizar que se cumplan los estándares adecuados en ambas, contribuyendo a la creación de aplicaciones bien estructuradas, funcionales y con una excelente experiencia de usuario.<p><p>En 2022, tuve la oportunidad de liderar la arquitectura del proyecto ARIA de Repsol, que fue una pieza clave del aplicativo Stock Control. Este proyecto fue reconocido en 2023 con el premio Best in Class en Expoquimia. Gracias a este éxito, me convertí en un referente para Repsol en la arquitectura Front End, consolidando mi rol en la definición de soluciones innovadoras y de alto rendimiento dentro de la compañía.</p><p>Actualmente, me encuentro liderando el desarrollo de la arquitectura Front End de una aplicación destinada a gestionar la firma digital de todas las propuestas emitidas en el Parlamento de los Diputados. Este proyecto está basado en una arquitectura modular de microsites, acompañada de la creación de una librería de componentes personalizada. Esta solución no solo optimiza la velocidad y la robustez del desarrollo, sino que también permite una mayor independencia entre los módulos, posicionándose como una innovación clave en el futuro del desarrollo web.</p>",
   "hobbies": ["bi-image-alt", "bi-tsunami", "bi-camera-reels", "bi-music-note-beamed", "bi-bicycle", "bi-dribbble", "bi-controller"],
   "skills": [
     {
@@ -90,11 +90,7 @@
   ],
   "businessSkills": [
     {
-      "name": "Liderazgo",
-      "coverage": 95
-    },
-    {
-      "name": "Arquitectura",
+      "name": "Arquitectura escalable",
       "coverage": 95
     },
     {
@@ -102,16 +98,24 @@
       "coverage": 95
     },
     {
-      "name": "Soporte Back End",
-      "coverage": 85
-    },
-    {
-      "name": "Soporte UX/UI",
+      "name": "Buenas prácticas",
       "coverage": 95
     },
     {
-      "name": "Soporte PM",
+      "name": "Liderazgo",
+      "coverage": 95
+    },
+    {
+      "name": "Resolución de problemas",
+      "coverage": 95
+    },
+    {
+      "name": "Soporte UX/UI",
       "coverage": 90
+    },
+    {
+      "name": "Transferencia de conocimientos",
+      "coverage": 95
     }
   ],
   "degrees": [
@@ -177,11 +181,11 @@
     { "name": "Inglés", "coverage": 70 }
   ],
   "professionalGrowth": {
-    "names": ["Arquitectura", "Gestión de equipos", "Soporte UX/UI", "Soporte Back End", "Soporte PM"],
+    "names": ["Arquitectura", "Gestión de equipos", "Soporte UX/UI", "Arquitectura micro-sites", "Inglés", "Js frameworks"],
     "growth": [
-      { "year": 2020, "values": [75, 74, 80, 72, 73] },
-      { "year": 2022, "values": [85, 80, 87, 75, 81] },
-      { "year": 2025, "values": [95, 95, 95, 85, 90] }
+      { "year": 2020, "values": [75, 74, 80, 0, 50, 80] },
+      { "year": 2022, "values": [85, 80, 87, 75, 55, 87] },
+      { "year": 2025, "values": [95, 95, 90, 90, 70, 95] }
     ]
   },
   "experience": [

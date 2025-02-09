@@ -73,6 +73,9 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
       type: 'radar',
       data: this.chartData,
       options: {
+        layout: {
+          padding: 0, // Elimina el padding externo de la gráfica
+        },
         scales: {
           r: {
             grid: {
@@ -86,6 +89,12 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
             ticks: {
               color: '#666',
               backdropColor: 'transparent',
+            },
+            pointLabels: {
+              font: {
+                size: 11.5,
+                weight: 'bold',
+              },
             },
           },
         },
