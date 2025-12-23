@@ -32,7 +32,7 @@
       "coverage": 95
     },
     {
-      "name": "SPA (Micro-sites)",
+      "name": "Single-spa (Micro-sites)",
       "coverage": 85
     },
     {
@@ -90,11 +90,7 @@
   ],
   "businessSkills": [
     {
-      "name": "Liderazgo",
-      "coverage": 95
-    },
-    {
-      "name": "Arquitectura",
+      "name": "Arquitectura escalable",
       "coverage": 95
     },
     {
@@ -102,30 +98,38 @@
       "coverage": 95
     },
     {
-      "name": "Soporte Back End",
-      "coverage": 85
-    },
-    {
-      "name": "Soporte UX/UI",
+      "name": "Buenas prácticas",
       "coverage": 95
     },
     {
-      "name": "Soporte PM",
+      "name": "Liderazgo",
+      "coverage": 95
+    },
+    {
+      "name": "Resolución de problemas",
+      "coverage": 95
+    },
+    {
+      "name": "Soporte UX/UI",
       "coverage": 90
+    },
+    {
+      "name": "Transferencia de conocimientos",
+      "coverage": 95
     }
   ],
   "degrees": [
     {
       "name": "Ingeniería Electrónica",
       "school": "Universidad de Málaga",
-      "startDate": 2000,
-      "endDate": 2003
+      "startDate": 2002,
+      "endDate": 2005
     },
     {
       "name": "FP2 Desarrollo de aplicaciones informáticas",
       "school": "I.E.S Instituto Martín Rivero",
-      "startDate": 2002,
-      "endDate": 2004
+      "startDate": 2004,
+      "endDate": 2006
     }
   ],
   "courses": [
@@ -177,11 +181,11 @@
     { "name": "Inglés", "coverage": 70 }
   ],
   "professionalGrowth": {
-    "names": ["Arquitectura", "Gestión de equipos", "Soporte UX/UI", "Soporte Back End", "Soporte PM"],
+    "names": ["Arquitectura", "Gestión de equipos", "Soporte UX/UI", "Arquitectura micro-sites", "Inglés", "Js frameworks"],
     "growth": [
-      { "year": 2020, "values": [75, 74, 80, 72, 73] },
-      { "year": 2022, "values": [85, 80, 87, 75, 81] },
-      { "year": 2024, "values": [95, 95, 95, 85, 90] }
+      { "year": 2020, "values": [75, 74, 80, 0, 50, 80] },
+      { "year": 2022, "values": [85, 80, 87, 75, 55, 87] },
+      { "year": 2025, "values": [95, 95, 90, 90, 70, 95] }
     ]
   },
   "experience": [
@@ -299,7 +303,7 @@
       "name": "Full Stack Developer",
       "company": "Delaware",
       "imageCompany": "/images/companies/delaware.png",
-      "startDate": "06/2006",
+      "startDate": "06/2008",
       "endDate": "05/2014",
       "description": "Full Stack Developer. Desarrollo de aplicaciones bancarias para Unicaja Banco.",
       "proyects": [
@@ -314,8 +318,8 @@
       "name": "Developer",
       "company": "Isoft",
       "imageCompany": "/images/companies/isoft.png",
-      "startDate": "05/2004",
-      "endDate": "06/2006",
+      "startDate": "05/2006",
+      "endDate": "06/2008",
       "description": "Desarrollador Junior. Desarrollo de aplicaciones sanitarias para el S.A.S.",
       "proyects": [
         {

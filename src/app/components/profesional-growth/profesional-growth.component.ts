@@ -17,7 +17,7 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
   private subscription = new Subscription();
   private chartData!: ICharData;
   private charColors = [
-    { backgroundColor: 'rgba(108, 117, 125, 0.3)', borderColor: 'rgba(108, 117, 125, 1)' },
+    { backgroundColor: 'rgba(13, 110, 253, 0.3)', borderColor: 'rgba(13, 110, 253, 1)' },
     {
       backgroundColor: 'rgba(88, 21, 28, 0.3)',
       borderColor: 'rgba(88, 21, 28, 1)',
@@ -73,9 +73,29 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
       type: 'radar',
       data: this.chartData,
       options: {
-        elements: {
-          line: {
-            borderWidth: 3,
+        layout: {
+          padding: 0, // Elimina el padding externo de la gráfica
+        },
+        scales: {
+          r: {
+            grid: {
+              color: '#666',
+              lineWidth: 0.3,
+            },
+            angleLines: {
+              color: '#666',
+              lineWidth: 0.3,
+            },
+            ticks: {
+              color: '#666',
+              backdropColor: 'transparent',
+            },
+            pointLabels: {
+              font: {
+                size: 11.5,
+                weight: 'bold',
+              },
+            },
           },
         },
         plugins: {
