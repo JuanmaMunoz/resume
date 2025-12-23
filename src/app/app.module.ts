@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -39,54 +39,47 @@ import { SkillsLgComponent } from './components/skills-lg/skills-lg.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    MenuComponent,
-    PhotoComponent,
-    MenuButtonComponent,
-    InfoComponent,
-    SkillsComponent,
-    ExperienceComponent,
-    CardUserComponent,
-    AccordionInfoComponent,
-    DegreesItemComponent,
-    CoursesItemComponent,
-    CareerItemComponent,
-    ExperienceItemComponent,
-    InfoItemComponent,
-    InfoComponent,
-    TitleComponent,
-    SkillItemComponent,
-    ProfesionalGrowthComponent,
-    ExperienceItemComponent,
-    ExperienceMenuItemComponent,
-    NavbarComponent,
-    ModeDarkComponent,
-    MenuSmComponent,
-    InfoSmComponent,
-    SkillsSmComponent,
-    HobbiesComponent,
-    LanguageComponent,
-    InfoLgComponent,
-    SkillsLgComponent,
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    AppRoutingModule,
-    HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: createTranslateLoader,
-        deps: [HttpClient],
-      },
-    }),
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HeaderComponent,
+        MenuComponent,
+        PhotoComponent,
+        MenuButtonComponent,
+        InfoComponent,
+        SkillsComponent,
+        ExperienceComponent,
+        CardUserComponent,
+        AccordionInfoComponent,
+        DegreesItemComponent,
+        CoursesItemComponent,
+        CareerItemComponent,
+        ExperienceItemComponent,
+        InfoItemComponent,
+        InfoComponent,
+        TitleComponent,
+        SkillItemComponent,
+        ProfesionalGrowthComponent,
+        ExperienceItemComponent,
+        ExperienceMenuItemComponent,
+        NavbarComponent,
+        ModeDarkComponent,
+        MenuSmComponent,
+        InfoSmComponent,
+        SkillsSmComponent,
+        HobbiesComponent,
+        LanguageComponent,
+        InfoLgComponent,
+        SkillsLgComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        AppRoutingModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: createTranslateLoader,
+                deps: [HttpClient],
+            },
+        })], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}
