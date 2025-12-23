@@ -3,9 +3,10 @@ import { Subscription, of, repeat } from 'rxjs';
 import { ISkill } from 'src/app/models/interfaces';
 
 @Component({
-  selector: 'app-skill-item',
-  templateUrl: './skill-item.component.html',
-  styleUrls: ['./skill-item.component.scss'],
+    selector: 'app-skill-item',
+    templateUrl: './skill-item.component.html',
+    styleUrls: ['./skill-item.component.scss'],
+    standalone: false
 })
 export class SkillItemComponent implements OnInit, OnDestroy {
   @Input() skill!: ISkill;

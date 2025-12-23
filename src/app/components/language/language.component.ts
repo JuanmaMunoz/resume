@@ -4,9 +4,10 @@ import { Subscription } from 'rxjs';
 import { Language } from 'src/app/models/enums';
 
 @Component({
-  selector: 'app-language',
-  templateUrl: './language.component.html',
-  styleUrls: ['./language.component.scss'],
+    selector: 'app-language',
+    templateUrl: './language.component.html',
+    styleUrls: ['./language.component.scss'],
+    standalone: false
 })
 export class LanguageComponent implements OnInit, OnDestroy {
   @Input() id: string = '';

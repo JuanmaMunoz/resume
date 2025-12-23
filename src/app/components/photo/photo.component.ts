@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
-  selector: 'app-photo',
-  templateUrl: './photo.component.html',
-  styleUrls: ['./photo.component.scss'],
+    selector: 'app-photo',
+    templateUrl: './photo.component.html',
+    styleUrls: ['./photo.component.scss'],
+    standalone: false
 })
 export class PhotoComponent {
   constructor(public resumeService: ResumeService) {}

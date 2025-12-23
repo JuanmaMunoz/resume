@@ -3,9 +3,10 @@ import { TypeAccordionItem } from 'src/app/models/enums';
 import { IAccordionItem } from 'src/app/models/interfaces';
 
 @Component({
-  selector: 'app-accordion-info',
-  templateUrl: './accordion-info.component.html',
-  styleUrls: ['./accordion-info.component.scss'],
+    selector: 'app-accordion-info',
+    templateUrl: './accordion-info.component.html',
+    styleUrls: ['./accordion-info.component.scss'],
+    standalone: false
 })
 export class AccordionInfoComponent {
   public idAccordion = 'accordionInfo';

@@ -4,9 +4,10 @@ import { ModeDark } from 'src/app/models/enums';
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
-  selector: 'app-mode-dark',
-  templateUrl: './mode-dark.component.html',
-  styleUrls: ['./mode-dark.component.scss'],
+    selector: 'app-mode-dark',
+    templateUrl: './mode-dark.component.html',
+    styleUrls: ['./mode-dark.component.scss'],
+    standalone: false
 })
 export class ModeDarkComponent implements OnInit, OnDestroy {
   @Input() id: string = '';

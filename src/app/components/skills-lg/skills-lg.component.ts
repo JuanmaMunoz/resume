@@ -3,9 +3,10 @@ import { TypeSkill } from 'src/app/models/enums';
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
-  selector: 'app-skills-lg',
-  templateUrl: './skills-lg.component.html',
-  styleUrls: ['./skills-lg.component.scss'],
+    selector: 'app-skills-lg',
+    templateUrl: './skills-lg.component.html',
+    styleUrls: ['./skills-lg.component.scss'],
+    standalone: false
 })
 export class SkillsLgComponent {
   public enumTypeSkill = TypeSkill;

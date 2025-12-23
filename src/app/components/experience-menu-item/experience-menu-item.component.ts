@@ -3,9 +3,10 @@ import { IExperience } from 'src/app/models/interfaces';
 import { environmment } from '../../../environments/environment';
 
 @Component({
-  selector: 'app-experience-menu-item',
-  templateUrl: './experience-menu-item.component.html',
-  styleUrls: ['./experience-menu-item.component.scss'],
+    selector: 'app-experience-menu-item',
+    templateUrl: './experience-menu-item.component.html',
+    styleUrls: ['./experience-menu-item.component.scss'],
+    standalone: false
 })
 export class ExperienceMenuItemComponent {
   @Input() experience!: IExperience;

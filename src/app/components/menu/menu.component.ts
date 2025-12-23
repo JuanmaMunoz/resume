@@ -4,9 +4,10 @@ import { IMenuButton } from 'src/app/models/interfaces';
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss'],
+    selector: 'app-menu',
+    templateUrl: './menu.component.html',
+    styleUrls: ['./menu.component.scss'],
+    standalone: false
 })
 export class MenuComponent implements OnInit {
   public menu!: Observable<IMenuButton[]>;
