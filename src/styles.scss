@@ -1,8 +1,10 @@
+@use 'bootstrap/scss/bootstrap' as *;
+@use 'bootstrap-icons/font/bootstrap-icons.scss';
 /* You can add global styles to this file, and also import other style files */
 //ScrollBar
 ::-webkit-scrollbar {
-  width: 0.5rem;
   height: 0.5rem;
+  width: 0.5rem;
 }
 
 /* Track */
@@ -27,8 +29,8 @@
 }
 
 .card-header {
-  padding-top: 1rem;
   padding-left: 1.25rem;
+  padding-top: 1rem;
 }
 
 .card-header,
@@ -50,8 +52,8 @@
 }
 
 .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
-  border-bottom-right-radius: var(--bs-border-radius-xxl);
   border-bottom-left-radius: var(--bs-border-radius-xxl);
+  border-bottom-right-radius: var(--bs-border-radius-xxl);
 }
 
 .accordion {
@@ -71,9 +73,9 @@
 
 @media (max-width: 768px) {
   .main {
-    padding: 0 1rem 0 1rem;
-    overflow-y: hidden;
     overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0 1rem 0 1rem;
   }
 }
 
