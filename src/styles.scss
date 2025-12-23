@@ -1,5 +1,55 @@
-@use 'bootstrap/scss/bootstrap' as *;
+@use 'sass:map';
+@use 'sass:color'; // Importante para manipular colores
+
+$primary: #414040;
+$secondary: #80868a;
+$success: #08875d;
+$info: #0dcaf0;
+$warning: #ffc008;
+$danger: #ff4c4c;
+$light: #adb5bd;
+
+$my-theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+);
+
+@use 'bootstrap/scss/bootstrap' with (
+  $theme-colors: $my-theme-colors
+);
+
 @use 'bootstrap-icons/font/bootstrap-icons.scss';
+
+:root,
+[data-bs-theme='light'] {
+  @each $name, $value in $my-theme-colors {
+    // In light mode, the emphasis is usually a slightly darker version of the color.
+    --bs-#{$name}-text-emphasis: #{color.adjust($value, $lightness: -10%)};
+    --bs-#{$name}-bg-subtle: #{color.adjust($value, $lightness: 85%)};
+    --bs-#{$name}-border-subtle: #{color.adjust($value, $lightness: 70%)};
+  }
+}
+
+[data-bs-theme='dark'] {
+  @each $name, $value in $my-theme-colors {
+    // In dark mode, the emphasis should be a lighter version of the color
+    --bs-#{$name}-text-emphasis: #{color.adjust($value, $lightness: 40%)}; // Brightens the text
+    --bs-#{$name}-bg-subtle: #{color.adjust($value, $lightness: -70%)}; // Very dark background
+    --bs-#{$name}-border-subtle: #{color.adjust($value, $lightness: -50%)};
+  }
+}
+
+::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+// ... resto de tu código (scrollbar, cards, media queries, etc.)
+
 /* You can add global styles to this file, and also import other style files */
 //ScrollBar
 ::-webkit-scrollbar {
@@ -58,6 +108,10 @@
 
 .accordion {
   --bs-accordion-border-radius: var(--bs-border-radius-xxl);
+}
+
+.fw-bold {
+  font-weight: 500 !important;
 }
 
 .text-secondary,
