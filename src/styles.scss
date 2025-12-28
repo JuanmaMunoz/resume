@@ -7,7 +7,7 @@ $success: #08875d;
 $info: #0dcaf0;
 $warning: #ffc008;
 $danger: #ff4c4c;
-$light: #adb5bd;
+$light: #f0f2f3;
 
 $my-theme-colors: (
   'primary': $primary,
@@ -20,7 +20,20 @@ $my-theme-colors: (
 );
 
 @use 'bootstrap/scss/bootstrap' with (
-  $theme-colors: $my-theme-colors
+  $theme-colors: $my-theme-colors,
+  $accordion-icon-color: $secondary,
+  $accordion-icon-active-color: $secondary,
+  $accordion-button-active-bg: var(--bs-tertiary-bg),
+  $accordion-button-active-color: $primary,
+
+  $form-check-input-checked-bg-color: $secondary,
+  $form-check-input-checked-border-color: $secondary,
+
+  $form-switch-color: $secondary,
+  $form-switch-checked-color: $light,
+
+  $form-check-input-focus-border: #{color.adjust($primary, $lightness: 20%)},
+  $form-check-input-focus-box-shadow: 0 0 0 0.25rem #{rgba($primary, 0.25)}
 );
 
 @use 'bootstrap-icons/font/bootstrap-icons.scss';
@@ -41,6 +54,85 @@ $my-theme-colors: (
     --bs-#{$name}-text-emphasis: #{color.adjust($value, $lightness: 40%)}; // Brightens the text
     --bs-#{$name}-bg-subtle: #{color.adjust($value, $lightness: -70%)}; // Very dark background
     --bs-#{$name}-border-subtle: #{color.adjust($value, $lightness: -50%)};
+  }
+}
+
+/* Eliminar el azul del foco y activo en todos los temas */
+.form-check-input {
+  // Cuando el elemento tiene el foco (haces clic o usas teclado)
+  &:focus {
+    border-color: #{color.adjust($primary, $lightness: 20%)} !important;
+    box-shadow: 0 0 0 0.25rem rgba($primary, 0.25) !important; // Sombra suave de TU color
+    outline: 0;
+  }
+
+  // Cuando está marcado Y tiene el foco
+  &:checked:focus {
+    border-color: #{$primary} !important;
+    box-shadow: 0 0 0 0.25rem rgba($primary, 0.35) !important;
+  }
+
+  // Específicamente para el estado activo (mantenido presionado)
+  &:active {
+    border-color: #{$primary} !important;
+    filter: none !important; // Quita el filtro oscuro de Bootstrap
+  }
+}
+
+/* REGLA MAESTRA PARA EL SWITCH (Sin filtros que rompan todo) */
+.form-switch .form-check-input {
+  // 1. Color de la bola siempre BLANCO (en cualquier estado)
+  // %23ffffff es blanco puro
+  --bs-form-switch-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='%23ffffff'/></svg>") !important;
+
+  // 2. Comportamiento del fondo (el "track")
+  background-color: #{$secondary} !important; // Apagado
+  border-color: #{$secondary} !important;
+
+  &:checked {
+    background-color: $secondary !important; // Encendido (tu primario)
+    // Forzamos que la bola siga siendo blanca al estar encendido
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='%23ffffff'/></svg>") !important;
+    border-color: $secondary !important;
+  }
+
+  // 3. Eliminar el azul del FOCO y el ACTIVE
+  &:focus,
+  &:active {
+    border-color: $primary !important;
+    box-shadow: 0 0 0 0.25rem rgba(26, 26, 26, 0.25) !important; // Sombra de tu color
+    filter: none !important; // IMPORTANTE: Quitamos cualquier filtro previo
+    outline: 0 !important;
+  }
+
+  // 4. Específico para cuando mantienes presionado (Active)
+  &:active {
+    background-color: #333333 !important; // Un gris un poco más claro al presionar
+  }
+}
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #{rgba($primary, 0.25)};
+}
+
+.accordion-button {
+  &::after {
+    color: inherit;
+  }
+  &:not(.collapsed)::after,
+  &.collapsed::after {
+    filter: brightness(0) saturate(100%) invert(56%) sepia(6%) saturate(190%) hue-rotate(162deg) brightness(92%) contrast(85%);
+  }
+}
+
+[data-bs-theme='dark'] {
+  .accordion {
+    // Override active state in dark mode
+    //--bs-accordion-active-bg: #{color.adjust($primary, $lightness: -60%)}; // Very dark background
+    --bs-accordion-active-bg: var(--bs-tertiary-bg); // Very dark background
+    --bs-accordion-active-color: #{color.adjust($primary, $lightness: 40%)}; // Lightened text
+    --bs-accordion-btn-color: var(--bs-body-color);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #{rgba($secondary, 0.25)};
   }
 }
 
