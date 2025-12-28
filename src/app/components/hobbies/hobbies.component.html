@@ -1,14 +1,14 @@
-@if(resumeService.infoUser | async; as infoUser){
-<div class="hoobies">
-  <div class="card-hobbies card">
-    <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
-      <i class="bi bi-arrow-through-heart me-2"></i> {{ 'info.hobbies' | translate }}
-    </div>
-    <div class="card-body hobbies__body d-flex justify-content-between px-4">
-      @for(hobby of infoUser.hobbies; track $index){
-      <i class="bi {{ hobby }} fs-3 text-secondary"></i>
-      }
+@if (resumeService.infoUser | async; as infoUser) {
+  <div class="hoobies">
+    <div class="card-hobbies card">
+      <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
+        <i class="bi bi-arrow-through-heart me-2 text-info"></i> {{ 'info.hobbies' | translate }}
+      </div>
+      <div class="card-body hobbies__body d-flex justify-content-between px-4">
+        @for (hobby of infoUser.hobbies; track $index) {
+          <i class="bi {{ hobby }} fs-3 text-secondary"></i>
+        }
+      </div>
     </div>
   </div>
-</div>
 }

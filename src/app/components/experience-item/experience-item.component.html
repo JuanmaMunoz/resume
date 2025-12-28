@@ -1,20 +1,20 @@
 <div class="experience-item border-bottom ps-lg-2 pb-3 mb-3" [id]="experience.company">
   <div class="d-flex flex-row align-items-center">
-    <h2 id="simple-list-item-1" class="text-primary-emphasis">{{ experience.company }}</h2>
+    <h2 id="simple-list-item-1" class="text-info">{{ experience.company }}</h2>
     <span class="ms-3 experience-item__date text-secondary d-lg-none">{{ experience.startDate }} - {{ experience.endDate }}</span>
   </div>
   <p class="text-secondary">{{ experience.description }}</p>
   <h5 class="text-secondary mb-3">{{ 'experience.proyects' | translate }}:</h5>
-  @for(proyect of experience.proyects; track $index){
-  <div>
-    <h5 class="text-primary-emphasis fw-bold">{{ proyect.name }}</h5>
-    <p class="text-secondary">{{ proyect.description }}</p>
-    <h6 class="text-secondary mb-3">{{ 'experience.technologies' | translate }}:</h6>
-    <div class="d-flex flex-row flex-wrap">
-      @for(tecnology of proyect.technologies; track $index){
-      <span class="badge text-bg-secondary me-3 mb-3 fs-6">{{ tecnology }}</span>
-      }
+  @for (proyect of experience.proyects; track $index) {
+    <div>
+      <h5 class="text-primary-emphasis fw-bold">{{ proyect.name }}</h5>
+      <p class="text-secondary">{{ proyect.description }}</p>
+      <h6 class="text-secondary mb-3">{{ 'experience.technologies' | translate }}:</h6>
+      <div class="d-flex flex-row flex-wrap">
+        @for (tecnology of proyect.technologies; track $index) {
+          <span class="badge text-bg-secondary text-light me-3 mb-3 fs-6">{{ tecnology }}</span>
+        }
+      </div>
     </div>
-  </div>
   }
 </div>

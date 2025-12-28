@@ -6,9 +6,9 @@
           <div class="card-header d-flex flex-row bg-body text-primary-emphasis fs-5 fw-bold">
             <div class="w-100">
               @if (typeSkill === enumTypeSkill.TECHNICAL) {
-                <i class="bi bi-gear me-2"></i> {{ 'skills.techSkills' | translate }}
+                <i class="bi bi-gear me-2 text-info"></i> {{ 'skills.techSkills' | translate }}
               } @else {
-                <i class="bi bi-briefcase me-2"></i> {{ 'skills.bussSkills' | translate }}
+                <i class="bi bi-briefcase me-2 text-info"></i> {{ 'skills.bussSkills' | translate }}
               }
             </div>
             <div class="flex-shrink-1 text-secondary skills-lg__btn">
@@ -37,7 +37,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
-            <i class="bi bi-translate me-2"></i> {{ 'skills.languages' | translate }}
+            <i class="bi bi-translate me-2 text-info"></i> {{ 'skills.languages' | translate }}
           </div>
           <div class="card-body">
             @for (item of infoUser.languages; track $index) {
@@ -50,7 +50,7 @@
     <div class="col-md-7">
       <div class="card">
         <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
-          <i class="bi bi-rocket-takeoff me-2"></i> {{ 'skills.growthProfesional' | translate }}
+          <i class="bi bi-rocket-takeoff me-2 text-info"></i> {{ 'skills.growthProfesional' | translate }}
         </div>
         <div class="card-body">
           <app-profesional-growth [idChart]="'charLg'"></app-profesional-growth>
