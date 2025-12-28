@@ -4,12 +4,12 @@ import { IMenuButton } from 'src/app/models/interfaces';
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
-    selector: 'app-menu',
-    templateUrl: './menu.component.html',
-    styleUrls: ['./menu.component.scss'],
-    standalone: false
+  selector: 'app-left-side',
+  templateUrl: './left-side.component.html',
+  styleUrls: ['./left-side.component.scss'],
+  standalone: false,
 })
-export class MenuComponent implements OnInit {
+export class LeftSideComponent implements OnInit {
   public menu!: Observable<IMenuButton[]>;
 
   constructor(public resumeService: ResumeService) {}

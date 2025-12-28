@@ -1,20 +1,23 @@
 <div class="main container">
   <div class="row">
-    <div class="col">
-      <app-header></app-header>
+    <div class="col d-none d-xl-block">
+      <app-options [id]="'xl-device'" />
     </div>
   </div>
 
-  <div class="row mt-2 border border rounded-5 p-2">
+  <div class="mt-2 border border rounded-5 p-2">
     <div class="row m-0 p-0">
       <div class="col-3 d-none d-xl-block">
-        <app-menu> </app-menu>
+        <app-left-side />
       </div>
-      <div class="main__body col bg-body-secondary rounded-5 p-2 p-xl-4">
-        <app-navbar></app-navbar>
-        <div #menu class="d-xl-none main__menu-sm">
-          <app-menu-sm [show]="showMenu"></app-menu-sm>
+      <div class="col bg-body-secondary rounded-5 p-2 p-xl-4">
+        <div class="d-xl-none">
+          <app-navbar [show]="showMenu" />
         </div>
+
+        <!--<div #menu class="d-xl-none">
+          <app-menu-sm [show]="showMenu"></app-menu-sm>
+        </div>-->
         <div #content>
           <router-outlet></router-outlet>
         </div>

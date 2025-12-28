@@ -1,16 +1,30 @@
-@if(resumeService.infoUser | async; as info){
-  @if (resumeService.infoUser | async; as info) {
-    <nav class="navbar rounded-4 mb-2 p-0 d-xl-none">
-      <div class="container-fluid">
-        <button class="navbar-btn btn btn-secondary"><i class="bi bi-list"></i></button>
-        <div class="d-flex flex-row align-items-center">
-          <h1 class="navbar__title text-primary-emphasis me-2 mb-0">CV/</h1>
-          <div class="d-flex flex-column navbar__text">
-            <p class="mb-0 text-primary-emphasis">{{ info.name }}</p>
-            <p class="mb-0 text-secondary">{{ info.email }}</p>
-          </div>
+@if (resumeService.infoUser | async; as info) {
+  <nav class="navbar rounded-4 mb-2 p-0 d-xl-none">
+    <div class="container-fluid">
+      <button class="navbar-btn btn btn-secondary"><i class="bi bi-list"></i></button>
+      <div class="d-flex flex-row align-items-center">
+        <h1 class="navbar__title text-primary-emphasis me-2 mb-0">CV/</h1>
+        <div class="d-flex flex-column navbar__text">
+          <p class="mb-0 text-primary-emphasis">{{ info.name }}</p>
+          <p class="mb-0 text-secondary">{{ info.email }}</p>
         </div>
       </div>
-    </nav>
-  }
+    </div>
+    @if (show) {
+      <div class="navbar__menu border bg-body rounded-5" [class]="show ? 'menu-sm--open' : 'menu-sm--close'">
+        <div class="row">
+          <div class="col-12 menu__buttons py-3">
+            @for (button of menu | async; track $index) {
+              <div class="d-flex flex-column mx-3">
+                <app-menu-button [menuButton]="button"></app-menu-button>
+              </div>
+            }
+          </div>
+        </div>
+        <div class="col-12 ms-4 mb-3">
+          <app-options [id]="'small-device'" />
+        </div>
+      </div>
+    }
+  </nav>
 }
