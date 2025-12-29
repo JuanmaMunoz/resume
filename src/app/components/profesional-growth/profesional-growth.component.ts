@@ -17,17 +17,7 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
   public chart: any = null;
   private subscription = new Subscription();
   private chartData!: ICharData;
-  private charColors = [
-    { backgroundColor: 'rgba(13, 110, 253, 0.3)', borderColor: 'rgba(13, 110, 253, 1)' },
-    {
-      backgroundColor: 'rgba(88, 21, 28, 0.3)',
-      borderColor: 'rgba(88, 21, 28, 1)',
-    },
-    {
-      backgroundColor: 'rgba(110, 168, 254, 0.3)',
-      borderColor: 'rgba(110, 168, 254, 1)',
-    },
-  ];
+  private chartColors: string[] = ['#0094b3', '#ffc008', '#0da673'];
   constructor(
     private translate: TranslateService,
     private resumeService: ResumeService,
@@ -58,14 +48,13 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
   private setCharData(professionalGrowth: IProfessionalGrowth): void {
     this.chartData = { ...this.chartData, labels: professionalGrowth.names, datasets: [] };
     professionalGrowth.growth.forEach((e: IGrowth, index) => {
-      const dataset: IDataset = {
+      const dataset = {
         label: e.year.toString(),
         data: e.values,
-        backgroundColor: this.charColors[index].backgroundColor,
-        borderColor: this.charColors[index].borderColor,
-        borderWidth: 1,
+        backgroundColor: this.chartColors[index],
+        borderColor: this.chartColors[index],
       };
-      this.chartData.datasets.push(dataset);
+      this.chartData.datasets.push(dataset as IDataset);
     });
   }
 
@@ -77,26 +66,31 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
       type: 'line',
       data: this.chartData,
       options: {
-        layout: {
-          padding: 0, // Elimina el padding externo de la gráfica
+        plugins: {
+          legend: {
+            display: true,
+          },
         },
         scales: {
-          r: {
+          x: {
             grid: {
-              color: '#666',
-              lineWidth: 0.3,
+              color: 'rgb(62, 62, 66)',
             },
-            ticks: {
-              color: '#666',
-              backdropColor: 'transparent',
+          },
+          y: {
+            grid: {
+              color: 'rgb(62, 62, 66)',
             },
           },
         },
-        plugins: {
-          title: {
-            font: {
-              size: 30,
-            },
+        elements: {
+          line: {
+            borderColor: 'rgb(173, 181, 189)',
+            borderWidth: 2,
+          },
+          point: {
+            backgroundColor: 'rgb(173, 181, 189)',
+            radius: 4,
           },
         },
       },

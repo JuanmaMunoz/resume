@@ -1,59 +1,63 @@
 @if (resumeService.infoUser | async; as infoUser) {
-  <div class="skills-lg row">
-    <div class="col-md-4">
-      <div class="col-12 mb-3">
+  <div class="skills-lg">
+    <div class="row">
+      <div class="col-md-4">
         <div class="card">
           <div class="card-header d-flex flex-row bg-body text-primary-emphasis fs-5 fw-bold">
-            <div class="w-100">
-              @if (typeSkill === enumTypeSkill.TECHNICAL) {
-                <i class="bi bi-gear me-2 text-info"></i> {{ 'skills.techSkills' | translate }}
-              } @else {
-                <i class="bi bi-briefcase me-2 text-info"></i> {{ 'skills.bussSkills' | translate }}
-              }
-            </div>
-            <div class="flex-shrink-1 text-secondary skills-lg__btn">
-              @if (typeSkill === enumTypeSkill.BUSINESS) {
-                <i (click)="changeTypeSkills(enumTypeSkill.TECHNICAL)" class="bi bi-gear"></i>
-              } @else {
-                <i (click)="changeTypeSkills(enumTypeSkill.BUSINESS)" class="bi bi-briefcase"></i>
-              }
-            </div>
+            <div class="w-100"><i class="bi bi-gear me-2 text-info"></i> {{ 'skills.techSkills' | translate }}</div>
+            <div class="flex-shrink-1 text-secondary skills-lg__btn"></div>
           </div>
           <div class="card-body pe-2">
             <div class="skills-lg__card pe-3">
-              @if (typeSkill === enumTypeSkill.TECHNICAL) {
-                @for (item of infoUser.skills; track $index) {
-                  <app-skill-item [skill]="item"></app-skill-item>
-                }
-              } @else {
-                @for (item of infoUser.businessSkills; track $index) {
-                  <app-skill-item [skill]="item"></app-skill-item>
-                }
+              @for (item of infoUser.skills; track $index) {
+                <app-skill-item [skill]="item"></app-skill-item>
               }
             </div>
           </div>
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
+            <i class="bi bi-rocket-takeoff me-2 text-info"></i> {{ 'skills.growthProfesional' | translate }}
+          </div>
+          <div class="card-body">
+            <div class="skills-lg__card">
+              <app-profesional-growth [idChart]="'charLg'"></app-profesional-growth>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-4">
         <div class="card">
           <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
             <i class="bi bi-translate me-2 text-info"></i> {{ 'skills.languages' | translate }}
           </div>
           <div class="card-body">
-            @for (item of infoUser.languages; track $index) {
-              <app-skill-item [skill]="item"></app-skill-item>
-            }
+            <div class="skills-lg__card skills-lg__card--small">
+              @for (item of infoUser.languages; track $index) {
+                <app-skill-item [skill]="item"></app-skill-item>
+              }
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-8">
-      <div class="card">
-        <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
-          <i class="bi bi-rocket-takeoff me-2 text-info"></i> {{ 'skills.growthProfesional' | translate }}
-        </div>
-        <div class="card-body">
-          <app-profesional-growth [idChart]="'charLg'"></app-profesional-growth>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
+            <i class="bi bi-briefcase me-2 text-info"></i> {{ 'skills.bussSkills' | translate }}
+          </div>
+          <div class="card-body pe-2">
+            <div class="skills-lg__card skills-lg__card--small">
+              <div class="row pe-3">
+                @for (item of infoUser.businessSkills; track $index) {
+                  <div class="col-6"><app-skill-item [skill]="item"></app-skill-item></div>
+                }
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

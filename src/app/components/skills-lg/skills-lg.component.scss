@@ -9,5 +9,8 @@
     height: 18.4rem;
     overflow-x: hidden;
     overflow-y: auto;
+    &--small {
+      height: 5rem;
+    }
   }
 }

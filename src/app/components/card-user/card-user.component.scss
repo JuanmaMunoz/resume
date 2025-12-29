@@ -1,3 +1,8 @@
+.card-user {
+  &__body {
+    min-height: 14.2rem;
+  }
+}
 .img-fluid {
   animation: photo;
   animation-duration: 1s;
