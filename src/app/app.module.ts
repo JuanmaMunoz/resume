@@ -33,6 +33,7 @@ import { UserDataComponent } from './components/user-data/user-data.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { InfoComponent } from './pages/info/info.component';
 import { SkillsComponent } from './pages/skills/skills.component';
+import { ShineDirective } from './utils/shineDirective';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
@@ -73,6 +74,7 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
+    ShineDirective,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

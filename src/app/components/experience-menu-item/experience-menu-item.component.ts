@@ -1,12 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { IExperience } from 'src/app/models/interfaces';
+import { showAnimation } from 'src/app/utils/animations';
 import { environmment } from '../../../environments/environment';
 
 @Component({
-    selector: 'app-experience-menu-item',
-    templateUrl: './experience-menu-item.component.html',
-    styleUrls: ['./experience-menu-item.component.scss'],
-    standalone: false
+  selector: 'app-experience-menu-item',
+  templateUrl: './experience-menu-item.component.html',
+  styleUrls: ['./experience-menu-item.component.scss'],
+  animations: [showAnimation()],
+  standalone: false,
 })
 export class ExperienceMenuItemComponent {
   @Input() experience!: IExperience;
