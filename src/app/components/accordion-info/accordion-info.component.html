@@ -24,11 +24,19 @@
       >
         <div class="accordion-body pe-2">
           @if (item.type === typeItem.CAREER) {
-            <app-career-item></app-career-item>
+            <div class="accordion__info text-secondary pe-lg-3" [innerHTML]="(resumeService.infoUser | async)?.positionDescription"></div>
           } @else if (item.type === typeItem.DEGREES) {
-            <app-degrees-item></app-degrees-item>
+            <div class="accordion__info">
+              @for (degree of (resumeService.infoUser | async)?.degrees; track $index) {
+                <app-info-item [degree]="degree"></app-info-item>
+              }
+            </div>
           } @else {
-            <app-courses-item></app-courses-item>
+            <div class="accordion__info">
+              @for (degree of (resumeService.infoUser | async)?.courses; track $index) {
+                <app-info-item [degree]="degree"></app-info-item>
+              }
+            </div>
           }
         </div>
       </div>

@@ -1,0 +1,14 @@
+.accordion {
+  &__info {
+    text-align: justify;
+  }
+}
+@media (min-width: 992.1px) {
+  .accordion {
+    &__info {
+      max-height: 13.4rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+}

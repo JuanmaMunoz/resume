@@ -1,0 +1,11 @@
+@if (resumeService.infoUser | async; as infoUser) {
+  <div class="user-data text-center">
+    <p class="text-primary-emphasis mb-0">
+      {{ infoUser.name }}
+      <a href="https://www.linkedin.com/in/juan-manuel-mu%C3%B1oz-gonz%C3%A1lez/" target="_blank"
+        ><i class="bi bi-linkedin text-info ms-1"></i
+      ></a>
+    </p>
+    <p class="text-secondary mb-3">{{ infoUser.email }}</p>
+  </div>
+}

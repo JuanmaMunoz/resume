@@ -6,10 +6,10 @@ import { ICharData, IDataset, IGrowth, IInfoUser, IProfessionalGrowth } from 'sr
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
-    selector: 'app-profesional-growth',
-    templateUrl: './profesional-growth.component.html',
-    styleUrls: ['./profesional-growth.component.scss'],
-    standalone: false
+  selector: 'app-profesional-growth',
+  templateUrl: './profesional-growth.component.html',
+  styleUrls: ['./profesional-growth.component.scss'],
+  standalone: false,
 })
 export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewInit {
   @Input() idChart: string = '';
@@ -28,7 +28,10 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
       borderColor: 'rgba(110, 168, 254, 1)',
     },
   ];
-  constructor(private translate: TranslateService, private resumeService: ResumeService) {}
+  constructor(
+    private translate: TranslateService,
+    private resumeService: ResumeService,
+  ) {}
 
   ngOnInit(): void {
     this.subscription.add(
@@ -37,7 +40,7 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
           this.setCharData(info.professionalGrowth);
           this.createChart();
         }
-      })
+      }),
     );
   }
 
@@ -71,7 +74,7 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
     const ctx = document.getElementById(this.idChart);
 
     this.chart = new Chart(ctx as any, {
-      type: 'radar',
+      type: 'line',
       data: this.chartData,
       options: {
         layout: {
@@ -83,19 +86,9 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
               color: '#666',
               lineWidth: 0.3,
             },
-            angleLines: {
-              color: '#666',
-              lineWidth: 0.3,
-            },
             ticks: {
               color: '#666',
               backdropColor: 'transparent',
-            },
-            pointLabels: {
-              font: {
-                size: 11.5,
-                weight: 'bold',
-              },
             },
           },
         },

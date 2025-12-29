@@ -12,13 +12,9 @@ import { AccordionInfoComponent } from './components/accordion-info/accordion-in
 import { CardUserComponent } from './components/card-user/card-user.component';
 import { ExperienceItemComponent } from './components/experience-item/experience-item.component';
 import { ExperienceMenuItemComponent } from './components/experience-menu-item/experience-menu-item.component';
-import { InfoItemComponent } from './components/info-item/info-item.component';
-import { OptionsComponent } from './components/options/options.component';
-
-import { CareerItemComponent } from './components/career-item/career-item.component';
-import { CoursesItemComponent } from './components/courses-item/courses-item.component';
-import { DegreesItemComponent } from './components/degrees-item/degrees-item.component';
+import { FullRemoteComponent } from './components/full-remote/full-remote.component';
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
+import { InfoItemComponent } from './components/info-item/info-item.component';
 import { InfoLgComponent } from './components/info-lg/info-lg.component';
 import { InfoSmComponent } from './components/info-sm/info-sm.component';
 import { LanguageComponent } from './components/language/language.component';
@@ -26,12 +22,14 @@ import { LeftSideComponent } from './components/left-side/left-side.component';
 import { MenuButtonComponent } from './components/menu-button/menu-button.component';
 import { ModeDarkComponent } from './components/mode-dark/mode-dark.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { OptionsComponent } from './components/options/options.component';
 import { PhotoComponent } from './components/photo/photo.component';
 import { ProfesionalGrowthComponent } from './components/profesional-growth/profesional-growth.component';
 import { SkillItemComponent } from './components/skill-item/skill-item.component';
 import { SkillsLgComponent } from './components/skills-lg/skills-lg.component';
 import { SkillsSmComponent } from './components/skills-sm/skills-sm.component';
 import { TitleComponent } from './components/title/title.component';
+import { UserDataComponent } from './components/user-data/user-data.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { InfoComponent } from './pages/info/info.component';
 import { SkillsComponent } from './pages/skills/skills.component';
@@ -48,9 +46,6 @@ export function createTranslateLoader(http: HttpClient) {
     ExperienceComponent,
     CardUserComponent,
     AccordionInfoComponent,
-    DegreesItemComponent,
-    CoursesItemComponent,
-    CareerItemComponent,
     ExperienceItemComponent,
     InfoItemComponent,
     InfoComponent,
@@ -69,6 +64,8 @@ export function createTranslateLoader(http: HttpClient) {
     SkillsLgComponent,
     OptionsComponent,
     LeftSideComponent,
+    UserDataComponent,
+    FullRemoteComponent,
   ],
   bootstrap: [AppComponent],
   imports: [

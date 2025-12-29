@@ -1,9 +1,9 @@
 @if (resumeService.infoUser | async; as info) {
   <nav class="navbar rounded-4 mb-2 p-0 d-xl-none">
     <div class="container-fluid">
-      <button class="navbar-btn btn btn-secondary"><i class="bi bi-list"></i></button>
+      <button class="navbar-btn btn btn-secondary"><i class="bi bi-list text-light"></i></button>
       <div class="d-flex flex-row align-items-center">
-        <h1 class="navbar__title text-primary-emphasis me-2 mb-0">CV/</h1>
+        <h1 class="navbar__title text-info me-2 mb-0">CV/</h1>
         <div class="d-flex flex-column navbar__text">
           <p class="mb-0 text-primary-emphasis">{{ info.name }}</p>
           <p class="mb-0 text-secondary">{{ info.email }}</p>
