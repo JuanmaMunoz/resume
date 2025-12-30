@@ -1,16 +1,16 @@
-<div class="left-sice">
+<div class="left-side">
   <div class="row">
     <div class="col-12 menu__container px-4 pt-4 pb-3">
       @if (this.resumeService.currentUrl !== '/info') {
-        <app-photo></app-photo>
+        <app-photo />
       } @else {
-        <app-title></app-title>
+        <app-title />
       }
     </div>
     <div class="col-12 menu__buttons ps-0">
       @for (button of menu | async; track $index) {
         <div class="d-flex flex-column">
-          <app-menu-button [menuButton]="button"></app-menu-button>
+          <app-menu-button [menuButton]="button" />
         </div>
       }
     </div>

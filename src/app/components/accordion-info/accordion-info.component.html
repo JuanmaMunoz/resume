@@ -28,13 +28,13 @@
           } @else if (item.type === typeItem.DEGREES) {
             <div class="accordion__info">
               @for (degree of (resumeService.infoUser | async)?.degrees; track $index) {
-                <app-info-item [degree]="degree"></app-info-item>
+                <app-info-item [degree]="degree" />
               }
             </div>
           } @else {
             <div class="accordion__info">
               @for (degree of (resumeService.infoUser | async)?.courses; track $index) {
-                <app-info-item [degree]="degree"></app-info-item>
+                <app-info-item [degree]="degree" />
               }
             </div>
           }

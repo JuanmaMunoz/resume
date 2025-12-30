@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import Chart from 'chart.js/auto';
 import { Subscription } from 'rxjs';
 import { ICharData, IDataset, IGrowth, IInfoUser, IProfessionalGrowth } from 'src/app/models/interfaces';
@@ -18,16 +17,13 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
   private subscription = new Subscription();
   private chartData!: ICharData;
   private chartColors: string[] = ['#0094b3', '#ffc008', '#0da673'];
-  constructor(
-    private translate: TranslateService,
-    private resumeService: ResumeService,
-  ) {}
+  constructor(private resumeService: ResumeService) {}
 
   ngOnInit(): void {
     this.subscription.add(
-      this.resumeService.infoUser.subscribe((info: IInfoUser) => {
-        if (info.professionalGrowth && this.canvas) {
-          this.setCharData(info.professionalGrowth);
+      this.resumeService.infoUser.subscribe((info: IInfoUser | null) => {
+        if (info?.professionalGrowth && this.canvas) {
+          this.setCharData(info?.professionalGrowth);
           this.createChart();
         }
       }),
@@ -35,8 +31,8 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
   }
 
   ngAfterViewInit(): void {
-    if (this.resumeService.infoUser.getValue().professionalGrowth) {
-      this.setCharData(this.resumeService.infoUser.getValue().professionalGrowth!);
+    if (this.resumeService.infoUser.getValue()?.professionalGrowth) {
+      this.setCharData(this.resumeService.infoUser.getValue()?.professionalGrowth!);
       this.createChart();
     }
   }

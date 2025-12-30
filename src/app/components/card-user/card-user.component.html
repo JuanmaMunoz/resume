@@ -4,9 +4,10 @@
       <i class="bi bi-person-bounding-box me-2 text-info"></i> {{ 'info.personalInfo' | translate }}
     </div>
     <img [@show] src="assets/images/photo.jpg" alt="Front End Architect" class="img-fluid" />
-    <div class="card-body card-user__body">
+    <div class="card-body card-user__body pt-4">
       <app-user-data />
-      <div class="mt-5"><app-full-remote /></div>
+      <app-other-data />
+      <div class="mt-4"><app-full-remote /></div>
     </div>
   </div>
 }

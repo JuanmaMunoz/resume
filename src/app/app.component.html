@@ -12,14 +12,10 @@
       </div>
       <div class="col col-xl-9 bg-body-secondary rounded-5 p-2 p-xl-4">
         <div class="d-xl-none">
-          <app-navbar [show]="showMenu" />
+          <app-navbar #navbar />
         </div>
-
-        <!--<div #menu class="d-xl-none">
-          <app-menu-sm [show]="showMenu"></app-menu-sm>
-        </div>-->
-        <div #content>
-          <router-outlet></router-outlet>
+        <div>
+          <router-outlet />
         </div>
       </div>
     </div>

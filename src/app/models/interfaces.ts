@@ -30,7 +30,7 @@ export interface IExperience {
 
 export interface IInfoUser {
   name: string;
-  age: number;
+  date: string;
   city: string;
   email: string;
   position: string;

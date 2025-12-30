@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-title',
-    templateUrl: './title.component.html',
-    styleUrls: ['./title.component.scss'],
-    standalone: false
+  selector: 'app-title',
+  templateUrl: './title.component.html',
+  styleUrls: ['./title.component.scss'],
+  standalone: false,
 })
-export class TitleComponent {
-
-}
+export class TitleComponent {}

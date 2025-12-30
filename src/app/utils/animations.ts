@@ -1,4 +1,4 @@
-import { animate, AnimationMetadata, AnimationTriggerMetadata, style, transition, trigger } from '@angular/animations';
+import { animate, AnimationMetadata, AnimationTriggerMetadata, state, style, transition, trigger } from '@angular/animations';
 
 export const showAnimation = (duration: number = 1000): AnimationTriggerMetadata => {
   const definitions: AnimationMetadata[] = [
@@ -18,7 +18,7 @@ export const entranceAnimation = (duration: number = 500): AnimationTriggerMetad
         'box-shadow': '0 0 0.1rem 0.1rem var(--bs-info)',
         filter: 'blur(10px)',
         transform: 'scale(0.8)',
-        opacity: 0, // Añadido para un efecto más suave
+        opacity: 0,
       }),
       animate(
         `${duration}ms cubic-bezier(0.4, 0, 0.2, 1)`,
@@ -34,3 +34,25 @@ export const entranceAnimation = (duration: number = 500): AnimationTriggerMetad
 
   return trigger('entrance', definitions);
 };
+
+export const showAndSlide = (duration: number = 500): AnimationTriggerMetadata =>
+  trigger('show', [
+    state(
+      'hidden',
+      style({
+        opacity: 0,
+        transform: 'translateX(-20px)',
+        pointerEvents: 'none',
+      }),
+    ),
+    state(
+      'visible',
+      style({
+        opacity: 1,
+        transform: 'translateX(0)',
+        pointerEvents: 'auto',
+      }),
+    ),
+    transition('hidden => visible', animate(`${duration}ms ease-out`)),
+    transition('visible => hidden', animate(`${duration}ms ease-in`)),
+  ]);

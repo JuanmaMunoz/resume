@@ -9,13 +9,7 @@ import { IInfoUser, IMenuButton } from '../models/interfaces';
   providedIn: 'root',
 })
 export class ResumeService {
-  public infoUser: BehaviorSubject<IInfoUser> = new BehaviorSubject({
-    name: 'Juan Manuel Muñoz González',
-    age: 40,
-    city: 'Torre del Mar (Málaga)',
-    email: 'jmmugoz@gmail.com',
-    position: 'Front End Architect',
-  });
+  public infoUser: BehaviorSubject<IInfoUser | null> = new BehaviorSubject<IInfoUser | null>(null);
   public modeDark: BehaviorSubject<ModeDark> = new BehaviorSubject(ModeDark.LIGHT as ModeDark);
   public currentUrl: string = '/info';
   constructor(private http: HttpClient) {}

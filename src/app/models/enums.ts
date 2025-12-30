@@ -18,3 +18,8 @@ export enum ModeDark {
   DARK = 'dark',
   LIGHT = 'light',
 }
+
+export enum Float {
+  END = 'float-end',
+  START = 'float-start',
+}

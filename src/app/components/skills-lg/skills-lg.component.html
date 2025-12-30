@@ -10,7 +10,7 @@
           <div class="card-body pe-2">
             <div class="skills-lg__card pe-3">
               @for (item of infoUser.skills; track $index) {
-                <app-skill-item [skill]="item"></app-skill-item>
+                <app-skill-item [skill]="item" />
               }
             </div>
           </div>
@@ -19,11 +19,11 @@
       <div class="col-md-8">
         <div class="card">
           <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
-            <i class="bi bi-rocket-takeoff me-2 text-info"></i> {{ 'skills.growthProfesional' | translate }}
+            <i class="bi bi bi-graph-up me-2 text-info"></i> {{ 'skills.growthProfesional' | translate }}
           </div>
           <div class="card-body">
             <div class="skills-lg__card">
-              <app-profesional-growth [idChart]="'charLg'"></app-profesional-growth>
+              <app-profesional-growth [idChart]="'charLg'" />
             </div>
           </div>
         </div>

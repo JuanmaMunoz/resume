@@ -23,6 +23,7 @@ import { MenuButtonComponent } from './components/menu-button/menu-button.compon
 import { ModeDarkComponent } from './components/mode-dark/mode-dark.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { OptionsComponent } from './components/options/options.component';
+import { OtherDataComponent } from './components/other-data/other-data.component';
 import { PhotoComponent } from './components/photo/photo.component';
 import { ProfesionalGrowthComponent } from './components/profesional-growth/profesional-growth.component';
 import { SkillItemComponent } from './components/skill-item/skill-item.component';
@@ -67,6 +68,7 @@ export function createTranslateLoader(http: HttpClient) {
     LeftSideComponent,
     UserDataComponent,
     FullRemoteComponent,
+    OtherDataComponent,
   ],
   bootstrap: [AppComponent],
   imports: [
