@@ -2,6 +2,7 @@
   color: var(--bs-secondary);
   cursor: pointer;
   padding: 0.5rem 0 0.5rem 4.5rem;
+  user-select: none;
   &--active {
     background-color: var(--bs-secondary-bg);
     border-left: solid 0.3rem var(--bs-info);

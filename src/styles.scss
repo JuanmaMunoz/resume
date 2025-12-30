@@ -31,7 +31,6 @@ $my-theme-colors: (
 :root,
 [data-bs-theme='light'] {
   @each $name, $value in $my-theme-colors {
-    // In light mode, the emphasis is usually a slightly darker version of the color.
     --bs-#{$name}-text-emphasis: #{color.adjust($value, $lightness: -10%)};
     --bs-#{$name}-bg-subtle: #{color.adjust($value, $lightness: 85%)};
     --bs-#{$name}-border-subtle: #{color.adjust($value, $lightness: 70%)};
@@ -40,9 +39,8 @@ $my-theme-colors: (
 
 [data-bs-theme='dark'] {
   @each $name, $value in $my-theme-colors {
-    // In dark mode, the emphasis should be a lighter version of the color
-    --bs-#{$name}-text-emphasis: #{color.adjust($value, $lightness: 40%)}; // Brightens the text
-    --bs-#{$name}-bg-subtle: #{color.adjust($value, $lightness: -70%)}; // Very dark background
+    --bs-#{$name}-text-emphasis: #{color.adjust($value, $lightness: 40%)};
+    --bs-#{$name}-bg-subtle: #{color.adjust($value, $lightness: -70%)};
     --bs-#{$name}-border-subtle: #{color.adjust($value, $lightness: -50%)};
   }
 }
@@ -53,7 +51,7 @@ $my-theme-colors: (
   }
   &:not(.collapsed)::after,
   &.collapsed::after {
-    filter: brightness(0) saturate(100%) invert(56%) sepia(6%) saturate(190%) hue-rotate(162deg) brightness(92%) contrast(85%);
+    filter: brightness(0) saturate(100%) invert(37%) sepia(77%) saturate(2100%) hue-rotate(172deg) brightness(95%) contrast(95%);
   }
 }
 
@@ -74,19 +72,19 @@ $my-theme-colors: (
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--bs-light);
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ccc;
+  background: rgba(0, 148, 179, 0.5);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b3b2b2;
+  background: var(--bs-info);
 }
 
 .card {
