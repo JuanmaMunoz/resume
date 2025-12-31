@@ -32,9 +32,9 @@
               }
             </div>
           } @else {
-            <div class="accordion__info">
-              @for (degree of resumeService.infoUser()?.courses; track $index) {
-                <app-info-item [degree]="degree" />
+            <div class="accordion__info pe-lg-3">
+              @for (goal of resumeService.infoUser()?.goals; track $index) {
+                <app-goal-item [goal]="goal" />
               }
             </div>
           }

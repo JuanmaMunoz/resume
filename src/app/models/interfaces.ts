@@ -28,6 +28,12 @@ export interface IExperience {
   proyects: IProject[];
 }
 
+export interface IGoal {
+  name: string;
+  description: string;
+  date: string;
+}
+
 export interface IInfoUser {
   name: string;
   date: string;
@@ -35,14 +41,14 @@ export interface IInfoUser {
   email: string;
   position: string;
   positionDescription?: string;
-  skills?: ISkill[];
-  hobbies?: string[];
-  businessSkills?: ISkill[];
-  languages?: ISkill[];
-  professionalGrowth?: IProfessionalGrowth;
-  degrees?: IDegree[];
-  courses?: IDegree[];
-  experience?: IExperience[];
+  skills: ISkill[];
+  hobbies: string[];
+  businessSkills: ISkill[];
+  languages: ISkill[];
+  professionalGrowth: IProfessionalGrowth;
+  degrees: IDegree[];
+  goals: IGoal[];
+  experience: IExperience[];
 }
 
 export interface IMenuButton {

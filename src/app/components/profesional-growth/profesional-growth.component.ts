@@ -13,7 +13,7 @@ export class ProfesionalGrowthComponent implements AfterViewInit {
   @ViewChild('canvas') canvas!: HTMLCanvasElement;
   public chart: any = null;
   private chartData!: ICharData;
-  private chartColors: string[] = ['#0094b3', '#ffc008', '#0da673'];
+  private chartColors: string[] = ['#ff4c4c', '#ffc008', '#0094b3', '#0da673'];
   constructor(private resumeService: ResumeService) {
     effect(() => {
       if (this.resumeService.infoUser() && this.canvas) {

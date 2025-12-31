@@ -11,26 +11,38 @@
             <app-skill-item [skill]="item" />
           }
         </div>
-        <div class="col-12 mb-3 pb-4 border-bottom">
-          <h5 class="mb-3 fw-bold mb-4 text-secondary"><i class="bi bi-briefcase text-info"></i> {{ 'skills.business' | translate }}:</h5>
-          @for (item of infoUser.businessSkills; track $index) {
-            <app-skill-item [skill]="item" />
-          }
-        </div>
-        <div class="col-12 mb-3 pb-4 border-bottom">
-          <h5 class="mb-3 fw-bold mb-4 text-secondary">
-            <i class="bi bi bi-translate text-info"></i> {{ 'skills.languages' | translate }}:
-          </h5>
-          @for (item of infoUser.languages; track $index) {
-            <app-skill-item [skill]="item" />
-          }
-        </div>
-        <div class="col-12 mb-3 pb-4 border-bottom">
-          <h5 class="mb-3 fw-bold mb-4 text-secondary">
-            <i class="bi bi bi-graph-up text-info"></i> {{ 'skills.growthProfesional' | translate }}:
-          </h5>
-          <app-profesional-growth [idChart]="'chartSm'" />
-        </div>
+        @defer (on viewport) {
+          <div class="col-12 mb-3 pb-4 border-bottom">
+            <h5 class="mb-3 fw-bold mb-4 text-secondary"><i class="bi bi-briefcase text-info"></i> {{ 'skills.business' | translate }}:</h5>
+            @for (item of infoUser.businessSkills; track $index) {
+              <app-skill-item [skill]="item" />
+            }
+          </div>
+        } @placeholder {
+          <app-spinner />
+        }
+        @defer (on viewport) {
+          <div class="col-12 mb-3 pb-4 border-bottom">
+            <h5 class="mb-3 fw-bold mb-4 text-secondary">
+              <i class="bi bi bi-translate text-info"></i> {{ 'skills.languages' | translate }}:
+            </h5>
+            @for (item of infoUser.languages; track $index) {
+              <app-skill-item [skill]="item" />
+            }
+          </div>
+        } @placeholder {
+          <app-spinner />
+        }
+        @defer (on viewport) {
+          <div class="col-12 mb-3 pb-4 border-bottom">
+            <h5 class="mb-3 fw-bold mb-4 text-secondary">
+              <i class="bi bi bi-graph-up text-info"></i> {{ 'skills.growthProfesional' | translate }}:
+            </h5>
+            <app-profesional-growth [idChart]="'chartSm'" />
+          </div>
+        } @placeholder {
+          <app-spinner />
+        }
       </div>
     </div>
   </div>

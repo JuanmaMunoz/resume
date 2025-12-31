@@ -1,7 +1,7 @@
 export enum TypeAccordionItem {
   CAREER = 'career',
   DEGREES = 'degrees',
-  COURSES = 'courses',
+  GOALS = 'goals',
 }
 
 export enum TypeSkill {
