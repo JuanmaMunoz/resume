@@ -4,11 +4,10 @@ import { showAnimation } from 'src/app/utils/animations';
 import { environmment } from '../../../environments/environment';
 
 @Component({
-  selector: 'app-experience-menu-item',
-  templateUrl: './experience-menu-item.component.html',
-  styleUrls: ['./experience-menu-item.component.scss'],
-  animations: [showAnimation()],
-  standalone: false,
+    selector: 'app-experience-menu-item',
+    templateUrl: './experience-menu-item.component.html',
+    styleUrls: ['./experience-menu-item.component.scss'],
+    animations: [showAnimation()],
 })
 export class ExperienceMenuItemComponent {
   @Input() experience!: IExperience;

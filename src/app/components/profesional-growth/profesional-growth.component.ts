@@ -5,10 +5,9 @@ import { ICharData, IDataset, IGrowth, IInfoUser, IProfessionalGrowth } from 'sr
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
-  selector: 'app-profesional-growth',
-  templateUrl: './profesional-growth.component.html',
-  styleUrls: ['./profesional-growth.component.scss'],
-  standalone: false,
+    selector: 'app-profesional-growth',
+    templateUrl: './profesional-growth.component.html',
+    styleUrls: ['./profesional-growth.component.scss'],
 })
 export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewInit {
   @Input() idChart: string = '';

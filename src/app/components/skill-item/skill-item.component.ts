@@ -1,12 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Observable, interval, map, scan, takeWhile } from 'rxjs';
 import { ISkill } from 'src/app/models/interfaces';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
-  selector: 'app-skill-item',
-  templateUrl: './skill-item.component.html',
-  styleUrls: ['./skill-item.component.scss'],
-  standalone: false,
+    selector: 'app-skill-item',
+    templateUrl: './skill-item.component.html',
+    styleUrls: ['./skill-item.component.scss'],
+    imports: [AsyncPipe],
 })
 export class SkillItemComponent implements OnInit {
   @Input() skill!: ISkill;

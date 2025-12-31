@@ -1,13 +1,14 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { Language } from 'src/app/models/enums';
+import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-language',
     templateUrl: './language.component.html',
     styleUrls: ['./language.component.scss'],
-    standalone: false
+    imports: [FormsModule, TranslateModule]
 })
 export class LanguageComponent implements OnInit, OnDestroy {
   @Input() id: string = '';
