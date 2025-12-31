@@ -9,17 +9,17 @@
         <app-other-data />
       </div>
       <div class="col-12 mb-4 border-bottom pb-3">
-        <div class="info-sm__career text-secondary" [innerHTML]="(resumeService.infoUser | async)?.positionDescription"></div>
+        <div class="info-sm__career text-secondary" [innerHTML]="resumeService.infoUser()?.positionDescription"></div>
       </div>
       <div class="col-12 mb-4 border-bottom">
         <h4 class="text-secondary fw-bold"><i class="bi bi bi-mortarboard text-info"></i> {{ 'info.degrees' | translate }}:</h4>
-        @for (degree of (resumeService.infoUser | async)?.degrees; track $index) {
+        @for (degree of resumeService.infoUser()?.degrees; track $index) {
           <app-info-item [degree]="degree" />
         }
       </div>
       <div class="col-12 mb-4 border-bottom">
         <h4 class="text-secondary fw-bold"><i class="bi bi bi-award text-info"></i> {{ 'info.courses' | translate }}:</h4>
-        @for (degree of (resumeService.infoUser | async)?.courses; track $index) {
+        @for (degree of resumeService.infoUser()?.courses; track $index) {
           <app-info-item [degree]="degree" />
         }
       </div>

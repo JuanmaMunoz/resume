@@ -1,20 +1,15 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { TypeAccordionItem } from 'src/app/models/enums';
 import { IAccordionItem } from 'src/app/models/interfaces';
 import { ResumeService } from 'src/app/services/resume.service';
 import { InfoItemComponent } from '../info-item/info-item.component';
-import { AsyncPipe } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-accordion-info',
-    templateUrl: './accordion-info.component.html',
-    styleUrls: ['./accordion-info.component.scss'],
-    imports: [
-        InfoItemComponent,
-        AsyncPipe,
-        TranslateModule,
-    ],
+  selector: 'app-accordion-info',
+  templateUrl: './accordion-info.component.html',
+  styleUrls: ['./accordion-info.component.scss'],
+  imports: [InfoItemComponent, TranslateModule],
 })
 export class AccordionInfoComponent {
   public idAccordion = 'accordionInfo';

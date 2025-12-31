@@ -1,43 +1,33 @@
-import { AfterViewInit, Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, effect, Input, ViewChild } from '@angular/core';
 import Chart from 'chart.js/auto';
-import { Subscription } from 'rxjs';
-import { ICharData, IDataset, IGrowth, IInfoUser, IProfessionalGrowth } from 'src/app/models/interfaces';
+import { ICharData, IDataset, IGrowth, IProfessionalGrowth } from 'src/app/models/interfaces';
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
-    selector: 'app-profesional-growth',
-    templateUrl: './profesional-growth.component.html',
-    styleUrls: ['./profesional-growth.component.scss'],
+  selector: 'app-profesional-growth',
+  templateUrl: './profesional-growth.component.html',
+  styleUrls: ['./profesional-growth.component.scss'],
 })
-export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewInit {
+export class ProfesionalGrowthComponent implements AfterViewInit {
   @Input() idChart: string = '';
   @ViewChild('canvas') canvas!: HTMLCanvasElement;
   public chart: any = null;
-  private subscription = new Subscription();
   private chartData!: ICharData;
   private chartColors: string[] = ['#0094b3', '#ffc008', '#0da673'];
-  constructor(private resumeService: ResumeService) {}
-
-  ngOnInit(): void {
-    this.subscription.add(
-      this.resumeService.infoUser.subscribe((info: IInfoUser | null) => {
-        if (info?.professionalGrowth && this.canvas) {
-          this.setCharData(info?.professionalGrowth);
-          this.createChart();
-        }
-      }),
-    );
+  constructor(private resumeService: ResumeService) {
+    effect(() => {
+      if (this.resumeService.infoUser() && this.canvas) {
+        this.setCharData(this.resumeService.infoUser()?.professionalGrowth!);
+        this.createChart();
+      }
+    });
   }
 
   ngAfterViewInit(): void {
-    if (this.resumeService.infoUser.getValue()?.professionalGrowth) {
-      this.setCharData(this.resumeService.infoUser.getValue()?.professionalGrowth!);
+    if (this.resumeService.infoUser()?.professionalGrowth) {
+      this.setCharData(this.resumeService.infoUser()?.professionalGrowth!);
       this.createChart();
     }
-  }
-
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
   }
 
   private setCharData(professionalGrowth: IProfessionalGrowth): void {

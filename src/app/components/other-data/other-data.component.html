@@ -1,4 +1,4 @@
-@if (resumeService.infoUser | async; as infoUser) {
+@if (resumeService.infoUser(); as infoUser) {
   <div class="other-data text-secondary text-center">
     <p class="mb-0">{{ infoUser.date }}</p>
     <p class="mb-0">{{ infoUser.city }}</p>

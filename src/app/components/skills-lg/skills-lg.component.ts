@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { TypeSkill } from 'src/app/models/enums';
 import { ResumeService } from 'src/app/services/resume.service';
-import { SkillItemComponent } from '../skill-item/skill-item.component';
 import { ProfesionalGrowthComponent } from '../profesional-growth/profesional-growth.component';
-import { AsyncPipe } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+import { SkillItemComponent } from '../skill-item/skill-item.component';
 
 @Component({
-    selector: 'app-skills-lg',
-    templateUrl: './skills-lg.component.html',
-    styleUrls: ['./skills-lg.component.scss'],
-    imports: [SkillItemComponent, ProfesionalGrowthComponent, AsyncPipe, TranslateModule]
+  selector: 'app-skills-lg',
+  templateUrl: './skills-lg.component.html',
+  styleUrls: ['./skills-lg.component.scss'],
+  imports: [SkillItemComponent, ProfesionalGrowthComponent, TranslateModule],
 })
 export class SkillsLgComponent {
   public enumTypeSkill = TypeSkill;

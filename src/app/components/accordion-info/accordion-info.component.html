@@ -24,16 +24,16 @@
       >
         <div class="accordion-body pe-2">
           @if (item.type === typeItem.CAREER) {
-            <div class="accordion__info text-secondary pe-lg-3" [innerHTML]="(resumeService.infoUser | async)?.positionDescription"></div>
+            <div class="accordion__info text-secondary pe-lg-3" [innerHTML]="resumeService.infoUser()?.positionDescription"></div>
           } @else if (item.type === typeItem.DEGREES) {
             <div class="accordion__info">
-              @for (degree of (resumeService.infoUser | async)?.degrees; track $index) {
+              @for (degree of resumeService.infoUser()?.degrees; track $index) {
                 <app-info-item [degree]="degree" />
               }
             </div>
           } @else {
             <div class="accordion__info">
-              @for (degree of (resumeService.infoUser | async)?.courses; track $index) {
+              @for (degree of resumeService.infoUser()?.courses; track $index) {
                 <app-info-item [degree]="degree" />
               }
             </div>

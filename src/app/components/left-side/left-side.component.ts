@@ -1,29 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { IMenuButton } from 'src/app/models/interfaces';
+import { Component } from '@angular/core';
 import { ResumeService } from 'src/app/services/resume.service';
+import { MenuButtonComponent } from '../menu-button/menu-button.component';
 import { PhotoComponent } from '../photo/photo.component';
 import { TitleComponent } from '../title/title.component';
-import { MenuButtonComponent } from '../menu-button/menu-button.component';
-import { AsyncPipe } from '@angular/common';
 
 @Component({
-    selector: 'app-left-side',
-    templateUrl: './left-side.component.html',
-    styleUrls: ['./left-side.component.scss'],
-    imports: [
-        PhotoComponent,
-        TitleComponent,
-        MenuButtonComponent,
-        AsyncPipe,
-    ],
+  selector: 'app-left-side',
+  templateUrl: './left-side.component.html',
+  styleUrls: ['./left-side.component.scss'],
+  imports: [PhotoComponent, TitleComponent, MenuButtonComponent],
 })
-export class LeftSideComponent implements OnInit {
-  public menu!: Observable<IMenuButton[]>;
-
+export class LeftSideComponent {
   constructor(public resumeService: ResumeService) {}
-
-  ngOnInit(): void {
-    this.menu = this.resumeService.getMenuButtons();
-  }
 }
