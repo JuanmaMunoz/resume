@@ -1,5 +1,7 @@
 .card-user {
+  max-height: 35.48rem;
+  overflow: hidden;
   &__body {
-    min-height: 14.08rem;
+    height: 14.08rem;
   }
 }
