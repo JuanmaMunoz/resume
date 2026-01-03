@@ -2,7 +2,8 @@
   "menuButtons": {
     "info": "Information",
     "experience": "Experience",
-    "skills": "Skills"
+    "skills": "Skills",
+    "publications": "Publications"
   },
   "info": {
     "personalInfo": "Information",
@@ -24,6 +25,10 @@
     "experience": "Experience",
     "proyects": "Projects",
     "technologies": "Technologies"
+  },
+  "publications": {
+    "publications": "Publications",
+    "description": "I have always been deeply grateful to all those developers who have selflessly shared their knowledge with the community. I owe a significant part of my professional training to many of them. In recent months, I have begun to share my own knowledge, thus contributing my small part to the community."
   },
   "spanish": "ES",
   "english": "EN",

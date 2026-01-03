@@ -1,0 +1,19 @@
+@if (resumeService.infoUser(); as infoUser) {
+  <div class="publications">
+    <div class="card">
+      <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
+        <i class="bi bi-rocket-takeoff me-2 text-info"></i> {{ 'publications.publications' | translate }}
+      </div>
+      <div class="card-body publications__body">
+        <div class="row p-0">
+          <div class="col-12">
+            <p class="text-secondary">{{ 'publications.description' | translate }}</p>
+            @for (item of infoUser.publications; track $index) {
+              <app-publication-item [publication]="item" />
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}

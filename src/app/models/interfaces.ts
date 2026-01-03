@@ -34,6 +34,15 @@ export interface IGoal {
   date: string;
 }
 
+export interface IPublication {
+  name: string;
+  description: string;
+  date: string;
+  url: string;
+  imagePublication: string;
+  urlGithub?: string;
+}
+
 export interface IInfoUser {
   name: string;
   date: string;
@@ -49,6 +58,7 @@ export interface IInfoUser {
   degrees: IDegree[];
   goals: IGoal[];
   experience: IExperience[];
+  publications: IPublication[];
 }
 
 export interface IMenuButton {
