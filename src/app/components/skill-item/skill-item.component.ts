@@ -1,33 +1,26 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { Subscription, of, repeat } from 'rxjs';
+import { Component, Input, OnInit } from '@angular/core';
+import { Observable, interval, map, scan, takeWhile } from 'rxjs';
 import { ISkill } from 'src/app/models/interfaces';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
-  selector: 'app-skill-item',
-  templateUrl: './skill-item.component.html',
-  styleUrls: ['./skill-item.component.scss'],
+    selector: 'app-skill-item',
+    templateUrl: './skill-item.component.html',
+    styleUrls: ['./skill-item.component.scss'],
+    imports: [AsyncPipe],
 })
-export class SkillItemComponent implements OnInit, OnDestroy {
+export class SkillItemComponent implements OnInit {
   @Input() skill!: ISkill;
-  private subscription = new Subscription();
-  public percent: number = 0;
+  public percent$!: Observable<number>;
   ngOnInit(): void {
     this.fillBar();
   }
 
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
-  }
-
   private fillBar(): void {
-    let initialValue = 1;
-    this.subscription.add(
-      of(initialValue)
-        .pipe(repeat({ count: 3, delay: 1 }))
-        .subscribe((data: number) => {
-          const percent = initialValue++ * 33;
-          percent < this.skill.coverage ? (this.percent = percent) : (this.percent = this.skill.coverage);
-        })
+    this.percent$ = interval(10).pipe(
+      scan((acc) => acc + 10, 0),
+      map((value) => Math.min(value, this.skill.coverage)),
+      takeWhile((value) => value < this.skill.coverage, true),
     );
   }
 }

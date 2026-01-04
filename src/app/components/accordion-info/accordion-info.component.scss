@@ -1,0 +1,24 @@
+.accordion {
+  &__info {
+    height: 14.4rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+  }
+}
+
+/*@media (max-width: 1399px) {
+  .accordion {
+    &__info {
+      height: 17.34rem;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .accordion {
+    &__info {
+      height: 14.3rem;
+    }
+  }
+}*/

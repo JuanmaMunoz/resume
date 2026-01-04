@@ -1,7 +1,0 @@
-@if(resumeService.infoUser | async; as infoUser){
-<div class="courses-item">
-  @for(degree of infoUser.courses; track $index){
-  <app-info-item [degree]="degree"></app-info-item>
-  }
-</div>
-}

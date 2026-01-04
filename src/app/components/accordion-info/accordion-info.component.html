@@ -1,37 +1,45 @@
 <div class="accordion accordion-info" [id]="idAccordion">
-  @for (item of accordionItems; track $index){
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button
-        class="accordion-button"
-        [class.collapsed]="item.type !== typeItem.CAREER"
-        type="button"
-        data-bs-toggle="collapse"
-        [attr.data-bs-target]="'#' + item.type"
-        [attr.aria-expanded]="item.type === typeItem.CAREER ? true : false"
-        aria-controls="collapseOne"
+  @for (item of accordionItems; track $index) {
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button"
+          [class.collapsed]="item.type !== typeItem.CAREER"
+          type="button"
+          data-bs-toggle="collapse"
+          [attr.data-bs-target]="'#' + item.type"
+          [attr.aria-expanded]="item.type === typeItem.CAREER ? true : false"
+          aria-controls="collapseOne"
+        >
+          <div class="text-center text-primary-emphasis fs-5 fw-bold">
+            <i class="bi {{ item.icon }} me-2 text-info"></i> {{ 'info.' + item.type | translate }}
+          </div>
+        </button>
+      </h2>
+      <div
+        [id]="item.type"
+        [class.show]="item.type === typeItem.CAREER"
+        class="accordion-collapse collapse"
+        [attr.data-bs-parent]="'#' + idAccordion"
       >
-        <div class="text-center text-primary-emphasis fs-5 fw-bold">
-          <i class="bi {{ item.icon }} me-2"></i> {{ 'info.' + item.type | translate }}
+        <div class="accordion-body pe-2">
+          @if (item.type === typeItem.CAREER) {
+            <div class="accordion__info text-secondary pe-lg-3" [innerHTML]="resumeService.infoUser()?.positionDescription"></div>
+          } @else if (item.type === typeItem.DEGREES) {
+            <div class="accordion__info">
+              @for (degree of resumeService.infoUser()?.degrees; track $index) {
+                <app-info-item [degree]="degree" />
+              }
+            </div>
+          } @else {
+            <div class="accordion__info pe-lg-3">
+              @for (goal of resumeService.infoUser()?.goals; track $index) {
+                <app-goal-item [goal]="goal" />
+              }
+            </div>
+          }
         </div>
-      </button>
-    </h2>
-    <div
-      [id]="item.type"
-      [class.show]="item.type === typeItem.CAREER"
-      class="accordion-collapse collapse"
-      [attr.data-bs-parent]="'#' + idAccordion"
-    >
-      <div class="accordion-body pe-2">
-        @if(item.type=== typeItem.CAREER){
-        <app-career-item></app-career-item>
-        }@else if (item.type === typeItem.DEGREES) {
-        <app-degrees-item></app-degrees-item>
-        }@else {
-        <app-courses-item></app-courses-item>
-        }
       </div>
     </div>
-  </div>
   }
 </div>

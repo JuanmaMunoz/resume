@@ -1,23 +1,23 @@
-@if(resumeService.infoUser | async; as infoUser){
-<div class="experience col-12">
-  <div class="card">
-    <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
-      <i class="bi bi-hdd-stack me-2"></i> {{ 'experience.experience' | translate }}
-    </div>
-    <div class="card-body">
-      <div class="row">
-        <div class="col-3 experience__menu border-end d-none d-lg-block">
-          @for(item of infoUser.experience; track $index){
-          <app-experience-menu-item [experience]="item"></app-experience-menu-item>
-          }
-        </div>
-        <div class="col experience__body me-1">
-          @for(item of infoUser.experience; track $index){
-          <app-experience-item [experience]="item"></app-experience-item>
-          }
+@if (resumeService.infoUser(); as infoUser) {
+  <div class="experience">
+    <div class="card">
+      <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
+        <i class="bi bi-hdd-stack me-2 text-info"></i> {{ 'experience.experience' | translate }}
+      </div>
+      <div class="card-body">
+        <div class="row p-0">
+          <div class="col-3 experience__menu border-end d-none d-lg-block">
+            @for (item of infoUser.experience; track $index) {
+              <app-experience-menu-item [experience]="item" />
+            }
+          </div>
+          <div class="col experience__body p-0 me-1">
+            @for (item of infoUser.experience; track $index) {
+              <app-experience-item [experience]="item" />
+            }
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 }

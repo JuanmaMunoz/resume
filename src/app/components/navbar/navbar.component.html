@@ -1,14 +1,29 @@
-@if(resumeService.infoUser | async; as info){
-<nav class="navbar rounded-4 mb-2 p-0 d-xl-none" *ngIf="resumeService.infoUser | async as info">
-  <div class="container-fluid">
-    <button class="navbar-btn btn btn-secondary"><i class="bi bi-list"></i></button>
-    <div class="d-flex flex-row align-items-center">
-      <h1 class="navbar__title text-primary-emphasis me-2 mb-0">CV/</h1>
-      <div class="d-flex flex-column navbar__text">
-        <p class="mb-0 text-primary-emphasis">{{ info.name }}</p>
-        <p class="mb-0 text-secondary">{{ info.email }}</p>
+@if (resumeService.infoUser(); as info) {
+  <nav class="navbar rounded-4 mb-2 p-0">
+    <div class="container-fluid">
+      <button #navbarButton class="navbar-btn btn btn-secondary"><i class="bi bi-list text-light"></i></button>
+      <div class="d-flex flex-row align-items-center">
+        <h1 appShine class="navbar__title text-info me-2 mb-0">CV/</h1>
+        <div class="d-flex flex-column navbar__text">
+          <p class="mb-0 text-primary-emphasis">{{ info.name }}</p>
+          <p class="mb-0 text-secondary">{{ info.email }}</p>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+
+    <div [@show]="show ? 'visible' : 'hidden'" class="navbar__menu border border-info bg-body rounded-5 pb-4">
+      <div class="row">
+        <div class="col-12 menu__buttons py-3">
+          @for (button of resumeService.menuButtons(); track $index) {
+            <div class="d-flex flex-column mx-3">
+              <app-menu-button [menuButton]="button" />
+            </div>
+          }
+        </div>
+      </div>
+      <div class="col-12 ms-3">
+        <app-options [float]="enumFloat.START" [id]="'small-device'" />
+      </div>
+    </div>
+  </nav>
 }

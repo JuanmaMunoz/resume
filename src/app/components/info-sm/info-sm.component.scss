@@ -1,7 +1,9 @@
 .info-sm {
   &__body {
-    max-height: 69vh;
-    overflow-x: hidden;
+    max-height: 74vh;
     overflow-y: auto;
+  }
+  &__career {
+    text-align: justify;
   }
 }

@@ -1,7 +1,7 @@
 export enum TypeAccordionItem {
   CAREER = 'career',
   DEGREES = 'degrees',
-  COURSES = 'courses',
+  GOALS = 'goals',
 }
 
 export enum TypeSkill {
@@ -17,4 +17,9 @@ export enum Language {
 export enum ModeDark {
   DARK = 'dark',
   LIGHT = 'light',
+}
+
+export enum Float {
+  END = 'float-end',
+  START = 'float-start',
 }
