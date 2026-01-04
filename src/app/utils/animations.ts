@@ -2,10 +2,7 @@ import { animate, AnimationMetadata, AnimationTriggerMetadata, state, style, tra
 
 export const showAnimation = (duration: number = 1000): AnimationTriggerMetadata => {
   const definitions: AnimationMetadata[] = [
-    transition(':enter', [
-      style({ filter: 'opacity(0.2)', opacity: 0.2 }),
-      animate(`${duration}ms ease-out`, style({ filter: 'opacity(1)', opacity: 1 })),
-    ]),
+    transition(':enter', [style({ opacity: 0 }), animate(`${duration}ms ease-out`, style({ opacity: 1 }))]),
   ];
 
   return trigger('show', definitions);
