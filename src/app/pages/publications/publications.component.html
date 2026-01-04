@@ -4,12 +4,15 @@
       <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
         <i class="bi bi-rocket-takeoff me-2 text-info"></i> {{ 'publications.publications' | translate }}
       </div>
-      <div class="card-body publications__body">
-        <div class="row p-0">
-          <div class="col-12">
-            <p class="text-secondary">{{ 'publications.description' | translate }}</p>
+      <div class="card-body publications__body me-2 my-3">
+        <div class="row">
+          <div class="col-12 px-0">
+            <p class="text-secondary publications__description mb-4 px-2 px-lg-4">{{ 'publications.description' | translate }}</p>
+
             @for (item of infoUser.publications; track $index) {
-              <app-publication-item [publication]="item" />
+              <div class="border-bottom mb-4 pb-4">
+                <app-publication-item [publication]="item" />
+              </div>
             }
           </div>
         </div>

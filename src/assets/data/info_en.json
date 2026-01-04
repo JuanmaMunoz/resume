@@ -167,14 +167,9 @@
   ],
   "goals": [
     {
-      "name": "Línea Directa: Roadside Assistance App",
-      "description": "Designed and developed the Back and Front End architecture of the first web application for tracking roadside assistance. The project received wide media coverage, featuring Matías Prats in national news.",
-      "date": "2016"
-    },
-    {
-      "name": "Vodafone: IDM",
-      "description": "Contributed to the web architecture of Vodafone IDM, the platform responsible for identity management, enhancing system scalability and efficiency.",
-      "date": "2020"
+      "name": "Vintegris: nebulaSUITE 2.0",
+      "description": "Created the Front End architecture of nebulaSUITE 2.0, a platform for managing digital certificates and electronically signed documents, used by the Spanish Congress, key public administration bodies, and banking institutions.",
+      "date": "2024"
     },
     {
       "name": "Repsol: ARIA - Stock Control",
@@ -182,9 +177,14 @@
       "date": "2022"
     },
     {
-      "name": "Vintegris: NebulaSUITE 2.0",
-      "description": "Designed the Front End architecture of NebulaSUITE 2.0, a platform for managing digital certificates and electronically signed documents, used by the Spanish Congress, key public administration bodies, and banking institutions.",
-      "date": "2024"
+      "name": "Vodafone: IDM",
+      "description": "Created the web architecture of Vodafone IDM, the platform responsible for identity management.",
+      "date": "2020"
+    },
+    {
+      "name": "Línea Directa: Roadside Assistance App",
+      "description": "Designed and developed the Front End architecture of the first web application for tracking roadside assistance. The project received wide media coverage, featuring Matías Prats in national news.",
+      "date": "2016"
     }
   ],
   "languages": [
@@ -219,7 +219,7 @@
       "description": "Front End Architect. Design of the architecture and tech leadership of the Front End team.",
       "proyects": [
         {
-          "name": "Webs 2.0",
+          "name": "nebulaSUITE 2.0",
           "description": "Applications for digital certificate management. Design of microsite-based architecture using a proprietary component library and leadership in development. Distribution of Front End team tasks, code reviews, and establishment of work methodologies.",
           "technologies": [
             "Angular",
@@ -246,7 +246,7 @@
         {
           "name": "Signicat Products",
           "description": "Applications for digital certificate and facial recognition management. Design and refactoring of various identification products for Signicat. Training and code reviews for different Front End teams. Establishment of methodologies for achieving robust and scalable applications.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Web Socket", "Angular Material", "Prime Ng", "Webpack"]
+          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Web Socket", "Angular Material", "PrimeNg", "Webpack"]
         }
       ]
     },
@@ -352,6 +352,28 @@
     }
   ],
   "publications": [
+    {
+      "name": "CRUD Angular + NgRx with signals",
+      "date": "01/2026",
+      "description": "CRUD Angular + NgRx with Signals is a reference website and repository that shows how to build a complete CRUD application using Angular, NgRx, and Signals. It is aimed at junior and senior developers interested in architecture, state management, and recommended patterns. The project includes unit and end-to-end (E2E) tests.",
+      "imagePublication": "/images/publications/crudngrx.jpg",
+      "url": "https://juanmamunoz.github.io/crud-ngrx-signals/#/login",
+      "urlGithub": "https://github.com/JuanmaMunoz/crud-ngrx-signals"
+    },
+    {
+      "name": "CSS Layout Lab",
+      "date": "10/2025",
+      "description": "CSS Layout Lab is an interactive space to learn and experiment with the different ways of building layouts in CSS: from classic models like block and inline, to modern tools like flexbox and grid.",
+      "imagePublication": "/images/publications/layoutlab.jpg",
+      "url": "https://juanmamunoz.github.io/css-layout-lab/#/home"
+    },
+    {
+      "name": "Signals Vs Subjects Vs NgRx",
+      "date": "06/2025",
+      "description": "Signals vs Subjects vs NgRx is a documentation that analyzes the different tools available in Angular applications for managing data models. It provides a comparison between Signals, RxJS subjects, and NgRx, describing their main characteristics, advantages and disadvantages, as well as the most suitable use cases for each approach.",
+      "imagePublication": "/images/publications/signalvssubjects.jpg",
+      "url": "https://juanmamunoz.github.io/signalsVsRxJsVsNgRx/#/"
+    },
     {
       "name": "Play Rxjs",
       "date": "02/2025",

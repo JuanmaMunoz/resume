@@ -1,6 +1,12 @@
-<div (click)="goToExperience(experience.company)" class="experience-menu-item d-flex flex-column mt-2 mb-5">
-  <div class="text-center">
-    <img [@show] [src]="environment.url + experience.imageCompany" width="150px" class="experience-menu-item__img" />
-    <p class="text-primary-emphasis experience-menu-item__date mb-0">{{ experience.startDate }} - {{ experience.endDate }}</p>
+@defer (on viewport) {
+  <div (click)="goToExperience(experience.company)" class="experience-menu-item d-flex flex-column mt-2 mb-5">
+    <div class="text-center">
+      <img [@show] [src]="environment.url + experience.imageCompany" width="150px" class="experience-menu-item__img" />
+      <p class="text-primary-emphasis experience-menu-item__date mb-0">{{ experience.startDate }} - {{ experience.endDate }}</p>
+    </div>
   </div>
-</div>
+} @placeholder {
+  <div class="experience-menu-item__spinner">
+    <app-spinner />
+  </div>
+}

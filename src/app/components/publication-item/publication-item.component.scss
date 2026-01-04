@@ -1,7 +1,37 @@
+.publication-item {
+  &__description {
+    text-align: justify;
+  }
+  &__spinner {
+    min-height: 30rem;
+  }
+}
 @media (max-width: 992px) {
   .publication-item {
     &__container {
       text-align: center;
+    }
+    &__img {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .publication-item {
+    &__img {
+      max-width: 70%;
+    }
+    &__spinner {
+      min-height: 70rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .publication-item {
+    &__img {
+      max-width: 80%;
     }
   }
 }

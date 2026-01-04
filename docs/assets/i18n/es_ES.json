@@ -2,15 +2,16 @@
   "menuButtons": {
     "info": "Información",
     "experience": "Experiencia",
-    "skills": "Habilidades"
+    "skills": "Habilidades",
+    "publications": "Publicaciones"
   },
   "info": {
-    "personalInfo": "Información personal",
+    "personalInfo": "Información",
     "career": "Carrera profesional",
     "degrees": "Títulación",
-    "courses": "Otra formación",
+    "goals": "Hitos profesionales",
     "hobbies": "Aficiones",
-    "fullRemote": "Solo teletrabajo 100%"
+    "fullRemote": "Solo teletrabajo"
   },
   "skills": {
     "techSkills": "Habilidades técnicas",
@@ -25,7 +26,11 @@
     "proyects": "Proyectos",
     "technologies": "Tecnologías"
   },
-  "spanish": "Español",
-  "english": "Inglés",
+  "publications": {
+    "publications": "Publicaciones",
+    "description": "Siempre he estado profundamente agradecido a todos aquellos desarrolladores que, de manera desinteresada, han puesto sus conocimientos a disposición de la comunidad. A muchos de ellos les debo una parte importante de mi formación profesional. En los últimos meses he comenzado a compartir mis propios conocimientos, aportando así mi granito de arena a esta comunidad."
+  },
+  "spanish": "ES",
+  "english": "EN",
   "dark": "Oscuro"
 }

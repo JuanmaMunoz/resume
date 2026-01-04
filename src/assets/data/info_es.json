@@ -166,14 +166,9 @@
   ],
   "goals": [
     {
-      "name": "Línea Directa: Aplicación Grúa de Guardia",
-      "description": "Diseño y desarrollo de la arquitectura Back y Front de la primera aplicación web de tracking de asistencia en carretera. El proyecto tuvo gran repercusión mediática, apareciendo en medios nacionales con Matías Prats como protagonista.",
-      "date": "2016"
-    },
-    {
-      "name": "Vodafone: IDM",
-      "description": "Participación en la arquitectura web de Vodafone IDM, la plataforma encargada de la administración de identidades, optimizando escalabilidad y eficiencia del sistema.",
-      "date": "2020"
+      "name": "Vintegris: nebulaSUITE 2.0",
+      "description": "Creación de la arquitectura Front End de nebulaSUITE 2.0, plataforma para la gestión de certificados digitales y documentos firmados electrónicamente, utilizada en el Parlamento de los Diputados, principales organismos de la administración española y entidades bancarias.",
+      "date": "2024"
     },
     {
       "name": "Repsol: ARIA - Stock Control",
@@ -181,9 +176,14 @@
       "date": "2022"
     },
     {
-      "name": "Vintegris: NebulaSUITE 2.0",
-      "description": "Diseño de la arquitectura Front End de NebulaSUITE 2.0, plataforma para la gestión de certificados digitales y documentos firmados electrónicamente, utilizada en el Parlamento de los Diputados, principales organismos de la administración española y entidades bancarias.",
-      "date": "2024"
+      "name": "Vodafone: IDM",
+      "description": "Creación de la arquitectura web de Vodafone IDM, la plataforma encargada de la administración de identidades.",
+      "date": "2020"
+    },
+    {
+      "name": "Línea Directa: Aplicación Grúa de Guardia",
+      "description": "Diseño y desarrollo de la arquitectura Front de la primera aplicación web de tracking de asistencia en carretera. El proyecto tuvo gran repercusión mediática, apareciendo en medios nacionales con Matías Prats como protagonista.",
+      "date": "2016"
     }
   ],
 
@@ -219,7 +219,7 @@
       "description": "Front End Architect. Diseño de la arquitectura y Tech Lead del equipo de Front End.",
       "proyects": [
         {
-          "name": "Webs 2.0",
+          "name": "nebulaSUITE 2.0",
           "description": "Aplicaciones para la gestión de certificados digitales. Diseño de la arquitectura basada en microsites mediante librería de componentes propia y liderazgo del desarrollo. Distribucíon del trabajo del equipo de Front End, code-review y establecimiento de metodologías de trabajo.",
           "technologies": [
             "Angular",
@@ -246,7 +246,7 @@
         {
           "name": "Signicat Products",
           "description": "Aplicaciones para la gestión de certificados digitales e identificación facial. Diseño y refactorización de los distintos productos de identificación de la compañía Signicat. Formación y code-review de los distintos equipos de Front End. Establecimiento de metodologías para la consecución de aplicaciones robustas y escalables.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Web Socket", "Angular Material", "Prime Ng", "Webpack"]
+          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Web Socket", "Angular Material", "PrimeNg", "Webpack"]
         }
       ]
     },
@@ -349,6 +349,37 @@
           "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery", "Css 3"]
         }
       ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "CRUD Angular + NgRx with signals",
+      "date": "01/2026",
+      "description": "CRUD Angular + NgRx with Signals es una web y un repositorio de referencia que muestra cómo construir una aplicación CRUD completa utilizando Angular, NgRx y Signals. Está dirigido a desarrolladores junior y senior interesados en arquitectura, gestión de estado y patrones recomendados. El proyecto incluye pruebas unitarias y end-to-end (E2E).",
+      "imagePublication": "/images/publications/crudngrx.jpg",
+      "url": "https://juanmamunoz.github.io/crud-ngrx-signals/#/login",
+      "urlGithub": "https://github.com/JuanmaMunoz/crud-ngrx-signals"
+    },
+    {
+      "name": "CSS Layout Lab",
+      "date": "10/2025",
+      "description": "CSS Layout Lab es un espacio interactivo para aprender y experimentar con las distintas formas de construir layouts en CSS: desde los modelos clásicos como block e inline, hasta herramientas modernas como flexbox y grid.",
+      "imagePublication": "/images/publications/layoutlab.jpg",
+      "url": "https://juanmamunoz.github.io/css-layout-lab/#/home"
+    },
+    {
+      "name": "Signals Vs Subjects Vs NgRx",
+      "date": "06/2025",
+      "description": "Signals vs Subjects vs NgRx es una documentación que analiza las distintas herramientas disponibles en aplicaciones desarrolladas con Angular para la gestión de modelos de datos. Presenta una comparativa clara entre Signals, los subjects de RxJS y NgRx, destacando sus diferencias, casos de uso y ventajas.",
+      "imagePublication": "/images/publications/signalvssubjects.jpg",
+      "url": "https://juanmamunoz.github.io/signalsVsRxJsVsNgRx/#/"
+    },
+    {
+      "name": "Play Rxjs",
+      "date": "02/2025",
+      "description": "Play RxJS es una documentación interactiva y amigable de RxJS que permite al usuario comprobar, en tiempo real y mediante ejemplos sencillos, el funcionamiento de todos los operadores y las principales funcionalidades de RxJS. Está orientada tanto a desarrolladores junior como senior.",
+      "imagePublication": "/images/publications/playrxjs.jpg",
+      "url": "https://juanmamunoz.github.io/playRxjs/#/home"
     }
   ]
 }

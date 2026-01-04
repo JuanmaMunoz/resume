@@ -3,6 +3,9 @@
   &__date {
     font-weight: 500;
   }
+  &__spinner {
+    min-height: 30rem;
+  }
   &:hover {
     color: var(--bs-primary-text-emphasis);
     .experience-menu-item__img {

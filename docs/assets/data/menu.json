@@ -13,5 +13,10 @@
     "text": "experience",
     "url": "/experience",
     "icon": "bi-hdd-stack"
+  },
+  {
+    "text": "publications",
+    "url": "/publications",
+    "icon": "bi-rocket-takeoff"
   }
 ]
