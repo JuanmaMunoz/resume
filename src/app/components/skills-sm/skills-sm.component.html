@@ -4,16 +4,16 @@
       <div class="card-header bg-body text-primary-emphasis fs-5 fw-bold">
         <i class="bi bi-cup-hot me-2 text-info"></i> {{ 'menuButtons.skills' | translate }}
       </div>
-      <div class="card-body skills-sm__body pe-0 row my-3 me-2">
-        <div class="col-12 mb-3 pb-4 border-bottom">
-          <h5 class="fw-bold mb-4 text-secondary"><i class="bi bi bi-gear text-info"></i> {{ 'skills.tech' | translate }}:</h5>
+      <div class="card-body skills-sm__body pe-0 pt-0 row my-3 me-2">
+        <div class="col-12 mb-4 pb-4 border-bottom">
+          <h5 class="fw-bold mb-2 text-secondary"><i class="bi bi bi-gear text-info"></i> {{ 'skills.tech' | translate }}:</h5>
           @for (item of infoUser.skills; track $index) {
             <app-skill-item [skill]="item" />
           }
         </div>
         @defer (on viewport) {
-          <div class="col-12 mb-3 pb-4 border-bottom">
-            <h5 class="mb-3 fw-bold mb-4 text-secondary"><i class="bi bi-briefcase text-info"></i> {{ 'skills.business' | translate }}:</h5>
+          <div class="col-12 mb-4 pb-4 border-bottom">
+            <h5 class="fw-bold mb-2 text-secondary"><i class="bi bi-briefcase text-info"></i> {{ 'skills.business' | translate }}:</h5>
             @for (item of infoUser.businessSkills; track $index) {
               <app-skill-item [skill]="item" />
             }
@@ -22,10 +22,8 @@
           <app-spinner />
         }
         @defer (on viewport) {
-          <div class="col-12 mb-3 pb-4 border-bottom">
-            <h5 class="mb-3 fw-bold mb-4 text-secondary">
-              <i class="bi bi bi-translate text-info"></i> {{ 'skills.languages' | translate }}:
-            </h5>
+          <div class="col-12 mb-4 pb-4 border-bottom">
+            <h5 class="mb-2 fw-bold text-secondary"><i class="bi bi bi-translate text-info"></i> {{ 'skills.languages' | translate }}:</h5>
             @for (item of infoUser.languages; track $index) {
               <app-skill-item [skill]="item" />
             }
@@ -35,7 +33,7 @@
         }
         @defer (on viewport) {
           <div class="col-12 mb-3 pb-4 border-bottom">
-            <h5 class="mb-3 fw-bold mb-4 text-secondary">
+            <h5 class="mb-2 fw-bold text-secondary">
               <i class="bi bi bi-graph-up text-info"></i> {{ 'skills.growthProfesional' | translate }}:
             </h5>
             <app-profesional-growth [idChart]="'chartSm'" />
