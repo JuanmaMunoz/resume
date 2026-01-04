@@ -51,6 +51,8 @@ export class ProfesionalGrowthComponent implements AfterViewInit {
       type: 'line',
       data: this.chartData,
       options: {
+        maintainAspectRatio: window.innerWidth > 500,
+        responsive: true,
         plugins: {
           legend: {
             display: true,

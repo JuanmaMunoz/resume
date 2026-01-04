@@ -2,3 +2,9 @@
   border-radius: 2rem;
   position: relative;
 }
+
+@media (max-width: 500px) {
+  .profesional-growth {
+    height: 20rem;
+  }
+}
