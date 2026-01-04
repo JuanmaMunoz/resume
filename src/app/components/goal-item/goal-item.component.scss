@@ -11,3 +11,11 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .goal-item {
+    &__description {
+      text-align: left;
+    }
+  }
+}

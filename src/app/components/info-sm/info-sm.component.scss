@@ -1,9 +1,17 @@
 .info-sm {
   &__body {
-    max-height: 74vh;
+    max-height: 74svh;
     overflow-y: auto;
   }
   &__career {
     text-align: justify;
+  }
+}
+
+@media (max-width: 992px) {
+  .info-sm {
+    &__career {
+      text-align: center;
+    }
   }
 }
