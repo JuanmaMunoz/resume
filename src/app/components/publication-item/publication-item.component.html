@@ -11,7 +11,7 @@
       </div>
       <div class="col-12 col-lg-8">
         <p class="text-primary-emphasis mt-3 mt-lg-0 fs-4">
-          {{ publication.name }} <span class="text-secondary ms-2 fs-6">{{ publication.date }}</span>
+          {{ publication.name }} <span class="publication-item__date text-secondary ms-2">{{ publication.date }}</span>
           <a [href]="publication.url" class="link-info" target="_blank"><i class="ms-3 bi bi-globe2"></i></a>
           @if (publication.urlGithub) {
             <a [href]="publication.urlGithub" class="link-info" target="_blank"><i class="ms-3 bi bi-github"></i></a>
