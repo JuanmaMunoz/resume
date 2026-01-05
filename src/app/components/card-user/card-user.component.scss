@@ -1,31 +1,7 @@
-.img-fluid {
-  animation: photo;
-  animation-duration: 1s;
-}
-
-.alert {
-  animation: alert;
-  animation-duration: 0.5s;
-}
-
-@keyframes photo {
-  from {
-    filter: opacity(0.2);
-  }
-  to {
-    filter: opacity(1);
-  }
-}
-
-@keyframes alert {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.1);
-    transform: scale(0.1);
-  }
-  to {
-    opacity: 0.8;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+.card-user {
+  max-height: 35.35rem;
+  overflow: hidden;
+  &__body {
+    height: 14.08rem;
   }
 }

@@ -1,8 +1,6 @@
-import { AfterViewInit, Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { AfterViewInit, Component, effect, Input, ViewChild } from '@angular/core';
 import Chart from 'chart.js/auto';
-import { Subscription } from 'rxjs';
-import { ICharData, IDataset, IGrowth, IInfoUser, IProfessionalGrowth } from 'src/app/models/interfaces';
+import { ICharData, IDataset, IGrowth, IProfessionalGrowth } from 'src/app/models/interfaces';
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
@@ -10,58 +8,38 @@ import { ResumeService } from 'src/app/services/resume.service';
   templateUrl: './profesional-growth.component.html',
   styleUrls: ['./profesional-growth.component.scss'],
 })
-export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewInit {
+export class ProfesionalGrowthComponent implements AfterViewInit {
   @Input() idChart: string = '';
   @ViewChild('canvas') canvas!: HTMLCanvasElement;
   public chart: any = null;
-  private subscription = new Subscription();
   private chartData!: ICharData;
-  private charColors = [
-    { backgroundColor: 'rgba(13, 110, 253, 0.3)', borderColor: 'rgba(13, 110, 253, 1)' },
-    {
-      backgroundColor: 'rgba(88, 21, 28, 0.3)',
-      borderColor: 'rgba(88, 21, 28, 1)',
-    },
-    {
-      backgroundColor: 'rgba(110, 168, 254, 0.3)',
-      borderColor: 'rgba(110, 168, 254, 1)',
-    },
-  ];
-  constructor(private translate: TranslateService, private resumeService: ResumeService) {}
-
-  ngOnInit(): void {
-    this.subscription.add(
-      this.resumeService.infoUser.subscribe((info: IInfoUser) => {
-        if (info.professionalGrowth && this.canvas) {
-          this.setCharData(info.professionalGrowth);
-          this.createChart();
-        }
-      })
-    );
+  private chartColors: string[] = ['#ff4c4c', '#ffc008', '#0094b3', '#0da673'];
+  constructor(private resumeService: ResumeService) {
+    effect(() => {
+      if (this.resumeService.infoUser() && this.canvas) {
+        this.setCharData(this.resumeService.infoUser()?.professionalGrowth!);
+        this.createChart();
+      }
+    });
   }
 
   ngAfterViewInit(): void {
-    if (this.resumeService.infoUser.getValue().professionalGrowth) {
-      this.setCharData(this.resumeService.infoUser.getValue().professionalGrowth!);
+    if (this.resumeService.infoUser()?.professionalGrowth) {
+      this.setCharData(this.resumeService.infoUser()?.professionalGrowth!);
       this.createChart();
     }
-  }
-
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
   }
 
   private setCharData(professionalGrowth: IProfessionalGrowth): void {
     this.chartData = { ...this.chartData, labels: professionalGrowth.names, datasets: [] };
     professionalGrowth.growth.forEach((e: IGrowth, index) => {
-      const dataset: IDataset = {
+      const dataset = {
         label: e.year.toString(),
         data: e.values,
-        backgroundColor: this.charColors[index].backgroundColor,
-        borderColor: this.charColors[index].borderColor,
-        borderWidth: 1,
+        backgroundColor: this.chartColors[index],
+        borderColor: this.chartColors[index],
       };
-      this.chartData.datasets.push(dataset);
+      this.chartData.datasets.push(dataset as IDataset);
     });
   }
 
@@ -70,39 +48,36 @@ export class ProfesionalGrowthComponent implements OnInit, OnDestroy, AfterViewI
     const ctx = document.getElementById(this.idChart);
 
     this.chart = new Chart(ctx as any, {
-      type: 'radar',
+      type: 'line',
       data: this.chartData,
       options: {
-        layout: {
-          padding: 0, // Elimina el padding externo de la gráfica
+        maintainAspectRatio: window.innerWidth > 500,
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+          },
         },
         scales: {
-          r: {
+          x: {
             grid: {
-              color: '#666',
-              lineWidth: 0.3,
+              color: 'rgb(62, 62, 66)',
             },
-            angleLines: {
-              color: '#666',
-              lineWidth: 0.3,
-            },
-            ticks: {
-              color: '#666',
-              backdropColor: 'transparent',
-            },
-            pointLabels: {
-              font: {
-                size: 11.5,
-                weight: 'bold',
-              },
+          },
+          y: {
+            grid: {
+              color: 'rgb(62, 62, 66)',
             },
           },
         },
-        plugins: {
-          title: {
-            font: {
-              size: 30,
-            },
+        elements: {
+          line: {
+            borderColor: 'rgb(173, 181, 189)',
+            borderWidth: 2,
+          },
+          point: {
+            backgroundColor: 'rgb(173, 181, 189)',
+            radius: 4,
           },
         },
       },

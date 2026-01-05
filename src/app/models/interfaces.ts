@@ -28,21 +28,37 @@ export interface IExperience {
   proyects: IProject[];
 }
 
+export interface IGoal {
+  name: string;
+  description: string;
+  date: string;
+}
+
+export interface IPublication {
+  name: string;
+  description: string;
+  date: string;
+  url: string;
+  imagePublication: string;
+  urlGithub?: string;
+}
+
 export interface IInfoUser {
   name: string;
-  age: number;
+  date: string;
   city: string;
   email: string;
   position: string;
   positionDescription?: string;
-  skills?: ISkill[];
-  hobbies?: string[];
-  businessSkills?: ISkill[];
-  languages?: ISkill[];
-  professionalGrowth?: IProfessionalGrowth;
-  degrees?: IDegree[];
-  courses?: IDegree[];
-  experience?: IExperience[];
+  skills: ISkill[];
+  hobbies: string[];
+  businessSkills: ISkill[];
+  languages: ISkill[];
+  professionalGrowth: IProfessionalGrowth;
+  degrees: IDegree[];
+  goals: IGoal[];
+  experience: IExperience[];
+  publications: IPublication[];
 }
 
 export interface IMenuButton {

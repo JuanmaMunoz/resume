@@ -1,5 +1,10 @@
 .profesional-growth {
   border-radius: 2rem;
-  height: 28.9rem;
   position: relative;
+}
+
+@media (max-width: 500px) {
+  .profesional-growth {
+    height: 20rem;
+  }
 }

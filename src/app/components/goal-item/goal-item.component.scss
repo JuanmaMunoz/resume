@@ -1,0 +1,21 @@
+.goal-item {
+  &__description {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 992px) {
+  .goal-item {
+    &__date {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .goal-item {
+    &__description {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@defer (on viewport) {
+  <div [@show] class="publication-item px-2 px-lg-4">
+    <div class="row publication-item__container">
+      <div class="col-12 col-lg-4 mt-lg-0 mt-2">
+        <a [href]="publication.url" target="_blank"
+          ><img
+            class="img-fluid publication-item__img border rounded"
+            [src]="environment.url + publication.imagePublication"
+            [alt]="publication.name"
+        /></a>
+      </div>
+      <div class="col-12 col-lg-8">
+        <p class="text-primary-emphasis mt-3 mt-lg-0 fs-4">
+          {{ publication.name }} <span class="publication-item__date text-secondary ms-2">{{ publication.date }}</span>
+          <a [href]="publication.url" class="link-info" target="_blank"><i class="ms-3 bi bi-globe2"></i></a>
+          @if (publication.urlGithub) {
+            <a [href]="publication.urlGithub" class="link-info" target="_blank"><i class="ms-3 bi bi-github"></i></a>
+          }
+        </p>
+        <p class="text-secondary publication-item__description mb-lg-0">
+          {{ publication.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+} @placeholder {
+  <div class="publication-item__spinner">
+    <app-spinner />
+  </div>
+}

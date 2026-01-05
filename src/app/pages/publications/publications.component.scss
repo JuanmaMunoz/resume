@@ -1,0 +1,26 @@
+.publications {
+  &__body {
+    max-height: 30rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  &__description {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 991px) {
+  .publications {
+    &__body {
+      max-height: 74svh;
+    }
+    &__description {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .publications {
+  }
+}

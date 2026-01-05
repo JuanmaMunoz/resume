@@ -4,3 +4,9 @@
     font-size: 0.7rem;
   }
 }
+
+@media (max-width: 576px) {
+  .experience-item {
+    text-align: left;
+  }
+}

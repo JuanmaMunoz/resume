@@ -1,121 +1,153 @@
 {
   "name": "Juan Manuel Muñoz González",
-  "age": 40,
-  "city": "Torre del Mar (Málaga)",
+  "date": "15/05/1984",
+  "city": "Málaga (España)",
   "email": "jmmugoz@gmail.com",
   "position": "Front End Architect",
-  "positionDescription": "<p>Cuento con 18 años de experiencia en el mundo del software, habiendo trabajado para grandes compañías como Repsol, Vodafone, Línea Directa, Banco Santander, entre otras. En muchos de estos proyectos, he tenido la responsabilidad de diseñar y liderar desde cero la arquitectura Front End, lo que me ha permitido consolidar una sólida experiencia en este ámbito. Mi rol no solo ha consistido en la creación de arquitecturas robustas, sino también en la dirección técnica de equipos de desarrollo Front End, estableciendo buenas prácticas para garantizar la entrega de aplicaciones escalables y de alta calidad.<p>Además de liderar, me involucro activamente en el desarrollo, lo que me permite mantenerme al día con las últimas tendencias tecnológicas y seguir aportando valor como un desarrollador más. Este enfoque práctico y actualizado es clave para asegurar el éxito de los proyectos que lidero.</p><p>Poseo sólidos conocimientos en Back End y experiencia avanzada en UX/UI, lo que me proporciona una visión integral de las necesidades técnicas de cualquier aplicación. Esto me permite no solo dar soporte en estas áreas, sino también supervisar y garantizar que se cumplan los estándares adecuados en ambas, contribuyendo a la creación de aplicaciones bien estructuradas, funcionales y con una excelente experiencia de usuario.<p><p>En 2022, tuve la oportunidad de liderar la arquitectura del proyecto ARIA de Repsol, que fue una pieza clave del aplicativo Stock Control. Este proyecto fue reconocido en 2023 con el premio Best in Class en Expoquimia. Gracias a este éxito, me convertí en un referente para Repsol en la arquitectura Front End, consolidando mi rol en la definición de soluciones innovadoras y de alto rendimiento dentro de la compañía.</p><p>Actualmente, me encuentro liderando el desarrollo de la arquitectura Front End de una aplicación destinada a gestionar la firma digital de todas las propuestas emitidas en el Parlamento de los Diputados. Este proyecto está basado en una arquitectura modular de microsites, acompañada de la creación de una librería de componentes personalizada. Esta solución no solo optimiza la velocidad y la robustez del desarrollo, sino que también permite una mayor independencia entre los módulos, posicionándose como una innovación clave en el futuro del desarrollo web.</p>",
+  "positionDescription": "<p>Cuento con más de 20 años de experiencia en el mundo del software, he trabajado para grandes compañías como Repsol, Vodafone, Línea Directa, Banco Santander, entre otras. En muchos de estos proyectos, he tenido la responsabilidad de diseñar y liderar desde cero la arquitectura Front End, lo que me ha permitido consolidar una sólida experiencia en este ámbito. Mi rol no solo ha consistido en la creación de arquitecturas robustas, sino también en la dirección técnica de equipos de desarrollo Front End, estableciendo buenas prácticas para garantizar la entrega de aplicaciones escalables y de alta calidad.<p>Además de liderar, me involucro activamente en el desarrollo, lo que me permite mantenerme al día con las últimas tendencias tecnológicas y seguir aportando valor como un desarrollador más. Este enfoque práctico y actualizado es clave para asegurar el éxito de los proyectos que lidero.</p><p>Poseo sólidos conocimientos en Back End y experiencia avanzada en UX/UI, lo que me proporciona una visión integral de las necesidades técnicas de cualquier aplicación.<p><p>En 2022, tuve la oportunidad de liderar la arquitectura del proyecto ARIA de Repsol, que fue una pieza clave del aplicativo Stock Control. Este proyecto fue reconocido en 2023 con el premio Best in Class en Expoquimia. Gracias a este éxito, me convertí en un referente para Repsol en la arquitectura Front End.</p><p>Actualmente, me encuentro liderando el desarrollo de la arquitectura Front End de una aplicación destinada a gestionar la firma digital de todas las propuestas emitidas en el Parlamento de los Diputados y principales organismos de la administración Española. Este proyecto está basado en una arquitectura modular de microsites, acompañada de la creación de una librería de componentes personalizada. Esta solución no solo optimiza la velocidad y la robustez del desarrollo, sino que también permite una mayor independencia entre los módulos, posicionándose como una innovación clave en el futuro del desarrollo web.</p>",
   "hobbies": ["bi-image-alt", "bi-tsunami", "bi-camera-reels", "bi-music-note-beamed", "bi-bicycle", "bi-dribbble", "bi-controller"],
   "skills": [
     {
-      "name": "Js",
-      "coverage": 95
-    },
-    {
-      "name": "TypeScript",
-      "coverage": 95
-    },
-    {
-      "name": "HTML 5",
-      "coverage": 95
-    },
-    {
-      "name": "CSS 3",
-      "coverage": 85
-    },
-    {
-      "name": "Sass",
-      "coverage": 85
-    },
-    {
       "name": "Angular",
+      "coverage": 97
+    },
+    {
+      "name": "Angular Material",
+      "coverage": 90
+    },
+    {
+      "name": "BackBone",
+      "coverage": 88
+    },
+    {
+      "name": "BootStrap",
       "coverage": 95
     },
     {
-      "name": "Single-spa (Micro-sites)",
-      "coverage": 85
-    },
-    {
-      "name": "RxJs",
-      "coverage": 95
-    },
-    {
-      "name": "NgRx",
-      "coverage": 80
-    },
-    {
-      "name": "Vue",
+      "name": "Brain.js (AI)",
       "coverage": 75
     },
     {
-      "name": "Library Components",
-      "coverage": 95
+      "name": "CSS 3",
+      "coverage": 90
+    },
+    {
+      "name": "Express",
+      "coverage": 85
     },
     {
       "name": "Full Rest",
       "coverage": 95
     },
     {
-      "name": "Web Socket",
-      "coverage": 95
+      "name": "HTML 5",
+      "coverage": 97
     },
     {
       "name": "Ionic",
-      "coverage": 80
+      "coverage": 85
+    },
+    {
+      "name": "JAVA",
+      "coverage": 75
     },
     {
       "name": "Jquery",
-      "coverage": 80
-    },
-    {
-      "name": "BackBone",
-      "coverage": 75
-    },
-    {
-      "name": "Mean Stack",
-      "coverage": 80
-    },
-    {
-      "name": "BootStrap",
       "coverage": 90
     },
     {
-      "name": "Express",
-      "coverage": 75
+      "name": "Js",
+      "coverage": 97
+    },
+    {
+      "name": "Library Components",
+      "coverage": 95
+    },
+    {
+      "name": "Mean Stack",
+      "coverage": 90
     },
     {
       "name": "Mongoose",
       "coverage": 75
+    },
+    {
+      "name": "NgRx",
+      "coverage": 95
+    },
+    {
+      "name": "Node Js",
+      "coverage": 90
+    },
+    {
+      "name": "PHP",
+      "coverage": 75
+    },
+    {
+      "name": "PrimeNg",
+      "coverage": 90
+    },
+    {
+      "name": "React",
+      "coverage": 80
+    },
+    {
+      "name": "RxJs",
+      "coverage": 95
+    },
+    {
+      "name": "Sass",
+      "coverage": 90
+    },
+    {
+      "name": "Single-spa (Micro-sites)",
+      "coverage": 95
+    },
+    {
+      "name": "TypeScript",
+      "coverage": 97
+    },
+    {
+      "name": "Vue.js",
+      "coverage": 80
+    },
+    {
+      "name": "Web Socket",
+      "coverage": 95
     }
   ],
   "businessSkills": [
     {
-      "name": "Arquitectura escalable",
-      "coverage": 95
-    },
-    {
-      "name": "Gestión de Equipos",
-      "coverage": 95
-    },
-    {
-      "name": "Buenas prácticas",
-      "coverage": 95
-    },
-    {
-      "name": "Liderazgo",
+      "name": "Visión arquitectónica",
       "coverage": 95
     },
     {
       "name": "Resolución de problemas",
+      "coverage": 100
+    },
+    {
+      "name": "Estándares y buenas prácticas",
+      "coverage": 95
+    },
+    {
+      "name": "Gestión de equipos",
+      "coverage": 95
+    },
+    {
+      "name": "Decisiones técnicas",
+      "coverage": 95
+    },
+    {
+      "name": "Liderazgo técnico",
+      "coverage": 95
+    },
+    {
+      "name": "Mentorización técnica",
       "coverage": 95
     },
     {
       "name": "Soporte UX/UI",
       "coverage": 90
-    },
-    {
-      "name": "Transferencia de conocimientos",
-      "coverage": 95
     }
   ],
   "degrees": [
@@ -132,60 +164,49 @@
       "endDate": 2006
     }
   ],
-  "courses": [
+  "goals": [
     {
-      "name": "Vue.js",
-      "school": "Accenture Academy",
-      "startDate": 2021,
-      "endDate": 2021
+      "name": "Vintegris: nebulaSUITE 2.0",
+      "description": "Creación de la arquitectura Front End de nebulaSUITE 2.0, plataforma para la gestión de certificados digitales y documentos firmados electrónicamente, utilizada en el Parlamento de los Diputados, principales organismos de la administración española y entidades bancarias.",
+      "date": "2024"
     },
     {
-      "name": "Ionic",
-      "school": "Accenture Academy",
-      "startDate": 2021,
-      "endDate": 2021
+      "name": "Repsol: ARIA - Stock Control",
+      "description": "Creación de la arquitectura Front End de ARIA - Stock Control, aplicación galardonada con el premio Best in Class en Expoquimia 2023, destacada como la mejor solución de gestión química del mercado.",
+      "date": "2022"
     },
     {
-      "name": "Angular Testing",
-      "school": "Angular University",
-      "startDate": 2020,
-      "endDate": 2021
+      "name": "Vodafone: IDM",
+      "description": "Creación de la arquitectura web de Vodafone IDM, la plataforma encargada de la administración de identidades.",
+      "date": "2020"
     },
     {
-      "name": "Angular 8 MEAN STACK",
-      "school": "Angular University",
-      "startDate": 2020,
-      "endDate": 2020
-    },
-    {
-      "name": "Rxjs Level Pro",
-      "school": "Accenture Academy",
-      "startDate": 2020,
-      "endDate": 2020
-    },
-    {
-      "name": "Angular 8 Advanced",
-      "school": "Angular University",
-      "startDate": 2018,
-      "endDate": 2019
-    },
-    {
-      "name": "B1 Inglés",
-      "school": "Escuela Oficial de Idiomas Ronda",
-      "startDate": 2017,
-      "endDate": 2018
+      "name": "Línea Directa: Aplicación Grúa de Guardia",
+      "description": "Diseño y desarrollo de la arquitectura Front de la primera aplicación web de tracking de asistencia en carretera. El proyecto tuvo gran repercusión mediática, apareciendo en medios nacionales con Matías Prats como protagonista.",
+      "date": "2016"
     }
   ],
+
   "languages": [
     { "name": "Español", "coverage": 99 },
-    { "name": "Inglés", "coverage": 70 }
+    { "name": "Inglés", "coverage": 75 }
   ],
   "professionalGrowth": {
-    "names": ["Arquitectura", "Gestión de equipos", "Soporte UX/UI", "Arquitectura micro-sites", "Inglés", "Js frameworks"],
+    "names": [
+      "Arquitectura",
+      "Micro-frontends",
+      "Liderazgo técnico",
+      "Buenas prácticas",
+      "UX/UI",
+      "Frameworks JS",
+      "IA aplicada",
+      "Inglés"
+    ],
     "growth": [
-      { "year": 2020, "values": [75, 74, 80, 0, 50, 80] },
-      { "year": 2022, "values": [85, 80, 87, 75, 55, 87] },
-      { "year": 2025, "values": [95, 95, 90, 90, 70, 95] }
+      { "year": 2020, "values": [75, 0, 80, 70, 70, 80, 0, 50] },
+      { "year": 2022, "values": [80, 70, 85, 80, 75, 90, 0, 60] },
+      { "year": 2024, "values": [90, 90, 90, 90, 80, 93, 70, 70] },
+      { "year": 2026, "values": [95, 95, 95, 95, 85, 95, 90, 75] }
     ]
   },
   "experience": [
@@ -198,7 +219,7 @@
       "description": "Front End Architect. Diseño de la arquitectura y Tech Lead del equipo de Front End.",
       "proyects": [
         {
-          "name": "Webs 2.0",
+          "name": "nebulaSUITE 2.0",
           "description": "Aplicaciones para la gestión de certificados digitales. Diseño de la arquitectura basada en microsites mediante librería de componentes propia y liderazgo del desarrollo. Distribucíon del trabajo del equipo de Front End, code-review y establecimiento de metodologías de trabajo.",
           "technologies": [
             "Angular",
@@ -225,7 +246,7 @@
         {
           "name": "Signicat Products",
           "description": "Aplicaciones para la gestión de certificados digitales e identificación facial. Diseño y refactorización de los distintos productos de identificación de la compañía Signicat. Formación y code-review de los distintos equipos de Front End. Establecimiento de metodologías para la consecución de aplicaciones robustas y escalables.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Web Socket", "Angular Material", "Prime Ng", "Webpack"]
+          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Web Socket", "Angular Material", "PrimeNg", "Webpack"]
         }
       ]
     },
@@ -238,7 +259,7 @@
       "description": "Front End Architect / Consultor manager. Diseño y consultoría de arquitecturas.",
       "proyects": [
         {
-          "name": "Repsol Proyecto Aria",
+          "name": "Repsol Aria",
           "description": "Diseño y desarrollo de la arquitectura de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data por Expoquimia. Liderazgo de los equipos de Front End.",
           "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Vue", "Library Components", "Angular Material"]
         },
@@ -323,11 +344,42 @@
       "description": "Desarrollador Junior. Desarrollo de aplicaciones sanitarias para el S.A.S.",
       "proyects": [
         {
-          "name": "NovaSoft Sanidad",
+          "name": "Isoft Sanidad",
           "description": "Aplicativo de gestión sanitaria. Desarrollo e implementación del software en los distintos centros sanitarios.",
           "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery", "Css 3"]
         }
       ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "CRUD Angular + NgRx with signals",
+      "date": "01/2026",
+      "description": "CRUD Angular + NgRx with Signals es una web y un repositorio de referencia que muestra cómo construir una aplicación CRUD completa utilizando Angular, NgRx y Signals. Está dirigido a desarrolladores junior y senior interesados en arquitectura, gestión de estado y patrones recomendados. El proyecto incluye pruebas unitarias y end-to-end (E2E).",
+      "imagePublication": "/images/publications/crudngrx.jpg",
+      "url": "https://juanmamunoz.github.io/crud-ngrx-signals/#/login",
+      "urlGithub": "https://github.com/JuanmaMunoz/crud-ngrx-signals"
+    },
+    {
+      "name": "CSS Layout Lab",
+      "date": "10/2025",
+      "description": "CSS Layout Lab es un espacio interactivo para aprender y experimentar con las distintas formas de construir layouts en CSS: desde los modelos clásicos como block e inline, hasta herramientas modernas como flexbox y grid.",
+      "imagePublication": "/images/publications/layoutlab.jpg",
+      "url": "https://juanmamunoz.github.io/css-layout-lab/#/home"
+    },
+    {
+      "name": "Signals Vs Subjects Vs NgRx",
+      "date": "06/2025",
+      "description": "Signals vs Subjects vs NgRx es una documentación que analiza las distintas herramientas disponibles en aplicaciones desarrolladas con Angular para la gestión de modelos de datos. Presenta una comparativa clara entre Signals, los subjects de RxJS y NgRx, destacando sus diferencias, casos de uso y ventajas.",
+      "imagePublication": "/images/publications/signalvssubjects.jpg",
+      "url": "https://juanmamunoz.github.io/signalsVsRxJsVsNgRx/#/"
+    },
+    {
+      "name": "Play RxJS",
+      "date": "02/2025",
+      "description": "Play RxJS es una documentación interactiva y amigable de RxJS que permite al usuario comprobar, en tiempo real y mediante ejemplos sencillos, el funcionamiento de todos los operadores y las principales funcionalidades de RxJS. Está orientada tanto a desarrolladores junior como senior.",
+      "imagePublication": "/images/publications/playrxjs.jpg",
+      "url": "https://juanmamunoz.github.io/playRxjs/#/home"
     }
   ]
 }
