@@ -344,7 +344,7 @@
       "description": "Desarrollador Junior. Desarrollo de aplicaciones sanitarias para el S.A.S.",
       "proyects": [
         {
-          "name": "NovaSoft Sanidad",
+          "name": "Isoft Sanidad",
           "description": "Aplicativo de gestión sanitaria. Desarrollo e implementación del software en los distintos centros sanitarios.",
           "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery", "Css 3"]
         }

@@ -344,7 +344,7 @@
       "description": "Junior Developer. Development of healthcare applications for the S.A.S.",
       "proyects": [
         {
-          "name": "NovaSoft Sanidad",
+          "name": "Isoft Sanidad",
           "description": "Healthcare management application. Development and implementation of software in various healthcare centers.",
           "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery", "Css 3"]
         }
