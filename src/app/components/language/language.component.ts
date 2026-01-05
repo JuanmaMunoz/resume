@@ -19,6 +19,10 @@ export class LanguageComponent {
     this.translate.onLangChange.pipe(takeUntilDestroyed()).subscribe((data) => (this.language = data.lang as Language));
   }
 
+  ngOnInit(): void {
+    this.language = (localStorage.getItem('language') as Language) || Language.ENGLISH;
+  }
+
   setLanguage(lang: Language): void {
     this.translate.use(lang);
   }
