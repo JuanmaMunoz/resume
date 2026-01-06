@@ -36,13 +36,11 @@ export const showApp = (duration: number = 500): AnimationTriggerMetadata => {
   const definitions: AnimationMetadata[] = [
     transition(':enter', [
       style({
-        transform: 'scale(0.5)',
         opacity: 0,
       }),
       animate(
         `${duration}ms cubic-bezier(0.4, 0, 0.2, 1)`,
         style({
-          transform: 'scale(1)',
           opacity: 1,
         }),
       ),
