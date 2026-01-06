@@ -5,14 +5,17 @@ import { TranslateService } from '@ngx-translate/core';
 import { LeftSideComponent } from './components/left-side/left-side.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { OptionsComponent } from './components/options/options.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 import { Language, ModeDark } from './models/enums';
 import { ResumeService } from './services/resume.service';
+import { showApp } from './utils/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [OptionsComponent, LeftSideComponent, NavbarComponent, RouterOutlet],
+  animations: [showApp(500)],
+  imports: [OptionsComponent, LeftSideComponent, NavbarComponent, RouterOutlet, SpinnerComponent],
 })
 export class AppComponent {
   @ViewChild('content') content: ElementRef = {} as ElementRef;
