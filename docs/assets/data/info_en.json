@@ -92,7 +92,7 @@
       "coverage": 80
     },
     {
-      "name": "RxJs",
+      "name": "RxJS",
       "coverage": 95
     },
     {
@@ -223,14 +223,17 @@
           "description": "Applications for digital certificate management. Design of microsite-based architecture using a proprietary component library and leadership in development. Distribution of Front End team tasks, code reviews, and establishment of work methodologies.",
           "technologies": [
             "Angular",
-            "SPA (Micro-sites)",
-            "HTML 5",
-            "Sass",
-            "Library Components",
-            "Full Rest",
             "BootStrap",
+            "CSS 3",
+            "Express",
+            "Full Rest",
+            "HTML 5",
+            "Library Components",
+            "NgRx",
             "Node Js",
-            "Express"
+            "RxJS",
+            "Sass",
+            "SPA (Micro-sites)"
           ]
         }
       ]
@@ -246,7 +249,19 @@
         {
           "name": "Signicat Products",
           "description": "Applications for digital certificate and facial recognition management. Design and refactoring of various identification products for Signicat. Training and code reviews for different Front End teams. Establishment of methodologies for achieving robust and scalable applications.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Web Socket", "Angular Material", "PrimeNg", "Webpack"]
+          "technologies": [
+            "Angular",
+            "Angular Material",
+            "CSS 3",
+            "Full Rest",
+            "HTML 5",
+            "NgRx",
+            "PrimeNg",
+            "RxJS",
+            "Sass",
+            "Web Socket",
+            "Webpack"
+          ]
         }
       ]
     },
@@ -261,17 +276,28 @@
         {
           "name": "Repsol Aria",
           "description": "Design and development of the architecture for the Aria platform, software responsible for managing Repsol's Big Data. Awarded in 2023 as the best Big Data platform by Expoquimia. Leadership of the Front End teams.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Vue", "Library Components", "Angular Material"]
+          "technologies": [
+            "Angular",
+            "Angular Material",
+            "CSS 3",
+            "Full Rest",
+            "HTML 5",
+            "Library Components",
+            "NgRx",
+            "RxJS",
+            "Sass",
+            "Vue.js"
+          ]
         },
         {
           "name": "Vodafone IDM",
           "description": "Software responsible for managing identities on the platform. Design and solutions for the IDM architecture at Vodafone.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Js", "API SOAP", "Full Rest", "Java"]
+          "technologies": ["Angular", "SOAP", "CSS 3", "Full Rest", "HTML 5", "Java", "Js", "NgRx", "RxJS", "Sass"]
         },
         {
           "name": "Santander Iberia Plus",
           "description": "Application that manages offers and bonuses for Santander clients. Front End architecture design and consulting.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Library Components"]
+          "technologies": ["Angular", "CSS 3", "Full Rest", "HTML 5", "Library Components", "NgRx", "RxJS", "Sass"]
         }
       ]
     },
@@ -286,7 +312,7 @@
         {
           "name": "Games 2.0",
           "description": "Online and retail gambling video games. Development of gambling video games using web technology. Creation of new games and maintenance of existing ones. Enhancement of application performance through best development practices.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Angular Animations", "Web Sockect", "Full Rest"]
+          "technologies": ["Angular", "Angular Animations", "CSS 3", "Full Rest", "HTML 5", "RxJS", "Sass", "Web Sockect"]
         }
       ]
     },
@@ -301,7 +327,7 @@
         {
           "name": "Unicaja electronic forms",
           "description": "Development and maintenance of electronic forms for Unicaja Banco. Management of the development team.",
-          "technologies": ["Angular", "HTML 5", "Sass", "DocPath", "Full Rest"]
+          "technologies": ["Angular", "CSS 3", "DocPath", "Full Rest", "HTML 5", "RxJS", "Sass"]
         }
       ]
     },
@@ -316,7 +342,7 @@
         {
           "name": "Efiasistencia 2.0",
           "description": "Application that centralizes road incidents for major insurance companies. Design of the Front End architecture for the Efiasistencia 2.0 application and leadership in development. Creation of the middleware layer for SOAP communications.",
-          "technologies": ["Angular", "Js", "HTML 5", "Sass", "Css 3", "BackBone", "Jquery", "Api Google Maps", "Full Rest", "SOAP", "PHP"]
+          "technologies": ["Angular", "API Google Maps", "BackBone", "CSS 3", "Full Rest", "HTML 5", "Jquery", "Js", "PHP", "Sass", "SOAP"]
         }
       ]
     },
@@ -331,7 +357,7 @@
         {
           "name": "Unicaja electronic forms",
           "description": "Development and maintenance of electronic forms for Unicaja Banco.",
-          "technologies": ["Js", "HTML 5", "Css 3", "DocPath", "Full Rest", "PHP"]
+          "technologies": ["CSS", "DocPath", "HTML", "Js", "PHP"]
         }
       ]
     },
@@ -346,7 +372,7 @@
         {
           "name": "Isoft Sanidad",
           "description": "Healthcare management application. Development and implementation of software in various healthcare centers.",
-          "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery", "Css 3"]
+          "technologies": ["CSS", "HTML", "Java", "Jquery", "Js", "PHP", "PowerBuilder"]
         }
       ]
     }

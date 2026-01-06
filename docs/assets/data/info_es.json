@@ -24,7 +24,7 @@
       "coverage": 95
     },
     {
-      "name": "Brain.js (AI)",
+      "name": "Brain.js (IA)",
       "coverage": 75
     },
     {
@@ -92,7 +92,7 @@
       "coverage": 80
     },
     {
-      "name": "RxJs",
+      "name": "RxJS",
       "coverage": 95
     },
     {
@@ -223,14 +223,17 @@
           "description": "Aplicaciones para la gestión de certificados digitales. Diseño de la arquitectura basada en microsites mediante librería de componentes propia y liderazgo del desarrollo. Distribucíon del trabajo del equipo de Front End, code-review y establecimiento de metodologías de trabajo.",
           "technologies": [
             "Angular",
-            "SPA (Micro-sites)",
-            "HTML 5",
-            "Sass",
-            "Library Components",
-            "Full Rest",
             "BootStrap",
+            "CSS 3",
+            "Express",
+            "Full Rest",
+            "HTML 5",
+            "Library Components",
+            "NgRx",
             "Node Js",
-            "Express"
+            "RxJS",
+            "Sass",
+            "SPA (Micro-sites)"
           ]
         }
       ]
@@ -246,7 +249,19 @@
         {
           "name": "Signicat Products",
           "description": "Aplicaciones para la gestión de certificados digitales e identificación facial. Diseño y refactorización de los distintos productos de identificación de la compañía Signicat. Formación y code-review de los distintos equipos de Front End. Establecimiento de metodologías para la consecución de aplicaciones robustas y escalables.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Web Socket", "Angular Material", "PrimeNg", "Webpack"]
+          "technologies": [
+            "Angular",
+            "Angular Material",
+            "CSS 3",
+            "Full Rest",
+            "HTML 5",
+            "NgRx",
+            "PrimeNg",
+            "RxJS",
+            "Sass",
+            "Web Socket",
+            "Webpack"
+          ]
         }
       ]
     },
@@ -261,17 +276,28 @@
         {
           "name": "Repsol Aria",
           "description": "Diseño y desarrollo de la arquitectura de la plataforma Aria, software encargado de la administración Big Data de Repsol. Premiada en 2023, como la mejor plataforma de Big Data por Expoquimia. Liderazgo de los equipos de Front End.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Vue", "Library Components", "Angular Material"]
+          "technologies": [
+            "Angular",
+            "Angular Material",
+            "CSS 3",
+            "Full Rest",
+            "HTML 5",
+            "Library Components",
+            "NgRx",
+            "RxJS",
+            "Sass",
+            "Vue.js"
+          ]
         },
         {
           "name": "Vodafone IDM",
           "description": "Software encargado de la administración de identidades de la plataforma. Diseño y soluciones para la arquitectura IDM de Vodafone.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Js", "API SOAP", "Full Rest", "Java"]
+          "technologies": ["Angular", "SOAP", "CSS 3", "Full Rest", "HTML 5", "Java", "Js", "NgRx", "RxJS", "Sass"]
         },
         {
           "name": "Santander Iberia Plus",
           "description": "Aplicativo que gestiona ofertas y bonos para clientes del Santander. Diseño y consultoría de la Arquitectura Front End.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Full Rest", "Library Components"]
+          "technologies": ["Angular", "CSS 3", "Full Rest", "HTML 5", "Library Components", "NgRx", "RxJS", "Sass"]
         }
       ]
     },
@@ -286,7 +312,7 @@
         {
           "name": "Games 2.0",
           "description": "Videojuegos de apuestas online y retail. Desarrollo de videojuegos de apuestas mediante tecnología web. Desarrollo de nuevos juegos y mantenimiento de los existentes. Mejora del rendimiento del aplicativo mediante buenas prácticas de desarrollo.",
-          "technologies": ["Angular", "HTML 5", "Sass", "Angular Animations", "Web Sockect", "Full Rest"]
+          "technologies": ["Angular", "Angular Animations", "CSS 3", "Full Rest", "HTML 5", "RxJS", "Sass", "Web Sockect"]
         }
       ]
     },
@@ -301,7 +327,7 @@
         {
           "name": "Formularios electrónicos Unicaja",
           "description": "Desarrollo y mantenimiento de los formularios electrónicos de Unicaja Banco. Gestión del equipo de desarrollo.",
-          "technologies": ["Angular", "HTML 5", "Sass", "DocPath", "Full Rest"]
+          "technologies": ["Angular", "CSS 3", "DocPath", "Full Rest", "HTML 5", "RxJS", "Sass"]
         }
       ]
     },
@@ -316,7 +342,7 @@
         {
           "name": "Efiasistencia 2.0",
           "description": "Aplicativo que centraliza los siniestros en carretera de las principales compañías de seguro. Diseño de la arquitectura Front End de la aplicación Efiasistencia 2.0 y liderazgo del desarrollo. Creación de la capa intermedia de negocio, para las comunicaciones SOAP.",
-          "technologies": ["Angular", "Js", "HTML 5", "Sass", "Css 3", "BackBone", "Jquery", "Api Google Maps", "Full Rest", "SOAP", "PHP"]
+          "technologies": ["Angular", "API Google Maps", "BackBone", "CSS 3", "Full Rest", "HTML 5", "Jquery", "Js", "PHP", "Sass", "SOAP"]
         }
       ]
     },
@@ -331,7 +357,7 @@
         {
           "name": "Formularios electrónicos Unicaja",
           "description": "Desarrollo y mantenimiento de los formularios electrónicos de Unicaja Banco.",
-          "technologies": ["Js", "HTML 5", "Css 3", "DocPath", "Full Rest", "PHP"]
+          "technologies": ["CSS", "DocPath", "HTML", "Js", "PHP"]
         }
       ]
     },
@@ -346,7 +372,7 @@
         {
           "name": "Isoft Sanidad",
           "description": "Aplicativo de gestión sanitaria. Desarrollo e implementación del software en los distintos centros sanitarios.",
-          "technologies": ["Java", "PowerBuilder", "Js", "Html", "PHP", "Jquery", "Css 3"]
+          "technologies": ["CSS", "HTML", "Java", "Jquery", "Js", "PHP", "PowerBuilder"]
         }
       ]
     }
