@@ -1,6 +1,6 @@
 import { animate, AnimationMetadata, AnimationTriggerMetadata, state, style, transition, trigger } from '@angular/animations';
 
-export const showAnimation = (duration: number = 1000): AnimationTriggerMetadata => {
+export const show = (duration = 1000): AnimationTriggerMetadata => {
   const definitions: AnimationMetadata[] = [
     transition(':enter', [style({ opacity: 0 }), animate(`${duration}ms ease-out`, style({ opacity: 1 }))]),
   ];
@@ -8,7 +8,7 @@ export const showAnimation = (duration: number = 1000): AnimationTriggerMetadata
   return trigger('show', definitions);
 };
 
-export const entranceAnimation = (duration: number = 500): AnimationTriggerMetadata => {
+export const entrance = (duration = 500): AnimationTriggerMetadata => {
   const definitions: AnimationMetadata[] = [
     transition(':enter', [
       style({
@@ -32,7 +32,7 @@ export const entranceAnimation = (duration: number = 500): AnimationTriggerMetad
   return trigger('entrance', definitions);
 };
 
-export const showApp = (duration: number = 500): AnimationTriggerMetadata => {
+export const showApp = (duration = 500): AnimationTriggerMetadata => {
   const definitions: AnimationMetadata[] = [
     transition(':enter', [
       style({
@@ -50,7 +50,7 @@ export const showApp = (duration: number = 500): AnimationTriggerMetadata => {
   return trigger('showApp', definitions);
 };
 
-export const showAndSlide = (duration: number = 500): AnimationTriggerMetadata =>
+export const showAndSlide = (duration = 500): AnimationTriggerMetadata =>
   trigger('show', [
     state(
       'hidden',

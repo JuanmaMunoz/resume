@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { Float } from 'src/app/models/enums';
 import { ResumeService } from 'src/app/services/resume.service';
 import { showAndSlide } from 'src/app/utils/animations';
@@ -13,12 +13,12 @@ import { OptionsComponent } from '../options/options.component';
   animations: [showAndSlide()],
   imports: [ShineDirective, MenuButtonComponent, OptionsComponent],
 })
-export class NavbarComponent {
+export class NavbarComponent implements AfterViewInit {
   @ViewChild('navbarButton') navbarButton: ElementRef = {} as ElementRef;
-  public show: boolean = false;
+  public show = false;
   public enumFloat = Float;
 
-  constructor(public resumeService: ResumeService) {}
+  public resumeService = inject(ResumeService);
 
   ngAfterViewInit(): void {
     window.addEventListener('mouseup', (event: MouseEvent) => {

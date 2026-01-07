@@ -1,4 +1,4 @@
-import { Component, effect, ElementRef, ViewChild } from '@angular/core';
+import { Component, effect, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
@@ -17,23 +17,22 @@ import { showApp } from './utils/animations';
   animations: [showApp(500)],
   imports: [OptionsComponent, LeftSideComponent, NavbarComponent, RouterOutlet, SpinnerComponent],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   @ViewChild('content') content: ElementRef = {} as ElementRef;
-  constructor(
-    private translate: TranslateService,
-    private resumeService: ResumeService,
-  ) {
-    this.translate.onLangChange.pipe(takeUntilDestroyed()).subscribe((data) => {
-      this.getInfo(data.lang as Language);
-      this.resumeService.getMenuButtons();
-      localStorage.setItem('language', data.lang);
-    });
 
-    effect(() => {
-      document.documentElement.setAttribute('data-bs-theme', this.resumeService.modeDark());
-      localStorage.setItem('modeDark', this.resumeService.modeDark());
-    });
-  }
+  public resumeService = inject(ResumeService);
+  private translate = inject(TranslateService);
+
+  private subscription = this.translate.onLangChange.pipe(takeUntilDestroyed()).subscribe((data) => {
+    this.getInfo(data.lang as Language);
+    this.resumeService.getMenuButtons();
+    localStorage.setItem('language', data.lang);
+  });
+
+  private effect = effect(() => {
+    document.documentElement.setAttribute('data-bs-theme', this.resumeService.modeDark());
+    localStorage.setItem('modeDark', this.resumeService.modeDark());
+  });
 
   ngOnInit(): void {
     const lang = localStorage.getItem('language') || Language.ENGLISH;

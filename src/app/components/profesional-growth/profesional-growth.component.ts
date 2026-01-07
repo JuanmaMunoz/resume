@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, effect, Input, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, effect, inject, Input, ViewChild } from '@angular/core';
 import Chart from 'chart.js/auto';
 import { ICharData, IDataset, IGrowth, IProfessionalGrowth } from 'src/app/models/interfaces';
 import { ResumeService } from 'src/app/services/resume.service';
@@ -9,23 +9,24 @@ import { ResumeService } from 'src/app/services/resume.service';
   styleUrls: ['./profesional-growth.component.scss'],
 })
 export class ProfesionalGrowthComponent implements AfterViewInit {
-  @Input() idChart: string = '';
+  @Input() idChart = '';
   @ViewChild('canvas') canvas!: HTMLCanvasElement;
-  public chart: any = null;
+  public chart!: Chart;
   private chartData!: ICharData;
   private chartColors: string[] = ['#ff4c4c', '#ffc008', '#0094b3', '#0da673'];
-  constructor(private resumeService: ResumeService) {
-    effect(() => {
-      if (this.resumeService.infoUser() && this.canvas) {
-        this.setCharData(this.resumeService.infoUser()?.professionalGrowth!);
-        this.createChart();
-      }
-    });
-  }
+
+  public resumeService = inject(ResumeService);
+
+  private effect = effect(() => {
+    if (this.resumeService.infoUser() && this.canvas) {
+      this.setCharData(this.resumeService.infoUser()!.professionalGrowth!);
+      this.createChart();
+    }
+  });
 
   ngAfterViewInit(): void {
     if (this.resumeService.infoUser()?.professionalGrowth) {
-      this.setCharData(this.resumeService.infoUser()?.professionalGrowth!);
+      this.setCharData(this.resumeService.infoUser()!.professionalGrowth!);
       this.createChart();
     }
   }
@@ -47,7 +48,7 @@ export class ProfesionalGrowthComponent implements AfterViewInit {
     if (this.chart) this.chart.destroy();
     const ctx = document.getElementById(this.idChart);
 
-    this.chart = new Chart(ctx as any, {
+    this.chart = new Chart(ctx as HTMLCanvasElement, {
       type: 'line',
       data: this.chartData,
       options: {

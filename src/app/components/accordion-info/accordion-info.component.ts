@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TypeAccordionItem } from 'src/app/models/enums';
 import { IAccordionItem } from 'src/app/models/interfaces';
@@ -20,5 +20,5 @@ export class AccordionInfoComponent {
     { type: TypeAccordionItem.DEGREES, icon: 'bi-mortarboard' },
     { type: TypeAccordionItem.GOALS, icon: 'bi-award' },
   ];
-  constructor(public resumeService: ResumeService) {}
+  public resumeService = inject(ResumeService);
 }

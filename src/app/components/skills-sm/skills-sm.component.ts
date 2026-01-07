@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ResumeService } from 'src/app/services/resume.service';
 import { ProfesionalGrowthComponent } from '../profesional-growth/profesional-growth.component';
@@ -12,5 +12,5 @@ import { SpinnerComponent } from '../spinner/spinner.component';
   imports: [SkillItemComponent, ProfesionalGrowthComponent, TranslateModule, SpinnerComponent],
 })
 export class SkillsSmComponent {
-  constructor(public resumeService: ResumeService) {}
+  public resumeService = inject(ResumeService);
 }

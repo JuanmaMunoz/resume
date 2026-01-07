@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ResumeService } from 'src/app/services/resume.service';
 
 @Component({
@@ -8,5 +8,5 @@ import { ResumeService } from 'src/app/services/resume.service';
   imports: [],
 })
 export class UserDataComponent {
-  constructor(public resumeService: ResumeService) {}
+  public resumeService = inject(ResumeService);
 }

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IPublication } from 'src/app/models/interfaces';
-import { showAnimation } from 'src/app/utils/animations';
+import { show } from 'src/app/utils/animations';
 import { environmment } from 'src/environments/environment';
 import { SpinnerComponent } from './../spinner/spinner.component';
 
@@ -9,7 +9,7 @@ import { SpinnerComponent } from './../spinner/spinner.component';
   imports: [SpinnerComponent],
   templateUrl: './publication-item.component.html',
   styleUrl: './publication-item.component.scss',
-  animations: [showAnimation()],
+  animations: [show()],
 })
 export class PublicationItemComponent {
   @Input() publication!: IPublication;

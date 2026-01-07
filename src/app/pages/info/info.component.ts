@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ResumeService } from 'src/app/services/resume.service';
 import { InfoLgComponent } from '../../components/info-lg/info-lg.component';
@@ -11,10 +11,8 @@ import { InfoSmComponent } from '../../components/info-sm/info-sm.component';
   imports: [InfoLgComponent, InfoSmComponent],
 })
 export class InfoComponent implements OnInit {
-  constructor(
-    private resumeService: ResumeService,
-    private router: Router,
-  ) {}
+  public resumeService = inject(ResumeService);
+  private router = inject(Router);
 
   ngOnInit(): void {
     this.resumeService.currentUrl = this.router.url;

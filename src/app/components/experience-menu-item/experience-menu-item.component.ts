@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IExperience } from 'src/app/models/interfaces';
-import { showAnimation } from 'src/app/utils/animations';
+import { show } from 'src/app/utils/animations';
 import { environmment } from '../../../environments/environment';
 import { SpinnerComponent } from '../spinner/spinner.component';
 
@@ -9,7 +9,7 @@ import { SpinnerComponent } from '../spinner/spinner.component';
   templateUrl: './experience-menu-item.component.html',
   styleUrls: ['./experience-menu-item.component.scss'],
   imports: [SpinnerComponent],
-  animations: [showAnimation()],
+  animations: [show()],
 })
 export class ExperienceMenuItemComponent {
   @Input() experience!: IExperience;
