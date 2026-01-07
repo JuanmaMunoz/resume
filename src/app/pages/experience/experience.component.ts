@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { ResumeService } from 'src/app/services/resume.service';
@@ -12,10 +12,8 @@ import { ExperienceMenuItemComponent } from '../../components/experience-menu-it
   imports: [ExperienceMenuItemComponent, ExperienceItemComponent, TranslateModule],
 })
 export class ExperienceComponent implements OnInit {
-  constructor(
-    public resumeService: ResumeService,
-    private router: Router,
-  ) {}
+  public resumeService = inject(ResumeService);
+  private router = inject(Router);
 
   ngOnInit(): void {
     this.resumeService.currentUrl = this.router.url;

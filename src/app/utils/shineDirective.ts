@@ -4,7 +4,7 @@ import { Directive, HostBinding, Input } from '@angular/core';
   selector: '[appShine]',
 })
 export class ShineDirective {
-  @Input() shineDuration: string = '2s';
+  @Input() shineDuration = '2s';
 
   @HostBinding('style.animation') get animation() {
     return `shine ${this.shineDuration} linear infinite`;

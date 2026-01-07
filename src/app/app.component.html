@@ -1,23 +1,27 @@
-<div class="main container">
-  <div class="row">
-    <div class="col d-none d-xxl-block">
-      <app-options [id]="'xl-device'" />
+<div [@showApp] class="main container">
+  @defer (on viewport) {
+    <div class="row">
+      <div class="col d-none d-xxl-block">
+        <app-options [id]="'xl-device'" />
+      </div>
     </div>
-  </div>
 
-  <div class="border border rounded-5 p-2">
-    <div class="row m-0 p-0">
-      <div class="col-3 d-none d-xxl-block">
-        <app-left-side />
-      </div>
-      <div class="col col-xxl-9 bg-body-secondary rounded-5 p-2 p-xxl-4">
-        <div class="d-xxl-none">
-          <app-navbar #navbar />
+    <div class="border border rounded-5 p-2">
+      <div class="row m-0 p-0">
+        <div class="col-3 d-none d-xxl-block">
+          <app-left-side />
         </div>
-        <div>
-          <router-outlet />
+        <div class="col col-xxl-9 bg-body-secondary rounded-5 p-2 p-xxl-4">
+          <div class="d-xxl-none">
+            <app-navbar #navbar />
+          </div>
+          <div>
+            <router-outlet />
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  } @placeholder {
+    <div class="mt-5 mt-lg-0"><app-spinner /></div>
+  }
 </div>

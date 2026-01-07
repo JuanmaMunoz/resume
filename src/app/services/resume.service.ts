@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, signal, WritableSignal } from '@angular/core';
+import { inject, Injectable, signal, WritableSignal } from '@angular/core';
 import { environmment } from '../../environments/environment';
 import { Language, ModeDark } from '../models/enums';
 import { IInfoUser, IMenuButton } from '../models/interfaces';
@@ -11,8 +11,9 @@ export class ResumeService {
   public infoUser: WritableSignal<IInfoUser | null> = signal(null);
   public modeDark: WritableSignal<ModeDark> = signal(ModeDark.LIGHT);
   public menuButtons: WritableSignal<IMenuButton[]> = signal([]);
-  public currentUrl: string = '/info';
-  constructor(private http: HttpClient) {}
+  public currentUrl = '/info';
+
+  private http = inject(HttpClient);
 
   public getInfo(lan: Language): void {
     const url = lan === Language.ENGLISH ? `${environmment.url}/data/info_en.json` : `${environmment.url}/data/info_es.json`;

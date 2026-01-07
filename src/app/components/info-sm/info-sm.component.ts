@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ResumeService } from 'src/app/services/resume.service';
 import { GoalItemComponent } from '../goal-item/goal-item.component';
@@ -13,5 +13,5 @@ import { PhotoComponent } from '../photo/photo.component';
   imports: [PhotoComponent, OtherDataComponent, InfoItemComponent, TranslateModule, GoalItemComponent],
 })
 export class InfoSmComponent {
-  constructor(public resumeService: ResumeService) {}
+  public resumeService = inject(ResumeService);
 }

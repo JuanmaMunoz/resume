@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ResumeService } from 'src/app/services/resume.service';
 
@@ -9,5 +9,5 @@ import { ResumeService } from 'src/app/services/resume.service';
   imports: [TranslateModule],
 })
 export class HobbiesComponent {
-  constructor(public resumeService: ResumeService) {}
+  public resumeService = inject(ResumeService);
 }

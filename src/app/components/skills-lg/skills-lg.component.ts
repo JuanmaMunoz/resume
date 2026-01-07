@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TypeSkill } from 'src/app/models/enums';
 import { ResumeService } from 'src/app/services/resume.service';
@@ -14,7 +14,7 @@ import { SkillItemComponent } from '../skill-item/skill-item.component';
 export class SkillsLgComponent {
   public enumTypeSkill = TypeSkill;
   public typeSkill: TypeSkill = TypeSkill.TECHNICAL;
-  constructor(public resumeService: ResumeService) {}
+  public resumeService = inject(ResumeService);
 
   public changeTypeSkills(typeSkill: TypeSkill) {
     this.typeSkill = typeSkill;

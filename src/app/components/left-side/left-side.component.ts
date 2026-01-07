@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ResumeService } from 'src/app/services/resume.service';
 import { MenuButtonComponent } from '../menu-button/menu-button.component';
 import { PhotoComponent } from '../photo/photo.component';
@@ -11,5 +11,5 @@ import { TitleComponent } from '../title/title.component';
   imports: [PhotoComponent, TitleComponent, MenuButtonComponent],
 })
 export class LeftSideComponent {
-  constructor(public resumeService: ResumeService) {}
+  public resumeService = inject(ResumeService);
 }
