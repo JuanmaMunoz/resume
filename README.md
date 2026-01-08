@@ -5,7 +5,7 @@ An interactive platform documenting my professional evolution and technical expe
 ## 🛠️ Tech Stack
 
 - Angular 20
-- Rxjs 20
+- RxJS 7.8
 - Bootstrap 5.3
 
 ## Install dependecies
