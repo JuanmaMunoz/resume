@@ -36,10 +36,6 @@
       "coverage": 85
     },
     {
-      "name": "RESTful API",
-      "coverage": 95
-    },
-    {
       "name": "HTML 5",
       "coverage": 97
     },
@@ -98,6 +94,10 @@
     {
       "name": "React",
       "coverage": 80
+    },
+    {
+      "name": "RESTful API",
+      "coverage": 95
     },
     {
       "name": "RxJS",
