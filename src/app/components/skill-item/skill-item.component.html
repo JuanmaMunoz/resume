@@ -1,6 +1,14 @@
 <div class="skill-item mb-2">
   <p class="text-primary-emphasis mb-0 skill-item__name">{{ skill.name }}</p>
-  <div class="progress" style="height: 5px" role="progressbar" [attr.aria-valuenow]="skill.coverage">
+  <div
+    class="progress"
+    style="height: 5px"
+    role="progressbar"
+    [attr.aria-label]="skill.name"
+    [attr.aria-valuenow]="skill.coverage"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  >
     <div class="progress-bar bg-secondary" [style.width]="(percent$ | async) + '%'"></div>
   </div>
 </div>
