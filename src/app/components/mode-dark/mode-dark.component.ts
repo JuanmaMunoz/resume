@@ -1,5 +1,6 @@
 import { Component, effect, inject, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 import { ModeDark } from 'src/app/models/enums';
 import { ResumeService } from 'src/app/services/resume.service';
 
@@ -7,7 +8,7 @@ import { ResumeService } from 'src/app/services/resume.service';
   selector: 'app-mode-dark',
   templateUrl: './mode-dark.component.html',
   styleUrls: ['./mode-dark.component.scss'],
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateModule],
 })
 export class ModeDarkComponent {
   @Input() id = '';
