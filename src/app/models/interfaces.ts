@@ -25,7 +25,7 @@ export interface IExperience {
   startDate: string;
   endDate: string;
   description: string;
-  proyects: IProject[];
+  projects: IProject[];
 }
 
 export interface IGoal {

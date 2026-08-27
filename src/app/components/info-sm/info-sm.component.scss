@@ -1,4 +1,7 @@
 .info-sm {
+  &__heading {
+    font-size: 1.5rem;
+  }
   &__body {
     max-height: 74svh;
     overflow-y: auto;

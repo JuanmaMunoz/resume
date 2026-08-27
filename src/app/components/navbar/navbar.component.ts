@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { Float } from 'src/app/models/enums';
 import { ResumeService } from 'src/app/services/resume.service';
 import { showAndSlide } from 'src/app/utils/animations';
@@ -11,7 +12,7 @@ import { OptionsComponent } from '../options/options.component';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
   animations: [showAndSlide()],
-  imports: [ShineDirective, MenuButtonComponent, OptionsComponent],
+  imports: [ShineDirective, MenuButtonComponent, OptionsComponent, TranslateModule],
 })
 export class NavbarComponent implements AfterViewInit {
   @ViewChild('navbarButton') navbarButton: ElementRef = {} as ElementRef;

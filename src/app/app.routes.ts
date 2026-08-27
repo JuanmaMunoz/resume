@@ -1,25 +1,21 @@
 import { Routes } from '@angular/router';
-import { ExperienceComponent } from './pages/experience/experience.component';
-import { InfoComponent } from './pages/info/info.component';
-import { PublicationsComponent } from './pages/publications/publications.component';
-import { SkillsComponent } from './pages/skills/skills.component';
 
 export const routes: Routes = [
   {
     path: 'info',
-    component: InfoComponent,
+    loadComponent: () => import('./pages/info/info.component').then((m) => m.InfoComponent),
   },
   {
     path: 'skills',
-    component: SkillsComponent,
+    loadComponent: () => import('./pages/skills/skills.component').then((m) => m.SkillsComponent),
   },
   {
     path: 'experience',
-    component: ExperienceComponent,
+    loadComponent: () => import('./pages/experience/experience.component').then((m) => m.ExperienceComponent),
   },
   {
     path: 'publications',
-    component: PublicationsComponent,
+    loadComponent: () => import('./pages/publications/publications.component').then((m) => m.PublicationsComponent),
   },
   { path: '**', redirectTo: 'info' },
 ];

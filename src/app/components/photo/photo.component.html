@@ -1,13 +1,16 @@
 @if (resumeService.infoUser(); as infoUser) {
   <div class="photo text-center">
     <div class="photo-header mb-3">
-      <h4 class="text-info">{{ infoUser.position }}</h4>
+      <h2 class="photo-header__title text-info">{{ infoUser.position }}</h2>
     </div>
     <div class="photo__body">
       <img
         [@entrance]
         alt="Juan Manuel Muñoz González Front-End Architect"
-        src="assets/images/photo.jpg"
+        src="assets/images/photo.webp"
+        fetchpriority="high"
+        width="200"
+        height="200"
         class="img-fluid rounded-circle mb-2"
       />
     </div>

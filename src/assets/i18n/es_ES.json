@@ -30,6 +30,13 @@
     "publications": "Publicaciones",
     "description": "Siempre he estado profundamente agradecido a todos aquellos desarrolladores que, de manera desinteresada, han puesto sus conocimientos a disposición de la comunidad. A muchos de ellos les debo una parte importante de mi formación profesional. En los últimos meses he comenzado a compartir mis propios conocimientos, aportando así mi granito de arena a esta comunidad."
   },
+  "accessibility": {
+    "openMenu": "Abrir menú de navegación",
+    "linkedin": "Perfil de LinkedIn de Juan Manuel Muñoz González",
+    "visitPublication": "Visitar publicación",
+    "viewOnGithub": "Ver código en GitHub",
+    "darkMode": "Activar modo oscuro"
+  },
   "spanish": "ES",
   "english": "EN",
   "dark": "Oscuro"

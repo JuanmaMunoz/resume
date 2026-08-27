@@ -1,7 +1,16 @@
 @if (resumeService.infoUser(); as info) {
   <nav class="navbar rounded-4 mb-2 p-0">
     <div class="container-fluid">
-      <button #navbarButton class="navbar-btn btn btn-secondary"><i class="bi bi-list text-light"></i></button>
+      <button
+        #navbarButton
+        class="navbar-btn btn btn-secondary"
+        type="button"
+        [attr.aria-label]="'accessibility.openMenu' | translate"
+        [attr.aria-expanded]="show"
+        aria-controls="navbar-menu"
+      >
+        <i class="bi bi-list text-light"></i>
+      </button>
       <div class="d-flex flex-row align-items-center">
         <h1 appShine class="navbar__title text-info me-2 mb-0">CV/</h1>
         <div class="d-flex flex-column navbar__text">
@@ -11,7 +20,7 @@
       </div>
     </div>
 
-    <div [@show]="show ? 'visible' : 'hidden'" class="navbar__menu border border-info bg-body rounded-5 pb-4">
+    <div id="navbar-menu" [@show]="show ? 'visible' : 'hidden'" class="navbar__menu border border-info bg-body rounded-5 pb-4">
       <div class="row">
         <div class="col-12 menu__buttons py-3">
           @for (button of resumeService.menuButtons(); track $index) {

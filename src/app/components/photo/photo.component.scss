@@ -1,4 +1,7 @@
 .photo {
+  &-header__title {
+    font-size: 1.5rem;
+  }
   &__body {
     > img {
       max-width: 200px;
