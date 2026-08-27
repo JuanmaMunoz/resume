@@ -225,7 +225,7 @@
     {
       "name": "Front End Architect",
       "company": "Vintegris",
-      "imageCompany": "/images/companies/vintegris.png",
+      "imageCompany": "/images/companies/vintegris.webp",
       "startDate": "01/2023",
       "endDate": "Currently",
       "description": "Front End Architect. Design of the architecture and tech leadership of the Front End team.",
@@ -255,7 +255,7 @@
     {
       "name": "Front End Architect",
       "company": "Signicat",
-      "imageCompany": "/images/companies/signicat.png",
+      "imageCompany": "/images/companies/signicat.webp",
       "startDate": "07/2022",
       "endDate": "01/2023",
       "description": "Front End Architect. Design and refactoring of architecture, technical leadership of the three Front End teams.",
@@ -282,7 +282,7 @@
     {
       "name": "Front End Architect",
       "company": "Accenture",
-      "imageCompany": "/images/companies/accenture.png",
+      "imageCompany": "/images/companies/accenture.webp",
       "startDate": "11/2020",
       "endDate": "07/2022",
       "description": "Front End Architect / Consulting Manager. Architecture design and consulting.",
@@ -318,7 +318,7 @@
     {
       "name": "Front End Senior",
       "company": "Golden Race",
-      "imageCompany": "/images/companies/golden.png",
+      "imageCompany": "/images/companies/golden.webp",
       "startDate": "12/2019",
       "endDate": "11/2020",
       "description": "Front End Senior. Development of betting games.",
@@ -333,7 +333,7 @@
     {
       "name": "Full Stack Developer",
       "company": "CMC",
-      "imageCompany": "/images/companies/cmc.png",
+      "imageCompany": "/images/companies/cmc.webp",
       "startDate": "08/2017",
       "endDate": "12/2019",
       "description": "Full Stack Developer. Development of banking applications for Unicaja Banco.",
@@ -348,7 +348,7 @@
     {
       "name": "Full Stack Developer",
       "company": "Lambda Automotive",
-      "imageCompany": "/images/companies/lambda.png",
+      "imageCompany": "/images/companies/lambda.webp",
       "startDate": "05/2014",
       "endDate": "08/2017",
       "description": "Full Stack Developer. Design and development of the Front End for Efiasistencia 2.0.",
@@ -375,7 +375,7 @@
     {
       "name": "Full Stack Developer",
       "company": "Delaware",
-      "imageCompany": "/images/companies/delaware.png",
+      "imageCompany": "/images/companies/delaware.webp",
       "startDate": "06/2008",
       "endDate": "05/2014",
       "description": "Full Stack Developer. Development of banking applications for Unicaja Banco.",
@@ -390,7 +390,7 @@
     {
       "name": "Developer",
       "company": "Isoft",
-      "imageCompany": "/images/companies/isoft.png",
+      "imageCompany": "/images/companies/isoft.webp",
       "startDate": "05/2006",
       "endDate": "06/2008",
       "description": "Junior Developer. Development of healthcare applications for the S.A.S.",
@@ -408,7 +408,7 @@
       "name": "CRUD Angular + NgRx with signals",
       "date": "01/2026",
       "description": "CRUD Angular + NgRx with Signals is a reference website and repository that shows how to build a complete CRUD application using Angular, NgRx, and Signals. It is aimed at junior and senior developers interested in architecture, state management, and recommended patterns. The project includes unit and end-to-end (E2E) tests.",
-      "imagePublication": "/images/publications/crudngrx.jpg",
+      "imagePublication": "/images/publications/crudngrx.webp",
       "url": "https://juanmamunoz.github.io/crud-ngrx-signals/#/login",
       "urlGithub": "https://github.com/JuanmaMunoz/crud-ngrx-signals"
     },
@@ -416,21 +416,21 @@
       "name": "CSS Layout Lab",
       "date": "10/2025",
       "description": "CSS Layout Lab is an interactive space to learn and experiment with the different ways of building layouts in CSS: from classic models like block and inline, to modern tools like flexbox and grid.",
-      "imagePublication": "/images/publications/layoutlab.jpg",
+      "imagePublication": "/images/publications/layoutlab.webp",
       "url": "https://juanmamunoz.github.io/css-layout-lab/#/home"
     },
     {
       "name": "Signals Vs Subjects Vs NgRx",
       "date": "06/2025",
       "description": "Signals vs Subjects vs NgRx is a documentation that analyzes the different tools available in Angular applications for managing data models. It provides a comparison between Signals, RxJS subjects, and NgRx, describing their main characteristics, advantages and disadvantages, as well as the most suitable use cases for each approach.",
-      "imagePublication": "/images/publications/signalvssubjects.jpg",
+      "imagePublication": "/images/publications/signalvssubjects.webp",
       "url": "https://juanmamunoz.github.io/signalsVsRxJsVsNgRx/#/"
     },
     {
       "name": "Play RxJS",
       "date": "02/2025",
       "description": "Play RxJS is a friendly and interactive RxJS documentation that allows users to explore, in real time and through simple examples, the behavior of all operators and the main features of RxJS. It is aimed at both junior and senior developers.",
-      "imagePublication": "/images/publications/playrxjs.jpg",
+      "imagePublication": "/images/publications/playrxjs.webp",
       "url": "https://juanmamunoz.github.io/playRxjs/#/home"
     }
   ]

@@ -1,13 +1,13 @@
 <div class="experience-item border-bottom px-lg-4 pb-3 mb-3 px-2" [id]="experience.company">
   <div class="d-flex flex-row align-items-center">
-    <h1 id="simple-list-item-1" class="text-primary-emphasis">{{ experience.company }}</h1>
+    <h2 class="experience-item__company text-primary-emphasis">{{ experience.company }}</h2>
     <span class="ms-3 experience-item__date text-secondary d-lg-none">{{ experience.startDate }} - {{ experience.endDate }}</span>
   </div>
   <p class="text-secondary">{{ experience.description }}</p>
   <p class="text-info">{{ 'experience.proyects' | translate }}:</p>
   @for (proyect of experience.projects; track $index) {
     <div class="mt-3">
-      <h5 class="text-primary-emphasis fw-bold">{{ proyect.name }}</h5>
+      <h3 class="experience-item__project text-primary-emphasis fw-bold">{{ proyect.name }}</h3>
       <p class="text-secondary">{{ proyect.description }}</p>
       <p class="text-info mb-3">{{ 'experience.technologies' | translate }}:</p>
       <div class="d-flex justify-content-center flex-wrap">

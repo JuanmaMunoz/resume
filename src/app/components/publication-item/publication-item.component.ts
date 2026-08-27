@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { IPublication } from 'src/app/models/interfaces';
 import { show } from 'src/app/utils/animations';
 import { environmment } from 'src/environments/environment';
@@ -6,7 +7,7 @@ import { SpinnerComponent } from './../spinner/spinner.component';
 
 @Component({
   selector: 'app-publication-item',
-  imports: [SpinnerComponent],
+  imports: [SpinnerComponent, TranslateModule],
   templateUrl: './publication-item.component.html',
   styleUrl: './publication-item.component.scss',
   animations: [show()],

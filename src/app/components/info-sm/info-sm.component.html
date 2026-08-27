@@ -13,13 +13,13 @@
       </div>
 
       <div class="col-12 mb-4 border-bottom pb-3">
-        <h4 class="text-secondary fw-bold"><i class="bi bi bi-mortarboard text-info"></i> {{ 'info.degrees' | translate }}:</h4>
+        <h3 class="info-sm__heading text-secondary fw-bold"><i class="bi bi bi-mortarboard text-info"></i> {{ 'info.degrees' | translate }}:</h3>
         @for (degree of resumeService.infoUser()?.degrees; track $index) {
           <app-info-item [degree]="degree" />
         }
       </div>
       <div class="col-12 mb-4 border-bottom pb-3">
-        <h4 class="text-secondary fw-bold"><i class="bi bi bi-award text-info"></i> {{ 'info.goals' | translate }}:</h4>
+        <h3 class="info-sm__heading text-secondary fw-bold"><i class="bi bi bi-award text-info"></i> {{ 'info.goals' | translate }}:</h3>
         @for (goal of resumeService.infoUser()?.goals; track $index) {
           <app-goal-item [goal]="goal" />
         }
