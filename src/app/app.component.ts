@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { LeftSideComponent } from './components/left-side/left-side.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { NewWebDialogComponent } from './components/new-web-dialog/new-web-dialog.component';
 import { OptionsComponent } from './components/options/options.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { Language, ModeDark } from './models/enums';
@@ -15,7 +16,7 @@ import { showApp } from './utils/animations';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [showApp(500)],
-  imports: [OptionsComponent, LeftSideComponent, NavbarComponent, RouterOutlet, SpinnerComponent],
+  imports: [OptionsComponent, LeftSideComponent, NavbarComponent, RouterOutlet, SpinnerComponent, NewWebDialogComponent],
 })
 export class AppComponent implements OnInit {
   @ViewChild('content') content: ElementRef = {} as ElementRef;

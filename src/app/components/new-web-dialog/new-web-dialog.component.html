@@ -1,0 +1,26 @@
+<dialog
+  #dialog
+  class="new-web-dialog border rounded-5 p-2"
+  aria-labelledby="new-web-dialog-title"
+  aria-describedby="new-web-dialog-description"
+>
+  <div class="new-web-dialog__content bg-body-secondary rounded-5 p-4 text-center">
+    <button
+      type="button"
+      class="new-web-dialog__close btn-close"
+      [attr.aria-label]="'accessibility.closeDialog' | translate"
+      (click)="close()"
+    ></button>
+    <i class="new-web-dialog__icon bi bi-rocket-takeoff text-info" aria-hidden="true"></i>
+    <h2 id="new-web-dialog-title" class="text-primary-emphasis fs-4 mt-2">{{ 'newWeb.title' | translate }}</h2>
+    <p id="new-web-dialog-description" class="text-secondary mb-4">{{ 'newWeb.description' | translate }}</p>
+    <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+      <a [href]="url()" class="btn btn-info rounded-pill px-4 text-white fw-bold">
+        {{ 'newWeb.accept' | translate }} <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+      </a>
+      <button type="button" class="btn btn-outline-secondary rounded-pill px-4" (click)="close()">
+        {{ 'newWeb.cancel' | translate }}
+      </button>
+    </div>
+  </div>
+</dialog>

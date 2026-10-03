@@ -1,0 +1,41 @@
+.new-web-dialog {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  max-width: 30rem;
+  width: calc(100% - 2rem);
+  &[open] {
+    animation: show-dialog 0.3s ease-out;
+  }
+  &::backdrop {
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__content {
+    position: relative;
+  }
+  &__close {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+  }
+  &__icon {
+    font-size: 3rem;
+  }
+}
+
+@keyframes show-dialog {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .new-web-dialog[open] {
+    animation: none;
+  }
+}

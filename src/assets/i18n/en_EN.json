@@ -35,7 +35,14 @@
     "linkedin": "Juan Manuel Muñoz González's LinkedIn profile",
     "visitPublication": "Visit publication",
     "viewOnGithub": "View code on GitHub",
-    "darkMode": "Enable dark mode"
+    "darkMode": "Enable dark mode",
+    "closeDialog": "Close dialog"
+  },
+  "newWeb": {
+    "title": "New portfolio version",
+    "description": "This site has been replaced by a new version, featuring a refreshed design and updated content. Would you like to visit it?",
+    "accept": "Visit the new website",
+    "cancel": "Stay on this version"
   },
   "spanish": "ES",
   "english": "EN",

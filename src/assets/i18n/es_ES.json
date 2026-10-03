@@ -35,7 +35,14 @@
     "linkedin": "Perfil de LinkedIn de Juan Manuel Muñoz González",
     "visitPublication": "Visitar publicación",
     "viewOnGithub": "Ver código en GitHub",
-    "darkMode": "Activar modo oscuro"
+    "darkMode": "Activar modo oscuro",
+    "closeDialog": "Cerrar diálogo"
+  },
+  "newWeb": {
+    "title": "Nueva versión del portfolio",
+    "description": "Este sitio ha sido sustituido por una nueva versión, con un diseño renovado y contenido actualizado. ¿Desea acceder a ella?",
+    "accept": "Visitar la nueva web",
+    "cancel": "Permanecer en esta versión"
   },
   "spanish": "ES",
   "english": "EN",
